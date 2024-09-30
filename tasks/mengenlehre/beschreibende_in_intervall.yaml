@@ -2,11 +2,11 @@ title: Beschreibende Schreibweise in Intervallschreibweise umschreiben
 question: |
   Forme die Beschreibenden Schreibweisen in die Intervallschreibweise um.
 
-  a) $A = \{x∈R│x-3 < 5\}$ 
+  a) $A = \{x∈\mathbb{R}│x-3 < 5\}$ 
 
-  b) $B = \{x∈R│-3 < x + 2 ≤ 3\}$
+  b) $B = \{x∈\mathbb{R}│-3 < x + 2 ≤ 3\}$
 
-  c) $C = \{x∈R│-2x<-1\}$
+  c) $C = \{x∈\mathbb{R}│-2x<-1\}$
 
 solution: |
   a) $A = (-\infty, 8)$

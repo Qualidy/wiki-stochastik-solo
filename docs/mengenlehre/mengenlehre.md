@@ -4,7 +4,7 @@ Unter einer Menge versteht man in der Mathematik jede Zusammenfassung von versch
 Es gibt verschiedene Darstellungen, wie Mengen zusammengefasst werden können. 
 
 *	Aufzählende Schreibweise
-*	Beschreibende Schreibeweise
+*	Beschreibende Schreibweise
 *	Intervalle
 
 ## Aufzählende Schreibweise
@@ -28,14 +28,11 @@ _Beispiel_
 
 $$
 \begin{align*}
-A &= \{x∈N│x≤3\} \\
-B &= \{x∈Z│-4≤x≤4\} \\
-C &= \{x∈N│x≤49\}
+A &= \{x∈\mathbb{N}│x≤3\} \\
+B &= \{x∈\mathbb{Z}│-4≤x≤4\} \\
+C &= \{x∈\mathbb{N}│x≤49\}
 \end{align*}
 $$
-
-## Aufgabe
-Gegeben ist jeweils entweder die aufzählende oder die beschreibende Schreibweise. Forme die gegebene Menge in die jeweils andere Schreibweise um
 
 {{ task(file="tasks/mengenlehre/beschreibende_und_aufzaehlende_schreibweise.yaml") }}
 
@@ -44,12 +41,12 @@ Wenn über reelle Zahlen gesprochen wird, sind alle Zahlen auf dem Zahlenstrahl 
 
 _Beispiele_
 
-| Beispiel | Bezeichnung | Erklärung |
-|-------|-------------------------|------------------------------------------|
-| **[2,9]** | geschlossenes Intervall | Alle Werte von **2** bis **9**, inklusive **2** und **9**|
-|**(2,9)** | offenes Intervall       | Alle Werte von **2** bis **9**, exklusive **2** und **9**|
-|**(2,9]**  | halboffenes Intervall   | Alle Werte von **2** bis **9**, exklusive **2** bzw. inklusive **9**|
-|**[2,9)**  | halboffenes Intervall   | Alle Werte von **2** bis **9**, inklusive **2** bzw. exklusive **9**|
+| Beispiel  | Bezeichnung             | Erklärung                                                            |
+|-----------|-------------------------|----------------------------------------------------------------------|
+| **[2,9]** | geschlossenes Intervall | Alle Werte von **2** bis **9**, inklusive **2** und **9**            |
+| **(2,9)** | offenes Intervall       | Alle Werte von **2** bis **9**, exklusive **2** und **9**            |
+| **(2,9]** | halboffenes Intervall   | Alle Werte von **2** bis **9**, exklusive **2** bzw. inklusive **9** |
+| **[2,9)** | halboffenes Intervall   | Alle Werte von **2** bis **9**, inklusive **2** bzw. exklusive **9** |
 
 {{ task(file="tasks/mengenlehre/menge_zu_intervall.yaml") }} 
  

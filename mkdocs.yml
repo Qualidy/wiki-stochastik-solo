@@ -21,7 +21,6 @@ markdown_extensions:
 plugins:
   - search
   - macros
-  - awesome-pages
 
 extra_javascript:
   - javascripts/mathjax.js
