@@ -1,0 +1,1716 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../verteilung/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Deskriptive Statistik - Statistik Schulung</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#deskriptive-statistik" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Statistik Schulung" class="md-header__button md-logo" aria-label="Statistik Schulung" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Statistik Schulung
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deskriptive Statistik
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Statistik Schulung" class="md-nav__button md-logo" aria-label="Statistik Schulung" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    Statistik Schulung
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Deskriptive Statistik
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Deskriptive Statistik
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#der-modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Der Modus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skalenniveaus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skalenniveaus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anwendungsfalle-der-lagemae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anwendungsfälle der Lagemaße
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anwendungsfälle der Lagemaße">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mittelwert-durchschnitt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mittelwert (Durchschnitt):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    <span class="md-ellipsis">
+      Median:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modus:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spannweite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spannweite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interquartilabstand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interquartilabstand
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schiefe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schiefe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stichprobe-und-grundgesamtheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stichprobe und Grundgesamtheit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#varianz-und-standardabweichung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Varianz und Standardabweichung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Varianz und Standardabweichung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#varianz-der-grundgesamtheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Varianz der Grundgesamtheit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardabweichung-einer-grundgesamtheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardabweichung einer Grundgesamtheit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varianz-einer-stichprobe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Varianz einer Stichprobe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardabweichung-einer-stichprobe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardabweichung einer Stichprobe
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verschiebung-und-skalierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verschiebung und Skalierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verschiebung und Skalierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verschiebung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verschiebung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skalierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skalierung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistische-momente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistische Momente
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statistische Momente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nicht-standardisierte-momente" class="md-nav__link">
+    <span class="md-ellipsis">
+      nicht-standardisierte Momente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardisierte-momente" class="md-nav__link">
+    <span class="md-ellipsis">
+      standardisierte Momente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wahrscheinlichkeitstheorie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wahrscheinlichkeitstheorie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Deskriptive statistik
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Deskriptive statistik
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/deskriptive_statistik_einleitung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deskriptive statistik einleitung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/mean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mean
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/median/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Median
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/modus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/visualisierung_mean_mode_median/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visualisierung von Modus, Median und Arithmetischem Mittel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#der-modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Der Modus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skalenniveaus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skalenniveaus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anwendungsfalle-der-lagemae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anwendungsfälle der Lagemaße
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anwendungsfälle der Lagemaße">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mittelwert-durchschnitt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mittelwert (Durchschnitt):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    <span class="md-ellipsis">
+      Median:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modus:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spannweite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spannweite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interquartilabstand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interquartilabstand
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schiefe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schiefe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stichprobe-und-grundgesamtheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stichprobe und Grundgesamtheit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#varianz-und-standardabweichung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Varianz und Standardabweichung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Varianz und Standardabweichung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#varianz-der-grundgesamtheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Varianz der Grundgesamtheit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardabweichung-einer-grundgesamtheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardabweichung einer Grundgesamtheit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varianz-einer-stichprobe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Varianz einer Stichprobe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardabweichung-einer-stichprobe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardabweichung einer Stichprobe
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verschiebung-und-skalierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verschiebung und Skalierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verschiebung und Skalierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verschiebung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verschiebung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skalierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skalierung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistische-momente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistische Momente
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statistische Momente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nicht-standardisierte-momente" class="md-nav__link">
+    <span class="md-ellipsis">
+      nicht-standardisierte Momente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardisierte-momente" class="md-nav__link">
+    <span class="md-ellipsis">
+      standardisierte Momente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="deskriptive-statistik">Deskriptive Statistik</h1>
+<p>Deskriptive Statistik ist der Teil der Statistik, der sich mit der Beschreibung und Zusammenfassung von Daten befasst. Sie verwendet Kennzahlen (wie Mittelwert, Median und Standardabweichung), um zentrale Tendenzen und Streuungen von Daten darzustellen. Häufig werden grafische Darstellungen (Diagramme) genutzt, um Muster und Trends in den Daten auf einen Blick sichtbar zu machen. Deskriptive Statistik <strong>beschreibt</strong> die Daten nur. Wenn man irgendwelche Schlussfolgerungen machen will, nutzt man die Inferenzstatistik.</p>
+<p><em>Beispiel</em> <br />
+Im Folgenden wurden von 6 Menschen die Körpergrößen notiert.</p>
+<table>
+<thead>
+<tr>
+<th>Körpergröße</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>172</td>
+</tr>
+<tr>
+<td>183</td>
+</tr>
+<tr>
+<td>191</td>
+</tr>
+<tr>
+<td>156</td>
+</tr>
+<tr>
+<td>183</td>
+</tr>
+<tr>
+<td>207</td>
+</tr>
+</tbody>
+</table>
+<p>Kennzahlen aus der deskriptiven Statisik:<br />
+Durchschnitt = 182<br />
+Häufigster Wert = 183  </p>
+<p><em>Aufgabe</em><br />
+Welche Kennzahlen könntet ihr euch noch vorstellen?</p>
+<p><em>Aufgabe</em><br />
+Woher kommt das Wort <em>deskriptiv</em> bei der deskriptiven Statistik?  </p>
+<p>Es gibt zwei verschiedene Arten von Werten, die in der deskriptiven Statistik immer wieder vorkommen. Das sind zum einen Lagemaße, welche zum Beispiel ein besonders typischer oder zentraler Wert des Datensatzes sein können, und zum anderen Streumaße, welche beschreiben, wie sehr sich die Daten von einander unterscheiden. Wir werden nun im folgenden diese verschiedenen Maße durchgehen.</p>
+<h2 id="der-modus">Der Modus</h2>
+<p>Der Modus ist der Wert in einer Datenreihe, der am häufigsten vorkommt. Er zeigt also den häufigsten oder typischsten Wert an. Im Gegensatz zum Mittelwert oder Median muss der Modus nicht einmalig sein – es kann mehrere Modi geben, wenn mehrere Werte gleich oft vorkommen. Der Modus ist besonders nützlich bei kategorialen Daten, also Daten, die in Gruppen eingeteilt sind, wie z. B. die beliebteste Farbe in einer Umfrage.  </p>
+<p><em>Beispiel</em></p>
+<p>6 Personen wurden gefragt, welche Automarke sie fahren.</p>
+<table>
+<thead>
+<tr>
+<th>Automarke</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Audi</td>
+</tr>
+<tr>
+<td>BMW</td>
+</tr>
+<tr>
+<td>Porsche</td>
+</tr>
+<tr>
+<td>Audi</td>
+</tr>
+<tr>
+<td>VW</td>
+</tr>
+<tr>
+<td>BMW</td>
+</tr>
+</tbody>
+</table>
+<p>Die Modi dieser 6 Menschen sind sowohl "Audi" als auch "BMW".  </p>
+<p>Den Modus kann man auch von normalen Zahlen bestimmen.</p>
+<table>
+<thead>
+<tr>
+<th>Schulnote</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>In diesem Fall ist der Modus nur "1".</p>
+<p><em>Aufgabe: Modus</em></p>
+<p>Berechne den Modus folgender Datensätze.</p>
+<p>a) <span class="arithmatex">\(\{2,5,12,4,5,3\}\)</span><br />
+b) <span class="arithmatex">\(\{2,3,4,5,5,12\}\)</span><br />
+c) <span class="arithmatex">\(\{Orange,Blau,Grün,Gelb,Blau,Orange\}\)</span><br />
+d) <span class="arithmatex">\(\{33,21,12,4\}\)</span><br />
+e) <span class="arithmatex">\(\{gut,ausreichend,sehr\ gut,mangelhaft,gut,befriedigend,ausreichend, gut\}\)</span>  </p>
+<h2 id="skalenniveaus">Skalenniveaus</h2>
+<p>Das Skalenniveau beschreibt, auf welche Weise Daten gemessen und klassifiziert werden können. Es gibt vier Haupttypen von Skalenniveaus, die bestimmen, welche mathematischen Operationen und statistischen Analysen auf den Daten möglich sind:</p>
+<table>
+<thead>
+<tr>
+<th>Skalenniveau</th>
+<th>Operationen</th>
+<th>Messbare Eigenschaften</th>
+<th>Beispiel</th>
+<th>Lageparameter</th>
+<th>Frage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nominalskala</td>
+<td><span class="arithmatex">\(=,\neq\)</span></td>
+<td>Häufigkeit</td>
+<td>Farben, Parteien</td>
+<td>Modus</td>
+<td>alles ist nominal</td>
+</tr>
+<tr>
+<td>Ordinalskala</td>
+<td><span class="arithmatex">\(=,\neq,&lt;,&gt;\)</span></td>
+<td>Häufigkeit, Rangfolge</td>
+<td>Schulnoten</td>
+<td>Modus, Median</td>
+<td>Gibt es eine Rangfolge?</td>
+</tr>
+<tr>
+<td>Intervallskala</td>
+<td><span class="arithmatex">\(=,\neq,&lt;,&gt;,+,-\)</span></td>
+<td>Häufigkeit, Rangfolge, Abstand</td>
+<td>Temperatur in Celsius</td>
+<td>Modus, Median, Arithmetische Mittel</td>
+<td>Kann ich zwei Datenpunkte addieren/subtrahieren und bekomme einen neuen Datenpunkt?</td>
+</tr>
+<tr>
+<td>Verhältnisskala</td>
+<td><span class="arithmatex">\(=,\neq,&lt;,&gt;,+,-,\times,\div\)</span></td>
+<td>Häufigkeit, Rangfolge, Abstand, natürlicher Nullpuntk</td>
+<td>Alter, Temperatur in Kelvin</td>
+<td>Modus, Median, Arithmetische Mittel, Geometrisches Mittel*</td>
+<td>Führt verdoppeln immer zu mehr?</td>
+</tr>
+</tbody>
+</table>
+<p>*Das Geometrische Mittel wird in diesem Kurs nicht behandelt, bei Interesse lohnt es sich aber, eigenständig nachzuschlagen.</p>
+<p><em>Aufgabe: Skalenniveau</em>  </p>
+<p>Ein Unternehmen hat eine Umfrage zu verschiedenen Eigenschaften von Produkten durchgeführt. Bestimme für jedes der folgenden Merkmale das richtige Skalenniveau.<br />
+a) Seriennummer der Produkte<br />
+b) Rangliste der beliebtesten Produkte<br />
+c) Zeit in Minuten, die ein Kunde auf die Lieferung wartet<br />
+d) Anzahl der verkauften Produkte in einem Jahr<br />
+e) Produktkategorie (z.B. Elektronik, Kleidung, Lebensmittel)  </p>
+<h2 id="anwendungsfalle-der-lagemae">Anwendungsfälle der Lagemaße</h2>
+<h3 id="mittelwert-durchschnitt">Mittelwert (Durchschnitt):</h3>
+<p><em>Anwendungsfall:</em> Für metrische Daten (z.B. Größe, Gewicht), wenn die Daten eine symmetrische Verteilung haben.<br />
+<em>Beispiel:</em> Durchschnittsgröße einer Gruppe von Personen<br />
+<em>Achtung:</em> Empfindlich gegenüber Ausreißern - sehr große oder kleine Werte können den Mittelwert stark beeinflussen.  </p>
+<h3 id="median">Median:</h3>
+<p><em>Anwendungsfall:</em> Für metrische oder ordinale Daten, wenn die Daten asymmetrisch verteilt sind.<br />
+<em>Beispiel:</em> Median-Einkommen in einer Region, um extreme Spitzengehälter nicht zu stark zu gewichten.  </p>
+<h3 id="modus">Modus:</h3>
+<p><em>Anwendungsfall:</em> Für alle Datenarten möglich<br />
+<em>Beispiel:</em> Häufigste Schuhgröße in einem Laden oder häufigste Umfrageantwort  </p>
+<p><em>Beispiel: Mittelwert oder Median</em>  </p>
+<table>
+<thead>
+<tr>
+<th>Produktpreis (in Euro)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+</tr>
+<tr>
+<td>9</td>
+</tr>
+<tr>
+<td>13</td>
+</tr>
+<tr>
+<td>189</td>
+</tr>
+<tr>
+<td>14</td>
+</tr>
+<tr>
+<td>16</td>
+</tr>
+<tr>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[ Durchschnitt = 37 \]</div>
+<div class="arithmatex">\[ Median = 13 \]</div>
+<p>Bei diesem Beispiel fällt auf, dass der Durchschnitt wesentlich höher ist als die meisten Datenpunkte. Ein einzelner Ausreißer sorgt für einen hohen Durchschnitt. Möchte man eine Preisempfehlung machen, dann repräsentiert in diesem Fall der Median den Datensatz besser.  </p>
+<p><em>Aufgabe: Lagemaße</em><br />
+Bestimme das arithmetische Mittel, den Median und den Modus, wenn möglich. Wähle aus, welches Lagemaß am besten repräsentiert, und begründe deine Wahl. Ordne jedem Datensatz das passende Skalenniveau zu.</p>
+<p>a) Die Ergebnisse eines Tests in einer Schulklasse lauten:  </p>
+<div class="arithmatex">\[\{49,45,95,58,52,57,56,61,49,52\}\]</div>
+<p>b) Die Mitarbeiter einer Firma haben ihre Fahrtzeiten in Minuten notiert:  </p>
+<div class="arithmatex">\[\{12, 37, 21, 25, 30, 12, 19, 25, 15, 12 ,21\}\]</div>
+<p>c) Ein Modegeschäft hat in der letzten Woche folgende T-Shirt Größen verkauft:</p>
+<div class="arithmatex">\[\{𝑀, 𝑆, 𝑀, 𝑀, 𝑋𝐿, 𝐿, 𝐿, 𝑋𝐿, 𝑆, 𝑆, 𝐿, 𝑀\}\]</div>
+<p>d) Bei einer Umfrage nach der Lieblingssportart wurden folgende Antworten gegeben:</p>
+<div class="arithmatex">\[\{Tennis, Fußball, Schwimmen, Schwimmen, Tennis, Fußball, Fußball, Volleyball, Schwimmen, Volleyball, Volleyball\}\]</div>
+<h2 id="spannweite">Spannweite</h2>
+<p>Die Spannweite (auch Range genannt) ist ein einfaches Maß für die Streuung von Daten. Sie gibt an, wie groß der Abstand zwischen dem größten und dem kleinsten Wert in einem Datensatz ist. Um die Spannweite zu berechnen, zieht man den kleinsten Wert vom größten ab. Die Spannweite zeigt, wie weit die Werte auseinanderliegen, gibt aber keine Informationen darüber, wie die Werte dazwischen verteilt sind. Sie ist anfällig für Ausreißer, da nur die extremen Werte berücksichtigt werden.  </p>
+<p><em>Beispiel</em><br />
+Im Folgenden sind die Alter einer Familie notiert worden.  </p>
+<table>
+<thead>
+<tr>
+<th>Alter (in Jahren)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+</tr>
+<tr>
+<td>32</td>
+</tr>
+<tr>
+<td>31</td>
+</tr>
+<tr>
+<td>4</td>
+</tr>
+<tr>
+<td>67</td>
+</tr>
+<tr>
+<td>71</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[ Spannweite = 71 - 4 = 67 \]</div>
+<p>Die Alter in dieser Familie streuen also über eine Spannweite von 67 Jahren.  </p>
+<p><em>Aufgabe: Spannweite</em><br />
+Bestimme die Spannweite folgender Datensätze.  </p>
+<p>a) <span class="arithmatex">\(\{4, 18, 14, 27, 19, 12\}\)</span><br />
+b) <span class="arithmatex">\(\{−3,−20,−11, 0\}\)</span><br />
+c) <span class="arithmatex">\(\{3, 3, 5,−2, 7, 5,−2\}\)</span><br />
+d) <span class="arithmatex">\(\{65,−48,−1, 55,−31, 15\}\)</span>  </p>
+<h2 id="interquartilabstand">Interquartilabstand</h2>
+<p>Der Interquartilabstand (IQA) ist ein Maß für die Streuung von Daten und gibt an, wie weit die mittleren 50% der Daten verteilt sind. Er wird berechnet, in dem man den sortierten Datensatz in der Mitte teilt, den Median beider Teile berechnet und anschließend den unteren vom oberen subtrahiert.  </p>
+<p><em>Beispiel mit gerader Anzahl an Werten</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+</tr>
+<tr>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+</tr>
+<tr>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<p>Nach Teilung in der Mitte erhält man folgenden zwei Datensätze:  </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>4</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[ linker\ Median = 3 \]</div>
+<div class="arithmatex">\[ rechter\ Median = 8 \]</div>
+<div class="arithmatex">\[ IQA = 8 - 3 = 5 \]</div>
+<p><em>Beispiel mit ungerade Anzahl an Werten</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>Um zwei gleichgroße Datensätze zu erhalten, wird bei einer ungeraden Anzahl der mittlere Wert ignoriert.  </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>Der mittlere Wert "4" ist also in keinem der beiden Sätze mehr enthalten.  </p>
+<div class="arithmatex">\[ linker\ Median = \frac{2+2}{2} = 2 \]</div>
+<div class="arithmatex">\[ rechter\ Median = \frac{5+7}{2} = 6 \]</div>
+<div class="arithmatex">\[ IQA = 6 - 2 = 4 \]</div>
+<p><em>Aufgabe: IQA</em>  </p>
+<p>Bestimme den IQA folgender Datensätze.<br />
+a) <span class="arithmatex">\(\{12, 32, 53, 32, 15, 28, 31\}\)</span><br />
+b) <span class="arithmatex">\(\{32, 41, 21, 14, 19, 25, 71, 5\}\)</span><br />
+c) <span class="arithmatex">\(\{17, 19, 11, 9, 21, 13, 20, 10, 5\}\)</span><br />
+d) <span class="arithmatex">\(\{51, 32, 41, 44, 25, 28, 30, 11, 3\}\)</span>  </p>
+<h2 id="schiefe">Schiefe</h2>
+<p>Die Schiefe beschreibt, wie asymmetrisch eine Verteilung von Daten ist. Es gibt drei Typen von Schiefe:  </p>
+<ol>
+<li>Rechtsschiefe (positive Schiefe): Der rechte Teil der Verteilung ist länger, und die meisten Werte liegen auf der linken Seite.  </li>
+<li>Linksschiefe (negative Schiefe): Der linke Teil der Verteilung ist länger, und die meisten Werte liegen auf der rechten Seite.  </li>
+<li>Symmetrisch: Die Verteilung ist gleichmäßig auf beide Seiten verteilt.  </li>
+</ol>
+<p>Die Schiefe hilft dabei zu verstehen, ob extreme Werte auf einer Seite häufiger auftreten.  </p>
+<p>Qualitativ lässt sich die Schiefe mithilfe des Medians und des Mittelwertes bestimmen. Ist der Mittelwert größer als der Median, dann ist der Datensatz rechtsschief, ist er kleiner als der Median, dann ist es linksschief. Sind Mittelwert und Median gleich, ist der Datensatz symmetrisch.
+Da es sich hierbei um ein Streuungsmaß handelt, lässt sich dazu natürlich ein passender Wert berechnen. Die Formel lautet wie folgt:</p>
+<div class="arithmatex">\[ y_m = \frac{1}{n\sigma^3} \sum_{i = 1}^n(x_i - \bar{x})^3 \]</div>
+<ul>
+<li><span class="arithmatex">\(y_m\)</span> ist das Symbol für die Schiefe</li>
+<li><span class="arithmatex">\(n\)</span> ist die Anzahl an Werten</li>
+<li><span class="arithmatex">\(x_i\)</span> ist ein einzelner Wert</li>
+<li><span class="arithmatex">\(\bar{x}\)</span> ist der Mittelwert</li>
+<li><span class="arithmatex">\(\sigma\)</span> ist die Standardabweichung</li>
+</ul>
+<p>Da die Standardabweichung zu diesem Zeitpunkt noch nicht behandelt wurde, kommen wir später auf diese Formel zurück.  </p>
+<p><em>Aufgabe: Schiefe</em></p>
+<p>Ordne die Begriffe rechtsschief, linksschief und symmetrisch den folgenden Datensätze zu.
+a) <span class="arithmatex">\(\{30, 37, 29, 33, 52, 64, 31, 30, 35\}\)</span><br />
+b) <span class="arithmatex">\(\{11, 15, 19, 13, 10, 17, 20, 15\}\)</span><br />
+c) <span class="arithmatex">\(\{19, 23, 18, 22, 13, 11, 21, 19\}\)</span>  </p>
+<h2 id="stichprobe-und-grundgesamtheit">Stichprobe und Grundgesamtheit</h2>
+<p>In der Statistik müssen wir zwischen Grundgesamtheit (oft auch Population) und Stichproben unterscheiden. Grundsätzlich interessiert man sich meistens für die Grundgesamtheit. Da die aber sehr groß sein kann, ist es praktischer eine Stichprobe zu untersuchen, um anhand derer Schlüsse für die Grundgesamtheit zu schließen.<br />
+Für Grundgesamtheit und Stichproben werden oft die gleichen Kennzahlen genutzt. Um beide gut auseinander halten zu können, nutzt man unterschiedliche Symbole für die jeweiligen Kennzahlen.</p>
+<ul>
+<li>Die Anzahl der Datenpunkte wird für die Grundgesamtheit mit <span class="arithmatex">\(N\)</span> abgekürzt, für die Stichprobe mit <span class="arithmatex">\(n\)</span>.  </li>
+<li>Der Mittelwert nutzt für eine Stichprobe das Symbol <span class="arithmatex">\(\bar{x}\)</span> und für die Grundgesamtheit <span class="arithmatex">\(\mu\)</span>.</li>
+<li>Die Standardabweichung der Grundgesamtheit nutzt <span class="arithmatex">\(\sigma\)</span>, die der Stichprobe wird mit <span class="arithmatex">\(s\)</span> betitelt.</li>
+</ul>
+<h2 id="varianz-und-standardabweichung">Varianz und Standardabweichung</h2>
+<p>Varianz und Standardabweichung sind Streumaße dafür, wie stark die Daten in einem Datensatz durchschnittlich um den Mittelwert streuen.  </p>
+<h3 id="varianz-der-grundgesamtheit">Varianz der Grundgesamtheit</h3>
+<div class="arithmatex">\[ \sigma^2 = \frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2 \]</div>
+<p>Die Standardabweichung beschreibt die durchschnittliche quadratische Abweichung der Datenpunkte vom Mittelwert.<br />
+Zentral in der Formel der Varianz ist der Abstand zwischen einem Datenpunkt und dem Mittelwert <span class="arithmatex">\(x_i - \mu\)</span>.<br />
+Bei dieser Rechnung können sowohl negative wie auch positive Abstände entstehen. In welche Richtung der Datenpunkt vom Mittelwert abweicht, soll aber keine Rolle spielen. Zusätzlich sollen starke Abweichungen vom Mittelwert ein stärkeres Gewicht bekommen. Daher wird der Abstand quadriert, um diese beiden Ziele zu erreichen <span class="arithmatex">\((x_i - \mu)^2\)</span>.<br />
+Dieser quadrierte Abstand wird für jeden einzelnen Datenpunkt berechnet und dann aufsummiert <span class="arithmatex">\(\sum_{i=1}^N\)</span>.<br />
+Schlussendlich wird aus dieser Gesamtsumme der Durchschnitt berechnet, in dem durch die Anzahl der Datenpunkte geteilt wird <span class="arithmatex">\(\frac{1}{N}\)</span>.  </p>
+<p><em>Beispiel</em></p>
+<p>Ein Firmeninhaber hat die Gewinne seiner 4 Filialen notiert.</p>
+<table>
+<thead>
+<tr>
+<th>Gewinn (in Euro)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>800</td>
+</tr>
+<tr>
+<td>1200</td>
+</tr>
+<tr>
+<td>1300</td>
+</tr>
+<tr>
+<td>1700</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[ \mu = \frac{800 + 1200 + 1300 + 1700}{4} = 1250 \]</div>
+<div class="arithmatex">\[ \sigma^2 = \frac{(800 - 1250)^2 + (1200 - 1250)^2 + (1300 - 1250)^2 + (1700 - 1250)^2}{4} = 102.500 \]</div>
+<p>Die Varianz liegt hier also bei 102.500.  </p>
+<p><em>Aufgabe: Varianz einer Grundgesamtheit</em></p>
+<p>Berechne die Varianz der folgenden Grundgesamtheiten.<br />
+a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
+b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+<p>Der Wert der Varianz ist schwer zu interpretieren. Das liegt am Quadrieren des Abstandes. Im Beispiel des Firmeninhabers ist die Einheit der Varianz €<span class="arithmatex">\(^2\)</span>.<br />
+Die Einheit der Varianz ist also das Quadrat der Einheit eines Datenpunktes. Um diese Diskrepanz aufzulösen, wird die Standardabweichung hinzugezogen.</p>
+<h3 id="standardabweichung-einer-grundgesamtheit">Standardabweichung einer Grundgesamtheit</h3>
+<div class="arithmatex">\[ \sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2} \]</div>
+<p>Die Standardabweichung ist nichts anderes als die Wurzel der Varianz. Sie beschreibt den durchschnittliche Abstand der Datenpunkte um den Mittelwert. Im Gegensatz zur Varianz hat sie die gleiche Einheit wie die Datenpunkte.  </p>
+<p><em>Beispiel</em></p>
+<p>Beim Beispiel des Firmeninhabers hat sich eine Varianz von 102500 ergeben. Um nun die passende Standardabweichung zu berechnen, muss nur noch die Wurzel gezogen werden.  </p>
+<div class="arithmatex">\[ \sigma = \sqrt{102500} \approx 320 \]</div>
+<table>
+<thead>
+<tr>
+<th>Gewinn (in Euro)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>800</td>
+</tr>
+<tr>
+<td>1200</td>
+</tr>
+<tr>
+<td>1300</td>
+</tr>
+<tr>
+<td>1700</td>
+</tr>
+</tbody>
+</table>
+<p>Vergleicht man die Standardabweichung nun mit dem Datensatz, dann fällt auf, dass die Standardabweichung viel anschaulich die Streuung beschreibt als die Varianz. Das liegt daran, dass die Quadrierung in der Varianz für die Standardabweichung aufgelöst wurde.  </p>
+<p><em>Aufgabe: Standardabweichung einer Grundgesamtheit</em></p>
+<p>Berechne die Standardabweichung der folgenden Grundgesamtheiten.<br />
+a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
+b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+<h3 id="varianz-einer-stichprobe">Varianz einer Stichprobe</h3>
+<div class="arithmatex">\[ s^2 = \frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2 \]</div>
+<p>Wenn von der Varianz einer Stichprobe die Rede ist, dann meint man damit eigentlich eine Schätzung der Varianz der Grundgesamtheit anhand einer Stichprobe und <strong>nicht</strong> die Varianz der Stichprobe selbst. Wenn man die tatsächlichen Varianzen aller möglichen Stichproben einer Grundgesamtheit berechnet, fällt auf, dass man öfter unterhalb der Varianz der Grundgesamtheit liegt als darüber. Das liegt daran, dass die Ausreißer, welche einen stärkeren Einfluss auf die Varianz haben, seltener in einer Stichprobe vorhanden sind. Hier ist also in der Mathematik selbst ein systematischer Fehlschätzung. Um diesem Fehler entgegenzuwirken, wird ein Korrekturfaktor genutzt <span class="arithmatex">\(\frac{1}{n - 1}\)</span>.<br />
+Je kleiner die Stichprobe, desto größer ist der Einfluss dieser Korrektur. Das kann man sich dadurch erklären, dass eine große Stichprobe die Grundgesamtheit besser wiederspiegelt und daher eine geringere Korrektur benötigt. Ansonsten ist die Formel identisch zur Varianz einer Grundgesamtheit.  </p>
+<p><em>Beispiel</em></p>
+<p>Ein Firmeninhaber hat 10 Filialen. Er hat in einer Stichprobe die Gewinne von 4 Filialen notiert.</p>
+<table>
+<thead>
+<tr>
+<th>Gewinn (in Euro)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>800</td>
+</tr>
+<tr>
+<td>1200</td>
+</tr>
+<tr>
+<td>1300</td>
+</tr>
+<tr>
+<td>1700</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[ \bar{x} = \frac{800 + 1200 + 1300 + 1700}{4} = 1250 \]</div>
+<div class="arithmatex">\[ s^2 = \frac{(800-1250)^2 + (1200-1250)^2 + (1300-1250)^2 + (1700-1250)^2}{4-1} \]</div>
+<p>Die Varianz der Stichprobe (eigentlich die Schätzung der Varianz der Grundgesamtheit anhand der Stichprobe) beträgt also ungefähr 136.667.</p>
+<p><em>Aufgabe: Varianz einer Stichprobe</em></p>
+<p>Berechne die Varianz der folgenden Stichproben.
+(Berechne eine Schätzung der Varianz der Grundgesamhtheit anhand folgender Stichproben.) <br />
+a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
+b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+<h3 id="standardabweichung-einer-stichprobe">Standardabweichung einer Stichprobe</h3>
+<div class="arithmatex">\[ s = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})} \]</div>
+<p>Auch bei der Standardabweichung einer Stichprobe ist in der Regel eine Schätzung der Standardabweichung der Grundgesamtheit anhand der Stichprobe gemeint. Das heißt es kommt der gleiche Korrekturfaktor zum Einsatz wie bei der Varianz einer Stichprobe.  </p>
+<p><em>Beispiel</em>  </p>
+<p>Nimmt man die Varianz des vorherigen Beispiels, erhält man folgende
+Standardabweichung.  </p>
+<div class="arithmatex">\[ s = \sqrt{13667} \approx 370 \]</div>
+<p><em>Aufagbe: Standardabweichung einer Stichprobe</em></p>
+<p>Berechne die Standardabweichung der folgenden Stichproben.<br />
+(Berechne eine Schätzung der Standardabweichung der Grundgesamhtheit anhand folgender Stichproben.) <br />
+a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
+b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+<h2 id="verschiebung-und-skalierung">Verschiebung und Skalierung</h2>
+<p>Um das Verständnis der Lagemaße und Streumaße besser zu verstehen, lohnt es sich Datensätze zu verschieben bzw. zu skalieren.</p>
+<h3 id="verschiebung">Verschiebung</h3>
+<p>Bei einer Verschiebung eines Datensatzes wird jeder Datenpunkt mit demselben Wert subtrahiert bzw. addiert.  </p>
+<p><em>Beispiel</em><br />
+Datensatz vor Verschiebung:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+</tr>
+<tr>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[ Mittelwert = 6 \]</div>
+<div class="arithmatex">\[ Median = 5,5 \]</div>
+<div class="arithmatex">\[ Modus = 2 \]</div>
+<div class="arithmatex">\[ Spannweite = 10 \]</div>
+<div class="arithmatex">\[ IQA = 7 \]</div>
+<div class="arithmatex">\[ Varianz = 13 \]</div>
+<p>Nun wird jeder Datenpunkt mit 3 addiert:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+</tr>
+<tr>
+<td>12</td>
+</tr>
+<tr>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p><em>Aufgabe: Verschiebung</em>  </p>
+<p>Wie verändern sich die Kennzahlen nach der Verschiebung?  </p>
+<div class="arithmatex">\[ Mittelwert = 9 \]</div>
+<div class="arithmatex">\[ Median = 8,5 \]</div>
+<div class="arithmatex">\[ Modus = 5 \]</div>
+<div class="arithmatex">\[ Spannweite = 10 \]</div>
+<div class="arithmatex">\[ IQA = 7 \]</div>
+<div class="arithmatex">\[ Varianz = 13 \]</div>
+<p>Man kann beobachtet, dass die Lagemaße sich gleichermaßen wie die Datenpunkte verschoben haben. Die Streumaße sind dabei unverändert.</p>
+<h3 id="skalierung">Skalierung</h3>
+<p>Bei einer Skalierung wird jeder Datenpunkt mit dem selben Wert multipliziert bzw. dividiert.</p>
+<p><em>Beispiel</em><br />
+Datensatz vor Verschiebung:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+</tr>
+<tr>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[ Mittelwert = 6 \]</div>
+<div class="arithmatex">\[ Median = 5,5 \]</div>
+<div class="arithmatex">\[ Modus = 2 \]</div>
+<div class="arithmatex">\[ Spannweite = 10 \]</div>
+<div class="arithmatex">\[ IQA = 7 \]</div>
+<div class="arithmatex">\[ Varianz = 13 \]</div>
+<p>Jeder Datenpunkt soll mit 2 multipliziert werden:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+</tr>
+<tr>
+<td>4</td>
+</tr>
+<tr>
+<td>10</td>
+</tr>
+<tr>
+<td>12</td>
+</tr>
+<tr>
+<td>18</td>
+</tr>
+<tr>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+<p><em>Aufgabe: Skalierung</em>  </p>
+<p>Wie verändern sich die Kennzahlen nach der Skalierung?  </p>
+<div class="arithmatex">\[ Mittelwert = 12 \]</div>
+<div class="arithmatex">\[ Median = 11 \]</div>
+<div class="arithmatex">\[ Modus = 4 \]</div>
+<div class="arithmatex">\[ Spannweite = 20 \]</div>
+<div class="arithmatex">\[ IQA = 14 \]</div>
+<div class="arithmatex">\[ Varianz = 52 \]</div>
+<h2 id="statistische-momente">Statistische Momente</h2>
+<h3 id="nicht-standardisierte-momente">nicht-standardisierte Momente</h3>
+<p>Die statistische Momente haben wir teilweise in dieser Schulung schon kennen gelernt. Es sind neue Fachbegriffe, die die unterschiedlichen Kennzahlen zusammenführen. Die ersten beiden Momente fallen dabei ein wenig aus dem Muster, wie wir gleich sehen werden.</p>
+<p><em>Allgemeine Formel</em></p>
+<div class="arithmatex">\[ m_k = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^k \]</div>
+<p><em>Erstes statistisches Moment: Mittelwert</em></p>
+<div class="arithmatex">\[ m_1 = \frac{1}{n} \sum_{i=1}^n x_i \]</div>
+<p>Hier wird noch nicht die Differenz der einzelnen Datenpunkte zum Mittelwert bestimmt, da das erste Moment ja selbst der Mittelwert ist. Würde man hier jedes mal den Abstand zum Mittelwert berechnen, wäre das Ergebnis immer 0 (,probier es doch mal aus). Das erste Moment bedarf noch keiner Standardisierung.</p>
+<p><em>Zweites statistisches Moment: Varianz</em></p>
+<div class="arithmatex">\[ m_2 = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2 \]</div>
+<p>Das zweite statistische Moment, die Varianz, wird ebenfalls noch nicht standardisiert. Das liegt daran, dass bei den folgenden Momenten mit Hilfe der Varianz bzw. Standardabweichung standardisiert wird. Würde man die Varianz mit Hilfe der Varianz standardisieren, wäre das Ergebnis immer 0 und hätte damit jegliche Aussagekraft verloren.</p>
+<h3 id="standardisierte-momente">standardisierte Momente</h3>
+<p><em>Allgemeine standardisierte Formel</em></p>
+<div class="arithmatex">\[ m_k = \frac{1}{\sigma^k n} \sum_{i=1}^n (x_i - \bar{x})^k \]</div>
+<p><em>Drittes statistische Moment: Schiefe</em></p>
+<div class="arithmatex">\[ m_3 = \frac{1}{\sigma^3 n} \sum_{i=1}^n (x_i - \bar{x})^3 \]</div>
+<p>Das dritte statistische Moment ist die Schiefe. Diese wurde qualitativ bereits eingeführt. Als Erinnerung: die Schiefe beschreibt wie asymmetrisch eine Verteilung ist. Ab dem dritten statistischen Moment wird standardisiert. Das bedeutet, dass wir das Moment durch die Standardabweichung hoch des entsprechenden Grades dividieren. Der Grund für die Standardisierung ist, dass die Momente mit zunehmenden Grad immer größer werden (siehe <span class="arithmatex">\((x_i - \bar{x})^3\)</span>). Die Standardisierung sorgt dafür, dass die Momente handhabbare Werte annehmen.</p>
+<p><em>Viertes statistisches Moment: Kurtosis</em></p>
+<div class="arithmatex">\[ m_4 = \frac{1}{\sigma^4 n} \sum_{i=1}^n (x_i - \bar{x})^4 \]</div>
+<p>Die Kurtosis ist die eine neue Kennzahl, die hier eingeführt wird. Eine hohe Kurtosis beudetet, dass es viele Extremwerte, also Ausreißer, gibt. Wenn zum Beispiel bei einer Stichprobe viele Menschen über 2 Meter oder unter 1,60 Meter sind, dann hat die Stichprobe eine hohe Kurtosis. Gibt es wenige Extrempunkte ist die Kurotsis entsprechend klein.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

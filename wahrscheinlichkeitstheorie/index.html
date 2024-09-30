@@ -1,0 +1,975 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../verteilung/">
+      
+      
+        <link rel="next" href="../deskriptive_statistik/deskriptive_statistik_einleitung/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Wahrscheinlichkeitstheorie - Statistik Schulung</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#wahrscheinlichkeitstheorie" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Statistik Schulung" class="md-header__button md-logo" aria-label="Statistik Schulung" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Statistik Schulung
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Wahrscheinlichkeitstheorie
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Statistik Schulung" class="md-nav__button md-logo" aria-label="Statistik Schulung" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    Statistik Schulung
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deskriptive Statistik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Wahrscheinlichkeitstheorie
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Wahrscheinlichkeitstheorie
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#laplace-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Laplace-Experiment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bernoulli-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bernoulli-Experiment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baumdiagramme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baumdiagramme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additionsregel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additionsregel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiplikationsregel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplikationsregel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiplikationsregel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unabhangige-ereignisse" class="md-nav__link">
+    <span class="md-ellipsis">
+      unabhängige Ereignisse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abhangige-ereignisse" class="md-nav__link">
+    <span class="md-ellipsis">
+      abhängige Ereignisse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satz-von-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Satz von Bayes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erwartungswert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erwartungswert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erwartungswert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erwartungswert-fur-diskrete-zufallsvariablen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erwartungswert für diskrete Zufallsvariablen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gesetz-der-groen-zahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gesetz der großen Zahlen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zentraler-grenzwertsatz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zentraler Grenzwertsatz
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Deskriptive statistik
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Deskriptive statistik
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/deskriptive_statistik_einleitung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deskriptive statistik einleitung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/mean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mean
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/median/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Median
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/modus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deskriptive_statistik/visualisierung_mean_mode_median/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visualisierung von Modus, Median und Arithmetischem Mittel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#laplace-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Laplace-Experiment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bernoulli-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bernoulli-Experiment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baumdiagramme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baumdiagramme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additionsregel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additionsregel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiplikationsregel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplikationsregel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiplikationsregel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unabhangige-ereignisse" class="md-nav__link">
+    <span class="md-ellipsis">
+      unabhängige Ereignisse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abhangige-ereignisse" class="md-nav__link">
+    <span class="md-ellipsis">
+      abhängige Ereignisse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satz-von-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Satz von Bayes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erwartungswert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erwartungswert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erwartungswert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erwartungswert-fur-diskrete-zufallsvariablen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erwartungswert für diskrete Zufallsvariablen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gesetz-der-groen-zahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gesetz der großen Zahlen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zentraler-grenzwertsatz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zentraler Grenzwertsatz
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="wahrscheinlichkeitstheorie">Wahrscheinlichkeitstheorie</h1>
+<p>Die Wahrscheinlichkeitstheorie ist der Bereich der Mathematik, der sich damit beschäftigt, wie wahrscheinlich es ist, dass ein bestimmtes Ereignis eintritt. Sie hilft uns, Unsicherheiten und Zufälle zu verstehen und zu quantifizieren.  </p>
+<p>In der Wahrscheinlichkeitstheorie wird jedem möglichen Ereignis eine Zahl zwischen 0 und 1 zugewiesen:  </p>
+<p>Eine Wahrscheinlichkeit von 0 bedeutet, dass das Ereignis niemals passiert.<br />
+Eine Wahrscheinlichkeit von 1 bedeutet, dass das Ereignis immer passiert.  </p>
+<p>Beispiel: Beim Werfen einer Münze hat man zwei mögliche Ergebnisse – Kopf oder Zahl. Da beide Ergebnisse gleich wahrscheinlich sind, beträgt die Wahrscheinlichkeit für Kopf 0,5 oder 50%.  </p>
+<p>Die Wahrscheinlichkeitstheorie bildet die Grundlage für viele Konzepte in Statistik und Data Science, wie z. B. Vorhersagen, Risiken einschätzen und Entscheidungen unter Unsicherheit treffen.  </p>
+<p><em>mathematische Schreibweise</em></p>
+<div class="arithmatex">\[ P(Ereignis) \]</div>
+<p>zum Beispiel beim Münzwurf:</p>
+<div class="arithmatex">\[ P(Kopf)= 0,5 \]</div>
+<p>Alle möglichen Ereignisse eines Versuchs müssen dabei in der Summe 100% bzw. 1 ergeben.</p>
+<p>Oft sieht man auch so etwas wie <span class="arithmatex">\(P(X \leq 3)\)</span>. Auf ein Würfelwurd bezogen, ist damit die Wahrscheinlichkeit gemeint, eine 3 oder etwas kleineres zu würfeln.</p>
+<h2 id="laplace-experiment">Laplace-Experiment</h2>
+<p>Ein Laplace-Experiment ist ein Zufallsexperiment, bei dem alle möglichen Ergebnisse gleich wahrscheinlich sind. Es basiert auf der Idee des Mathematikers Pierre-Simon Laplace. Die Wahrscheinlichkeit, dass ein bestimmtes Ereignis eintritt, wird folgendermaßen berechnet:</p>
+<div class="arithmatex">\[ P(E) = \frac{Anzahl\ der\ günstigen\ Ergebnisse}{Anzahl\ aller\ möglichen\ Ergebnisse} \]</div>
+<p><em>Beispiel</em><br />
+Wenn du einen fairen Würfel wirfst, sind die sechs möglichen Ergebnisse (1, 2, 3, 4, 5, 6) gleich wahrscheinlich. Jede Zahl hat die gleiche Wahrscheinlichkeit von <span class="arithmatex">\(\frac{1}{6}\)</span>.<br />
+Die Wahrscheinlichkeit eine 3 oder etwas kleineres zu würfeln, lässt sich folgendermaßen berechnen. Es gibt in diesem Fall drei günstige Ergebnisse (1, 2, 3) von insgesamt sechs möglichen Ergebnisse (1, 2, 3, 4, 5, 6).</p>
+<div class="arithmatex">\[ P(X \leq 3) = \frac{3}{6} = \frac{1}{2} \]</div>
+<p>Die Wahrscheinlichkeit dieses Ereignisses ist also <span class="arithmatex">\(\frac{1}{2}\)</span> bzw. 50%.</p>
+<p><em>Aufgabe: Laplace-Experiment</em>
+Ein Kartenspiel enthält 52 Karten (ohne Joker). Du ziehst eine Karte.  </p>
+<p>a) Wie groß ist die Wahrscheinlichkeit, ein Herz zu ziehen?<br />
+b) Wie groß ist die Wahrscheinlichkeit, eine Ass-Karte zu ziehen?  </p>
+<p>Ein Glücksrad ist in 8 gleich große Sektoren unterteilt, die mit den Zahlen 1 bis 8 beschriftet sind. Das Rad wird einmal gedreht.  </p>
+<p>a) Wie groß ist die Wahrscheinlichkeit, dass eine ungerade Zahl kommt?<br />
+b) Wie groß ist die Wahrscheinlichkeit, dass eine Zahl größer als 5 kommt?  </p>
+<h2 id="bernoulli-experiment">Bernoulli-Experiment</h2>
+<p>Ein Bernoulli-Experiment ist ein Zufallsexperiment, das nur zwei mögliche Ergebnisse hat: Erfolg oder Misserfolg. Es ist benannt nach dem Mathematiker Jakob Bernoulli.  </p>
+<p>Bei einem Bernoulli-Experiment wird nur die Erfolgswahrscheinlichkeit angegeben, da sich die Wahrscheinlichkeit für Misserfolg dadurch ergibt, dass beide zusammen 100% sein müssen.</p>
+<div class="arithmatex">\[ Erfolgswahrscheinlichkeit: p \]</div>
+<div class="arithmatex">\[ Misserfolgswahrscheinlichkeit: 1-p \]</div>
+<p><em>Beispiel</em><br />
+Stell dir vor, du wirfst eine Münze:</p>
+<p>Kopf kann als Erfolg gelten, Zahl als Misserfolg.  </p>
+<div class="arithmatex">\[ P(Erfolg) = P(Kopf) = \frac{1}{2} \]</div>
+<div class="arithmatex">\[ P(Misserfolg) = P(Zahl) = 1 - \frac{1}{2} = \frac{1}{2} \]</div>
+<p>Man kann auch den Würfelwurf als Bernoulli-Experiment betrachten. Möchte man zum Beispiel eine 6 Würfeln, dann wäre ein Misserfolg jede andere gewürfelte Zahl.</p>
+<div class="arithmatex">\[ P(Erfolg) = \frac{1}{6} \]</div>
+<div class="arithmatex">\[ P(Misserfolg) = 1 - \frac{1}{6} = \frac{5}{6} \]</div>
+<p>Solche Experimente sind die Grundlage für viele wichtige Konzepte in der Statistik, wie zum Beispiel die Binomialverteilung, bei der es um die Anzahl von Erfolgen in mehreren Bernoulli-Experimenten geht.  </p>
+<h2 id="baumdiagramme">Baumdiagramme</h2>
+<p>Ein Baumdiagramm ist eine grafische Darstellung, die hilft, Schritt-für-Schritt alle möglichen Ergebnisse eines mehrstufigen Zufallsexperiments zu zeigen. Es sieht aus wie ein Baum mit Ästen und hilft, die Wahrscheinlichkeiten für verschiedene Pfade oder Ereignisse zu berechnen.</p>
+<p><em>Aufbau:</em><br />
+Ein Baumdiagramm beginnt mit einem Startpunkt.<br />
+Von diesem Startpunkt aus verzweigen sich Äste, die die möglichen Ereignisse der ersten Stufe zeigen.<br />
+An jedem Punkt, an dem ein Ast endet, können neue Äste für die nächsten Stufen des Experiments entstehen.<br />
+Jedem Ast und jedem Punkt können dabei Wahrscheinlichkeiten zugeordnet werden.  </p>
+<p><em>Beispiel</em><br />
+Folgendes Baumdiagramm modelliert einen zweifachen Münzwurf:</p>
+<pre class="mermaid"><code>graph LR
+  A([Start]) --&gt;|1/2| B([Kopf]);
+  A --&gt;|1/2| C([Zahl]);
+  B --&gt;|1/2| D([Kopf]);
+  B --&gt;|1/2| E([Zahl]);
+  C --&gt;|1/2| F([Kopf]);
+  C --&gt;|1/2| G([Zahl]);
+  D ~~~ R["` P(K,K) = 1/4 `"]
+  E ~~~ S["` P(K,Z) = 1/4 `"]
+  F ~~~ T["` P(Z,K) = 1/4 `"]
+  G ~~~ U["` P(Z,Z) = 1/4 `"]
+</code></pre>
+<p>Im Verlauf der Schulung werden wir Baumdiagramme nutzen, um Sachverhalte zu veranschaulichen.</p>
+<h2 id="additionsregel">Additionsregel</h2>
+<p>Die Additionsregel ist ein wichtiges Konzept in der Wahrscheinlichkeitstheorie, das uns hilft, die Wahrscheinlichkeit von mindestens einem von mehreren Ereignissen zu berechnen.<br />
+Man kann damit die Wahrscheinlichkeit berechenen, ob Ereignis <span class="arithmatex">\(A\)</span> oder Ereignis <span class="arithmatex">\(B\)</span> eintritt.  </p>
+<p><em>Beispiel</em><br />
+Betrachten wir wieder den zweifachen Münzwurf, dann können wir uns fragen, wie hoch die Wahrscheinlichkeit ist, zweimal das gleiche Symbol zu erhalten. Dafür müssen wir jedes Ereignis, bei dem dieses Szenario erfüllt ist, addieren.</p>
+<pre class="mermaid"><code>graph LR
+  A([Start]) --&gt;|1/2| B([Kopf]);
+  A --&gt;|1/2| C([Zahl]);
+  B --&gt;|1/2| D([Kopf]);
+  B --&gt;|1/2| E([Zahl]);
+  C --&gt;|1/2| F([Kopf]);
+  C --&gt;|1/2| G([Zahl]);
+  D ~~~ R["` P(K,K) = 1/4 `"]
+  E ~~~ S["` P(K,Z) = 1/4 `"]
+  F ~~~ T["` P(Z,K) = 1/4 `"]
+  G ~~~ U["` P(Z,Z) = 1/4 `"]
+</code></pre>
+<p>Wir wissen aus dem Laplace-Experiment, dass wir diese Wahrscheinlichkeit einfach über die Anzahlen berechenen können, da jedes Ergebnis gleich wahrscheinlich ist. In diesem Fall möchten wir aber die Additionsregel anwenden. Wir addieren in diesem Fall also die Wahrscheinlichkeit für zweimal Kopf zu bekommen mit der Wahrscheinlichkeit zweimal Zahl zu bekommen.</p>
+<div class="arithmatex">\[ P(zweimal\ gleiches\ Symbol) = P(Kopf, Kopf) + P(Zahl, Zahl) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2} \]</div>
+<p>Als Ergebnis erhalten wir also 50%. In diesem Fall war die Rechnung sehr einfach, weil die Ereignisse "Kopf, Kopf" und "Zahl, Zahl" komplett unabhängig voneinander sind.</p>
+<p>In einem zweiten Beispiel möchten wir die Wahrscheinlichkeit berechnen, dass die Münze beim zweimaligen Werfen mindestens einmal Kopf zeigt.</p>
+<p>Wenn wir uns das Baumdiagramm angucken, welches alle möglichen Fälle darstellt, sehen wir, dass in drei von vier Fällen mindesten einmal Kopf vorkommt. Mithilfe von Laplace können wir also die Wahrscheinlichkeit berechnen:</p>
+<div class="arithmatex">\[ P(mind.\ einmal\ Kopf) = \frac{3}{4} \]</div>
+<p>Versuchen wir nun das gleiche mit der Additionsregel, dann fällt folgendes auf. Die Wahrscheinlichkeit, dass beim ersten Wurf Kopf fällt, ist genau wie beim zweiten Wurf 50%. <span class="arithmatex">\(W_1\)</span> soll hier den ersten Wurf beschreiben, <span class="arithmatex">\(W_2\)</span> den zweiten.</p>
+<div class="arithmatex">\[ P(mind.\ einmal\ Kopf) \overset{?}{=} P(W_1:Kopf) + P(W_2:Kopf) = \frac{1}{2} + \frac{1}{2} = 1 \]</div>
+<p>Diese Rechnung sagt uns also, dass die Wahrscheinlichkeit 100% betragen würden. Das kann natürlich nicht sein, weil wir wissen, dass Zahl, Zahl auch eine Möglichkeit ist.<br />
+Das Problem hier ist, dass wir ein Ereignis doppelt zählen. Die 50% vom zweiten Wurf setzen sich nämlich aus den Ereignissen "Kopf, Kopf" und "Zahl, Kopf" zusammen. Dass beim ersten Wurf Kopf fällt, ist hier also ebenfalls teilweise vertreten. Hier überlappen sich also die Wahrscheinlichkeiten <span class="arithmatex">\(P(W_1:Kopf)\)</span> und <span class="arithmatex">\(P(W_2:Kopf)\)</span>. Um diese Überlappung nicht doppelt zu zählen, müssen wir sie in unserer Formel berücksichtigen.</p>
+<p><em>mathematische Schreibweise:</em></p>
+<div class="arithmatex">\[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]</div>
+<p>Die korrekte Berechnung subtrahiert also die Überlappung von <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(B\)</span>, welche sowohl in <span class="arithmatex">\(P(A)\)</span> <strong>und</strong> in <span class="arithmatex">\(P(B)\)</span> vertreten ist, damit sie am Ende nur einfach mitgezählt wird.</p>
+<div class="arithmatex">\[ P(mind.\ einmal\ Kopf) = P(W_1:Kopf) + P(W_2:Kopf) - P(Kopf,Kopf) \]</div>
+<div class="arithmatex">\[ = \frac{1}{2} + \frac{1}{2} - \frac{1}{4} = \frac{3}{4} \]</div>
+<p>Mit dieser Formel gelangen wir zur korrekten Lösung.</p>
+<h2 id="multiplikationsregel">Multiplikationsregel</h2>
+<p>Die Multiplikationsregel ist ein Konzept in der Wahrscheinlichkeitstheorie, das hilft, die Wahrscheinlichkeit von zwei oder mehr Ereignissen zu berechnen, wenn sie "nacheinander" auftreten. 
+Man kann damit die Wahrscheinlichkeit berechenen, ob Ereignis <span class="arithmatex">\(A\)</span> und Ereignis <span class="arithmatex">\(B\)</span> eintritt.</p>
+<p>Hierbei müssen wir unterscheiden, ob die Ereignis <strong>abhängig</strong> oder <strong>unabhängig</strong> von einander sind.</p>
+<p><em>Beispiel</em><br />
+<em>Stellt man sich vor, man würde mit einem Würfel zweimal würfeln. Die Wahrscheinlichkeit, ob beim ersten Wurf eine "6" gewürfelt wird, ist genauso so groß wie die Wahrscheinlichkeit, dass beim zweiten Wurf eine "6" gewürfelt wird. Diese beiden Wahrscheinlichkeiten sind <strong>unabhängig</strong>.</em><br />
+<em>Vergleichen wir das mit dem Ziehen einer Karte aus einem Deck ohne Zurücklegen. Im ersten Zug ist die Wahrscheinlichkeit ein Ass zu ziehen <span class="arithmatex">\(\frac{4}{52}\)</span>. Wenn ich meine gezogene Karte nicht zurücklege, dann habe ich im zweiten Zug nur noch 51 Karten übrig. Will ich dann ein weiteres Ass ziehen, dann weiß ich, dass auch nur noch 3 Asse im Deck vorhanden sind. Die Wahrscheinlichkeit im zweiten Zug noch ein Ass zu ziehen ist in diesem Fall dann also <span class="arithmatex">\(\frac{3}{51}\)</span>. Genauso verändert sich auch die Wahrscheinlichkeit irgendeine andere Karte zu ziehen, da das gesamte Deck kleiner geworden ist. In diesem Fall haben wir es also mit <strong>abhängigen</strong> Ereignissen zu tun.</em></p>
+<h3 id="unabhangige-ereignisse">unabhängige Ereignisse</h3>
+<div class="arithmatex">\[ P(A \cap B) = P(A) \cdot P(B) \]</div>
+<ul>
+<li><span class="arithmatex">\(P(A \cap B)\)</span> ist die Wahrscheinlichkeit, dass beide Ereignisse <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(B\)</span> eintreten</li>
+<li><span class="arithmatex">\(P(A)\)</span> ist die Wahrscheinlichkeit für das Ereignis <span class="arithmatex">\(A\)</span></li>
+<li><span class="arithmatex">\(P(B)\)</span> ist die Wahrscheinlichkeit für das Ereignis <span class="arithmatex">\(B\)</span></li>
+</ul>
+<p><em>Beispiel</em><br />
+<em>Möchte man zweimal hintereinander eine "6" würfeln, dann geschieht das statistisch gesehen beim ersten Wurf in einem von sechs Fällen und bei zweiten Wurf ebenfalls. Würden wir das Experiment "zweimal würfeln" 36-mal durchführen, dann wäre statistisch gesehen jeder 6. Wurf eine "6". Von den 36 Experiment würden also 6 Experimente beim ersten Wurf eine "6" würfeln. Beim zweiten Mal würfeln, würden von 6 übrig gebliebene Experimente ebenfalls nur jedes 6. eine "6" würfeln. Es bleibt von den 36 Experimenten vom Start also nur ein Experiment übrig, bei dem zweimal hintereinander eine "6" gewürfelt wurde.</em></p>
+<div class="arithmatex">\[ P(6,6) = \frac{1}{6} \cdot \frac{1}{6} = \frac{1}{36} \]</div>
+<p><em>Die Wahrscheinlichkeit, zweimal hintereinander eine "6" zu würfeln, ist also <span class="arithmatex">\(\frac{1}{36}\)</span>.</em></p>
+<h3 id="abhangige-ereignisse">abhängige Ereignisse</h3>
+<div class="arithmatex">\[ P(A \cap B) = P(A) \cdot P(B|A) \]</div>
+<ul>
+<li><span class="arithmatex">\(P(A \cap B)\)</span> ist die Wahrscheinlichkeit, dass beide Ereignisse <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(B\)</span> eintreten</li>
+<li><span class="arithmatex">\(P(A)\)</span> ist die Wahrscheinlichkeit für das Ereignis <span class="arithmatex">\(A\)</span></li>
+<li><span class="arithmatex">\(P(B|A)\)</span> ist die Wahrscheinlichkeit, dass das Ereignise <span class="arithmatex">\(B\)</span> eintritt, <strong>wenn</strong> vorher das Ereignis <span class="arithmatex">\(A\)</span> eingetreten ist</li>
+</ul>
+<p><em>Beispiel</em><br />
+<em>Gegeben sei eine Urne mit 3 blauen und 5 roten Kugeln. Es sollen 3 rote Kugeln hintereinander gezogen werden. Für den ersten Zug ist die Wahrscheinlichkeit rot zu ziehen <span class="arithmatex">\(\frac{5}{8}\)</span>, da von ingesamt 8 Kugeln 5 rot sind. Will man jetzt wieder eine rote Kugel ziehen, dann ist die Wahrscheinlichkeit nicht mehr <span class="arithmatex">\(\frac{5}{8}\)</span>, weil zu diesem Zeitpunkt nur noch 7 Kugeln in der Urne sind, von denen 4 rot sind. Die Wahrscheinlichkeit rot zu ziehen, verändert sich also, weil die beiden Ereignisse abhängig sind. Beim zweiten Zug ist die Wahrscheinlichkeit entsprechend <span class="arithmatex">\(\frac{4}{7}\)</span>. Beim dritten Zug verändert sie sich zu <span class="arithmatex">\(\frac{3}{6}\)</span>.</em></p>
+<div class="arithmatex">\[ \frac{5}{8} \cdot \frac{4}{7} \cdot \frac{3}{6} = \frac{5}{28} \]</div>
+<p><em>In 5 von 28 Fällen zieht man also drei rote Kugeln hintereinander. Oder anders gesagt: mit einer Wahrscheinlichkeit von ungefähr 18% zieht man beim ersten Versuch drei rote Kugeln hintereinander.</em></p>
+<p><em>Beispiel: Kartendeck</em>
+<em>Als Nächstes möchten wir uns überlegen, was die Wahrscheinlichkeit ist, aus einem Kartendeck erste ein Ass und dann eine Herz-Karte zu ziehen. Die Wahrscheinlichkeit erst ein Ass zu ziehen, ist natürlich <span class="arithmatex">\(\frac{4}{52}\)</span>. Was ist dann aber die Wahrscheinlichkeit, eine Herz-Karte danach zu ziehen? Um diese Wahrscheinlichkeit zu bestimmen, muss man wissen wie viele Herz-Karten noch in den verbliebenen 51 Karten vorhanden sind. Das kommt darauf an, ob das Ass aus dem 1. Zug selbst eine Herz-Karte war oder nicht. Unsere Rechnung spaltet sich also in zwei Teile.</em></p>
+<p><em>Das erste Ereignis ist, dass wir im ersten Zug nicht das Herz-Ass ziehen. Da es 3 Asse gibt, die kein Herz sind, ist die Wahrscheinlichkeit <span class="arithmatex">\(\frac{3}{52}\)</span>. Ist das der Fall, dann befinden sich danach noch 13 Herz-Karten im Deck. Die Wahrscheinlichkeit, eine davon zu ziehen, ist dann <span class="arithmatex">\(\frac{13}{51}\)</span>.</em><br />
+<em>Das zweite Ereignis beschreibt den Fall, dass im ersten Zug Herz-Ass gezogen wird (<span class="arithmatex">\(\frac{1}{52}\)</span>). Dann befinden sich noch 12 Herz-Karten im Deck (<span class="arithmatex">\(\frac{12}{51}\)</span>).</em><br />
+<em>Diese beiden Ereignisse müssen nur noch addiert werden (Additionsregel), um auf die Antwort des Problems zu kommen.</em></p>
+<div class="arithmatex">\[ P(Ass, Herz) = \frac{3}{52} \cdot \frac{13}{51} + \frac{1}{52} \cdot \frac{12}{51} = \frac{1}{52} \]</div>
+<p><em>Die Wahrscheinlichkeit, erst ein Ass und dann eine Herz-Karte zu ziehen, beträgt ungefähr 2%</em></p>
+<h2 id="satz-von-bayes">Satz von Bayes</h2>
+<p>Der Satz von Bayes ist ein grundlegendes Konzept in der Wahrscheinlichkeitstheorie, das hilft, die bedingte Wahrscheinlichkeit zu berechnen. Er zeigt, wie wir die Wahrscheinlichkeit eines Ereignisses <span class="arithmatex">\(A\)</span> berechnen können, wenn wir bereits wissen, dass ein anderes Ereignis <span class="arithmatex">\(B\)</span> eingetreten ist.</p>
+<div class="arithmatex">\[ P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} \]</div>
+<p>Die Herleitung dafür ist recht einfach: wir wissen, wie die Wahrscheinlichkeit, dass <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(B\)</span> eintreten, mit bedingten Wahrscheinlichkeiten berechnen können.</p>
+<div class="arithmatex">\[ P(A \cap B) = P(A) \cdot P(B|A) \]</div>
+<p>Das wäre die Rechnung, wenn zuerst A und dann B eintritt. Umgekehrt siehts ähnlich aus.  </p>
+<div class="arithmatex">\[ P(B \cap A) = P(B) \cdot P(A|B) \]</div>
+<p>Wenn <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(B\)</span> eintreten, spielt es aber keine Rolle, in welcher Reihenfolge das geschieht.</p>
+<div class="arithmatex">\[ P(A \cap B) = P(B \cap A) \]</div>
+<p>Oder wenn wir die anderen Seiten der Gleichungen betrachten:</p>
+<div class="arithmatex">\[ P(A) \cdot P(B|A) = P(B) \cdot P(A|B) \]</div>
+<p>Durch einfaches Umstellen gelangen wir dann zum Satz von Bayes.</p>
+<div class="arithmatex">\[ P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} \]</div>
+<p>Der Satz von Bayes ist hilfreich, weil in vielen Fällen eine der beiden bedingten Wahrscheinlichkeiten leicht zu bestimmen ist, während die andere schwierig zu bestimmen ist. Mit dem Satz von Bayes kann man dann die jeweils andere bedingte Wahrscheinlichkeit berechnen.</p>
+<p><em>Beispiel</em><br />
+<em>Wir stellen uns einen zweifachen Münzwurf vor. Das Ereignis <span class="arithmatex">\(A\)</span> soll beschreiben, dass mindestens einmal Kopf fällt. Das Ereignis <span class="arithmatex">\(B\)</span> beschreibt, dass zweimal Kopf fällt.</em><br />
+<em>Bei diesem Versuch gibt es 4 mögliche Ergebnisse (KK, KZ, ZK, ZZ). In 3 Fällen ist mindestens einmal Kopf gefallen. In einem Fall erhalten wir zweimal Kopf. Wenn wir nun die bedingte Wahrscheinlichkeit, dass zweimal Kopf kommt, wenn einmal Kopf gefallen ist, berechnen wollen, dann wissen wir: Es gibt 3 gleich wahrscheinliche Fälle, bei denen einmal Kopf vorkommt, und bei einem davon fällt zweimal Kopf. Die bedingte Wahrscheinlichkeit ist also <span class="arithmatex">\(P(B|A) = \frac{1}{3}\)</span>.</em></p>
+<p><em>Möchte man das gleiche nun mithilfe des Satzes von Bayes berechnen, geht man folgendermaßen vor: die Wahrscheinlichkeit, dass mindestens einmal Kopf fällt, ist <span class="arithmatex">\(P(A) = \frac{3}{4}\)</span>. Die Wahrscheinlichkeit, dass zweimal Kopf fällt, ist <span class="arithmatex">\(P(B) = \frac{1}{4}\)</span>. Die bedingte Wahrscheinlichkeit, dass mindestens einmal Kopf fällt, wenn zweimal Kopf gefallen ist, ist natürlich <span class="arithmatex">\(P(A|B) = 1\)</span>.</em></p>
+<div class="arithmatex">\[ P(B|A) = \frac{1 \cdot \frac{1}{4}}{\frac{3}{4}} = \frac{1}{3} \]</div>
+<p><em>Aufgabe: Satz von Bayes</em><br />
+Wähle aus zwei Behätlern einen zufällig aus. In Behälter 1 sind zwei rote und zwei blaue Kugeln, in Behälter 2 sind zwei rote und 4 blaue Kugeln. Was ist die Wahrscheinlichkeit, dass wir den ersten Behälter gewählt haben, wenn wir eine rote Kugel ziehen?  </p>
+<h2 id="erwartungswert">Erwartungswert</h2>
+<p>Der Erwartungswert ist ein zentrales Konzept in der Statistik und beschreibt den durchschnittlichen Wert, den man erwarten würde, wenn ein Zufallsexperiment viele Male durchgeführt wird. Er gibt also an, wo der "Schwerpunkt" einer Wahrscheinlichkeitsverteilung liegt.  </p>
+<h3 id="erwartungswert-fur-diskrete-zufallsvariablen">Erwartungswert für diskrete Zufallsvariablen</h3>
+<div class="arithmatex">\[ E(X) = \sum_{i=1}^n (x_i \cdot P(x_i)) \]</div>
+<p><em>Beispiel</em><br />
+<em>Was ist der Erwartungswert eines Würfels?</em>  </p>
+<div class="arithmatex">\[ E(X) = 1 \cdot \frac{1}{6} + 2 \cdot \frac{1}{6} + 3 \cdot \frac{1}{6} + 4 \cdot \frac{1}{6} + 5 \cdot \frac{1}{6} + 6 \cdot \frac{1}{6} = 3,5 \]</div>
+<p><em>Wenn man einen Würfel oft wirft, dann wird der durchschnittliche Wert 3,5 ergeben.</em></p>
+<p><em>Beispiel</em><br />
+<em>Eine Firma macht bei einem TV-Modell einen Gewinn von 100€. In 2% der Verkäufe wird das Gerät allerdings zurückgeschickt, weil es defekt ist. In diesem Fall macht die Firma 800€ Verlust. Was ist der Erwartungswert des Gewinns?</em>  </p>
+<div class="arithmatex">\[ E(X) = 0,98 \cdot 100 + 0,02 \cdot (-800) = 82 \]</div>
+<p><em>Die Firma kann also mit einem durchschnittlichen Gewinn von 82€ pro Gerät rechnen.</em></p>
+<h2 id="gesetz-der-groen-zahlen">Gesetz der großen Zahlen</h2>
+<p>Das Gesetz der großen Zahlen ist ein grundlegendes Prinzip in der Statistik, das besagt, dass sich der Durchschnitt der Ergebnisse eines Zufallsexperiments bei sehr vielen Wiederholungen dem wahren Erwartungswert annähert.  </p>
+<p><em>Beispiel</em><br />
+<em>Stell dir vor, du wirfst eine faire Münze. Wenn du die Münze nur ein paar Mal wirfst, könnten die Ergebnisse stark schwanken (z. B. 3-mal Kopf und 1-mal Zahl). Aber wenn du die Münze sehr oft wirfst (z. B. 10.000 Mal), wird der Anteil der Kopf-Würfe immer näher an 50% herankommen.</em></p>
+<p>Das Prinzip ist auch unter dem Spielertrugschluss (engl. "Gambler's Fallacy") bekannt. Ein Spieler in einem Casino, der den ganzen Abend eine Pechsträhne hat, mag vielleicht denken, dass seine Glückssträhne jeden Moment anfangen müsste. Das ist allerdings ein Trugschluss. Wenn man als Beispiel eine Münze nimmt, dann hat die Münze keine "Erinnerung", welche Ergebnisse in der Vergangenheit gefallen sind. Auch wenn bereits 10-Mal hintereinander Kopf kam, kann wieder 10-Mal hintereinander Kopf kommen. Statistisch gesehen wird sich langfristig zwar langfristig ein 50-50-Verhältnis ergeben. Ob das aber nach 10 Würfen oder 1.000.000 Würfen passiert, darüber macht das Gesetz der großen Zahlen keine Aussage. Die Geschwindigkeit, mit der der Erwartungswert angestrebt wird, ist nicht vorhersehbar.</p>
+<h2 id="zentraler-grenzwertsatz">Zentraler Grenzwertsatz</h2>
+<p>Der Zentrale Grenzwertsatz (Central Limit Theorem, CLT) ist eines der wichtigsten Konzepte in der Statistik. Er besagt, dass, wenn man viele unabhängige Stichproben aus einer Verteilung zieht (egal wie diese Verteilung aussieht), der Mittelwert dieser Stichproben einer Normalverteilung folgt, wenn die Stichprobengröße groß genug ist. Unabhängig davon, ob die Verteilung der Daten zum Beispiel schief, gleichmäßig oder sonst wie verteilt ist, werden die Mittelwerte der Stichproben sich immer mehr einer Glockenkurve (Normalverteilung) annähern, je mehr Stichproben man nimmt.  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
