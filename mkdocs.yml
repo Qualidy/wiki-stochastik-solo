@@ -1,0 +1,68 @@
+site_name: Statistik Schulung
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - macros
+  - awesome-pages
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - style.css
+
+theme:
+  name: material
+  logo: logo.png
+  palette:
+    primary: 'amber'
+    accent: 'light blue'
+  features:
+    - navigation.indexes
+    - navigation.footer
+
+extra:
+  social:
+    - icon: fontawesome/solid/k
+      link: https://www.kununu.com/de/qualidy
+    - icon: fontawesome/brands/linkedin
+      link: https://de.linkedin.com/company/qualidy
+    - icon: material/google
+      link: https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF
+    - icon: fontawesome/solid/globe
+      link: https://qualidy.de
+
+nav:
+  - Statistik für Einsteiger: index.md
+  - Mengenlehre: mengenlehre/mengenlehre.md
+  - Lineare Funktionen: lineare_funktionen/lineare_funktionen.md
+  - Deskriptive Statistik:
+    - deskriptive_statistik/index.md
+    - Arithmetisches Mittel: deskriptive_statistik/mean.md
+    - Median: deskriptive_statistik/median.md
+    - Modus: deskriptive_statistik/modus.md
+    - Visualisierung: deskriptive_statistik/visualisierung_mean_mode_median.md
+  - Verteilungen: verteilung/verteilung.md
+  - Wahrscheinlichkeitstheorie: wahrscheinlichkeitstheorie/wahrscheinlichkeitstheorie.md
+  - Hypothesentest: hypothesentest/hypothesentest.md
+  - Regression: regression/regression.md
+  - Anova: anova/anova.md
