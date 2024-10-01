@@ -29,26 +29,6 @@ Es gibt zwei verschiedene Arten von Werten, die in der deskriptiven Statistik im
  
 
 
-## Skalenniveaus
-Das Skalenniveau beschreibt, auf welche Weise Daten gemessen und klassifiziert werden können. Es gibt vier Haupttypen von Skalenniveaus, die bestimmen, welche mathematischen Operationen und statistischen Analysen auf den Daten möglich sind:
-
-|Skalenniveau|Operationen|Messbare Eigenschaften|Beispiel|Lageparameter|Frage|
-|-|-|-|-|-|-|
-|Nominalskala|$=,\neq$|Häufigkeit|Farben, Parteien|Modus|alles ist nominal|
-|Ordinalskala|$=,\neq,<,>$|Häufigkeit, Rangfolge|Schulnoten|Modus, Median|Gibt es eine Rangfolge?|
-|Intervallskala|$=,\neq,<,>,+,-$|Häufigkeit, Rangfolge, Abstand|Temperatur in Celsius|Modus, Median, Arithmetische Mittel|Kann ich zwei Datenpunkte addieren/subtrahieren und bekomme einen neuen Datenpunkt?|
-|Verhältnisskala|$=,\neq,<,>,+,-,\times,\div$|Häufigkeit, Rangfolge, Abstand, natürlicher Nullpuntk|Alter, Temperatur in Kelvin|Modus, Median, Arithmetische Mittel, Geometrisches Mittel*|Führt verdoppeln immer zu mehr?|
-
-*Das Geometrische Mittel wird in diesem Kurs nicht behandelt, bei Interesse lohnt es sich aber, eigenständig nachzuschlagen.
-
-_Aufgabe: Skalenniveau_  
-
-Ein Unternehmen hat eine Umfrage zu verschiedenen Eigenschaften von Produkten durchgeführt. Bestimme für jedes der folgenden Merkmale das richtige Skalenniveau.  
-a) Seriennummer der Produkte  
-b) Rangliste der beliebtesten Produkte  
-c) Zeit in Minuten, die ein Kunde auf die Lieferung wartet  
-d) Anzahl der verkauften Produkte in einem Jahr  
-e) Produktkategorie (z.B. Elektronik, Kleidung, Lebensmittel)  
 
 ## Anwendungsfälle der Lagemaße
 

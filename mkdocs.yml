@@ -63,6 +63,7 @@ nav:
     - Median: deskriptive_statistik/median.md
     - Modus: deskriptive_statistik/modus.md
     - Visualisierung: deskriptive_statistik/visualisierung_mean_mode_median.md
+    - Skalenniveaus: deskriptive_statistik/skalenniveaus.md
   - Verteilungen: verteilung/verteilung.md
   - Wahrscheinlichkeitstheorie: wahrscheinlichkeitstheorie/wahrscheinlichkeitstheorie.md
   - Hypothesentest: hypothesentest/hypothesentest.md
