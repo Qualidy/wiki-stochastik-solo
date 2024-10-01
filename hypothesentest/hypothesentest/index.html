@@ -584,6 +584,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#alpha-fehler-und-beta-fehler" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\alpha\)-Fehler und \(\beta\)-Fehler
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -685,6 +694,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#alpha-fehler-und-beta-fehler" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\alpha\)-Fehler und \(\beta\)-Fehler
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -742,6 +760,37 @@ _Man hat einen sechsseitigen Würfel und möchte herausfinden, ob dieser Würfel
 <p>Für das Signifikanzniveau wird häufig ein Wert von <span class="arithmatex">\(\alpha = 0,05\)</span> verwendet. Das ist im Endeffekt eine willkürliche Wahl, welche sich aber historisch eingebürgert hat. Für medizinische Tests wird zum Beispiel oft ein kleinerer Wert für das Signifikanzniveau <span class="arithmatex">\(\alpha\)</span> verwendet.  </p>
 <p>Während das Signifikanzniveau die Schwelle darstellt, ab der wir die Nullhypothese verwerfen, ist der p-Wert die tatsächliche Wahrscheinlichkeit, dass unsere Stichprobe eintritt. Das Signifikanzniveau wird vorher festgelegt, den p-Wert berechnen wir aus unserer Stichprobe. Ist der p-Wert kleiner als das Signifikanzniveau, wird die Nullhypothese abgelehnt.</p>
 <p><em>Für unser Beispiel könnten wir das klassische Signifikanzniveau von <span class="arithmatex">\(\alpha = 0,05\)</span> wählen, dann ist die p-Wert von fünfmal Kopf <span class="arithmatex">\(p = 0,03125\)</span>. Da der p-Wert unter unser festgelegten Schwelle liegt, verwerfen wir die Hypothese, dass die Münze fair ist. (Eigentlich würde es sich hier um einen beidseitigen Test handeln, das habe ich zu Anschauungszwecken vernachlässigt.)</em></p>
+<h2 id="alpha-fehler-und-beta-fehler"><span class="arithmatex">\(\alpha\)</span>-Fehler und <span class="arithmatex">\(\beta\)</span>-Fehler</h2>
+<p>Die Begriffe Alpha-Fehler (Fehler 1. Art) und Beta-Fehler (Fehler 2. Art) beziehen sich auf Fehler, die man bei einem Hypothesentest machen kann, wenn man Entscheidungen über die Nullhypothese trifft.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(H_0\)</span> ist wahr</th>
+<th><span class="arithmatex">\(H_0\)</span> ist falsch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verwerfe <span class="arithmatex">\(H_0\)</span></td>
+<td>Typ I Fehler (<span class="arithmatex">\(\alpha\)</span>)</td>
+<td>kein Fehler</td>
+</tr>
+<tr>
+<td>Akzeptiere <span class="arithmatex">\(H_0\)</span></td>
+<td>kein Fehler</td>
+<td>Typ II Fehler (<span class="arithmatex">\(\beta\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Der Alpha-Fehler passiert, wenn du die Nullhypothese ablehnst, obwohl sie in Wirklichkeit wahr ist. Du kommst also zu dem Schluss, dass es einen Effekt oder einen Unterschied gibt, obwohl dies in der Realität nicht der Fall ist. <br />
+<em>Beispiel: Du testest, ob ein neues Medikament besser wirkt als ein altes. Wenn du zu dem Schluss kommst, dass das neue Medikament besser ist, obwohl es eigentlich keinen Unterschied gibt, hast du einen Alpha-Fehler gemacht.</em></li>
+<li>Der Beta-Fehler passiert, wenn du die Nullhypothese nicht ablehnst, obwohl sie in Wirklichkeit falsch ist. Das bedeutet, du übersiehst einen echten Effekt oder Unterschied.<br />
+<em>Beispiel:Du testest wieder das neue Medikament. Diesmal ist es tatsächlich besser als das alte, aber dein Test zeigt keinen Unterschied. Das ist ein Beta-Fehler: Du hast den echten Effekt des neuen Medikaments verpasst.</em></li>
+</ol>
+<p>Der Fokus liegt immer auf dem <span class="arithmatex">\(\alpha\)</span>-Fehler, da dies der "schlimmere" Fehler ist. Hat man zum Beispiel einen Test auf einen tödliche Krankheit, dann soll der Fehler, dass ein Patient die Krankheit hat und der Test es nicht erkennt, möglichst klein sein. Im Gegensatz dazu kann es auch passieren, dass der Test ergibt: ein Patient hat die Krankheit, obwohl er eigentlich gesund ist. Das würde man als <span class="arithmatex">\(\beta\)</span>-Fehler bezeichnen und wäre weniger "schlimm". Die Wahrscheinlichkeiten für den Fehler 1. Art hat als Symbol <span class="arithmatex">\(\alpha\)</span>, die Wahrscheinlichkeit für den Fehler 2. Art hat als Symbol <span class="arithmatex">\(\beta\)</span>.</p>
+<p>Natürlich möchte man eigentlich keine Fehler machen. Je kleiner man aber den <span class="arithmatex">\(\alpha\)</span>-Fehler wählt, desto größer wird dann der <span class="arithmatex">\(\beta\)</span>-Fehler. Umgekeht gilt das gleiche, wenn wir unseren <span class="arithmatex">\(\beta\)</span>-Fehler kleiner machen, dann wächst der <span class="arithmatex">\(\alpha\)</span>-Fehler. Die einzige Möglichkeit, beide Fehler kleiner zu machen, besteht darin, die Stichprobengröße zu erhöhen.</p>
 
 
 
