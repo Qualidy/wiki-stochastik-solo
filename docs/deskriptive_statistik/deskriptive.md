@@ -28,46 +28,6 @@ Es gibt zwei verschiedene Arten von Werten, die in der deskriptiven Statistik im
 
  
 
-## Der Modus
-Der Modus ist der Wert in einer Datenreihe, der am häufigsten vorkommt. Er zeigt also den häufigsten oder typischsten Wert an. Im Gegensatz zum Mittelwert oder Median muss der Modus nicht einmalig sein – es kann mehrere Modi geben, wenn mehrere Werte gleich oft vorkommen. Der Modus ist besonders nützlich bei kategorialen Daten, also Daten, die in Gruppen eingeteilt sind, wie z. B. die beliebteste Farbe in einer Umfrage.  
-
-_Beispiel_
-
-6 Personen wurden gefragt, welche Automarke sie fahren.
-
-|Automarke|
-|-|
-|Audi|
-|BMW|
-|Porsche|
-|Audi|
-|VW|
-|BMW|
-
-Die Modi dieser 6 Menschen sind sowohl "Audi" als auch "BMW".  
-
-Den Modus kann man auch von normalen Zahlen bestimmen.
-
-|Schulnote|
-|-|
-|4|
-|1|
-|3|
-|5|
-|2|
-|1|
-
-In diesem Fall ist der Modus nur "1".
-
-_Aufgabe: Modus_
-
-Berechne den Modus folgender Datensätze.
-
-a) $\{2,5,12,4,5,3\}$  
-b) $\{2,3,4,5,5,12\}$  
-c) $\{Orange,Blau,Grün,Gelb,Blau,Orange\}$  
-d) $\{33,21,12,4\}$  
-e) $\{gut,ausreichend,sehr\ gut,mangelhaft,gut,befriedigend,ausreichend, gut\}$  
 
 ## Skalenniveaus
 Das Skalenniveau beschreibt, auf welche Weise Daten gemessen und klassifiziert werden können. Es gibt vier Haupttypen von Skalenniveaus, die bestimmen, welche mathematischen Operationen und statistischen Analysen auf den Daten möglich sind:
@@ -129,19 +89,19 @@ Bestimme das arithmetische Mittel, den Median und den Modus, wenn möglich. Wäh
 
 a) Die Ergebnisse eines Tests in einer Schulklasse lauten:  
 
-$$\{49,45,95,58,52,57,56,61,49,52\}$$
+$$(49,45,95,58,52,57,56,61,49,52)$$
 
 b) Die Mitarbeiter einer Firma haben ihre Fahrtzeiten in Minuten notiert:  
 
-$$\{12, 37, 21, 25, 30, 12, 19, 25, 15, 12 ,21\}$$
+$$(12, 37, 21, 25, 30, 12, 19, 25, 15, 12 ,21)$$
 
 c) Ein Modegeschäft hat in der letzten Woche folgende T-Shirt Größen verkauft:
 
-$$\{𝑀, 𝑆, 𝑀, 𝑀, 𝑋𝐿, 𝐿, 𝐿, 𝑋𝐿, 𝑆, 𝑆, 𝐿, 𝑀\}$$
+$$(𝑀, 𝑆, 𝑀, 𝑀, 𝑋𝐿, 𝐿, 𝐿, 𝑋𝐿, 𝑆, 𝑆, 𝐿, 𝑀)$$
 
 d) Bei einer Umfrage nach der Lieblingssportart wurden folgende Antworten gegeben:
 
-$$\{Tennis, Fußball, Schwimmen, Schwimmen, Tennis, Fußball, Fußball, Volleyball, Schwimmen, Volleyball, Volleyball\}$$
+$$(Tennis, Fußball, Schwimmen, Schwimmen, Tennis, Fußball, Fußball, Volleyball, Schwimmen, Volleyball, Volleyball)$$
 
 ## Spannweite
 
@@ -166,10 +126,10 @@ Die Alter in dieser Familie streuen also über eine Spannweite von 67 Jahren.
 _Aufgabe: Spannweite_  
 Bestimme die Spannweite folgender Datensätze.  
 
-a) $\{4, 18, 14, 27, 19, 12\}$  
-b) $\{−3,−20,−11, 0\}$  
-c) $\{3, 3, 5,−2, 7, 5,−2\}$  
-d) $\{65,−48,−1, 55,−31, 15\}$  
+a) $(4, 18, 14, 27, 19, 12)$  
+b) $(−3,−20,−11, 0)$  
+c) $(3, 3, 5,−2, 7, 5,−2)$  
+d) $(65,−48,−1, 55,−31, 15)$  
 
 
 ## Interquartilabstand
@@ -240,10 +200,10 @@ $$ IQA = 6 - 2 = 4 $$
 _Aufgabe: IQA_  
 
 Bestimme den IQA folgender Datensätze.  
-a) $\{12, 32, 53, 32, 15, 28, 31\}$  
-b) $\{32, 41, 21, 14, 19, 25, 71, 5\}$  
-c) $\{17, 19, 11, 9, 21, 13, 20, 10, 5\}$  
-d) $\{51, 32, 41, 44, 25, 28, 30, 11, 3\}$  
+a) $(12, 32, 53, 32, 15, 28, 31)$  
+b) $(32, 41, 21, 14, 19, 25, 71, 5)$  
+c) $(17, 19, 11, 9, 21, 13, 20, 10, 5)$  
+d) $(51, 32, 41, 44, 25, 28, 30, 11, 3)$  
 
 ## Schiefe
 
@@ -271,9 +231,9 @@ Da die Standardabweichung zu diesem Zeitpunkt noch nicht behandelt wurde, kommen
 _Aufgabe: Schiefe_
 
 Ordne die Begriffe rechtsschief, linksschief und symmetrisch den folgenden Datensätze zu.
-a) $\{30, 37, 29, 33, 52, 64, 31, 30, 35\}$  
-b) $\{11, 15, 19, 13, 10, 17, 20, 15\}$  
-c) $\{19, 23, 18, 22, 13, 11, 21, 19\}$  
+a) $(30, 37, 29, 33, 52, 64, 31, 30, 35)$  
+b) $(11, 15, 19, 13, 10, 17, 20, 15)$  
+c) $(19, 23, 18, 22, 13, 11, 21, 19)$  
 
 ## Stichprobe und Grundgesamtheit
 In der Statistik müssen wir zwischen Grundgesamtheit (oft auch Population) und Stichproben unterscheiden. Grundsätzlich interessiert man sich meistens für die Grundgesamtheit. Da die aber sehr groß sein kann, ist es praktischer eine Stichprobe zu untersuchen, um anhand derer Schlüsse für die Grundgesamtheit zu schließen.  
@@ -318,8 +278,8 @@ Die Varianz liegt hier also bei 102.500.
 _Aufgabe: Varianz einer Grundgesamtheit_
 
 Berechne die Varianz der folgenden Grundgesamtheiten.  
-a) $\{14, 15, 15, 18\}$  
-b) $\{14, 15, 15, 30\}$  
+a) $(14, 15, 15, 18)$  
+b) $(14, 15, 15, 30)$  
 
 Der Wert der Varianz ist schwer zu interpretieren. Das liegt am Quadrieren des Abstandes. Im Beispiel des Firmeninhabers ist die Einheit der Varianz €$^2$.  
 Die Einheit der Varianz ist also das Quadrat der Einheit eines Datenpunktes. Um diese Diskrepanz aufzulösen, wird die Standardabweichung hinzugezogen.
@@ -348,8 +308,8 @@ Vergleicht man die Standardabweichung nun mit dem Datensatz, dann fällt auf, da
 _Aufgabe: Standardabweichung einer Grundgesamtheit_
 
 Berechne die Standardabweichung der folgenden Grundgesamtheiten.  
-a) $\{14, 15, 15, 18\}$  
-b) $\{14, 15, 15, 30\}$  
+a) $(14, 15, 15, 18)$  
+b) $(14, 15, 15, 30)$  
 
 ### Varianz einer Stichprobe
 
@@ -379,8 +339,8 @@ _Aufgabe: Varianz einer Stichprobe_
 
 Berechne die Varianz der folgenden Stichproben.
 (Berechne eine Schätzung der Varianz der Grundgesamhtheit anhand folgender Stichproben.)   
-a) $\{14, 15, 15, 18\}$  
-b) $\{14, 15, 15, 30\}$  
+a) $(14, 15, 15, 18)$  
+b) $(14, 15, 15, 30)$  
 
 ### Standardabweichung einer Stichprobe
 
@@ -399,8 +359,8 @@ _Aufagbe: Standardabweichung einer Stichprobe_
 
 Berechne die Standardabweichung der folgenden Stichproben.  
 (Berechne eine Schätzung der Standardabweichung der Grundgesamhtheit anhand folgender Stichproben.)   
-a) $\{14, 15, 15, 18\}$  
-b) $\{14, 15, 15, 30\}$  
+a) $(14, 15, 15, 18)$  
+b) $(14, 15, 15, 30)$  
 
 ## Verschiebung und Skalierung
 
