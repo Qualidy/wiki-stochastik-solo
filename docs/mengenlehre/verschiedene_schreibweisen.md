@@ -1,4 +1,4 @@
-# Mengenlehre
+# Verschiedene Schreibweisen
 
 Unter einer Menge versteht man in der Mathematik jede Zusammenfassung von verschiedenen Objekten zu einer Gesamtheit.
 Es gibt verschiedene Darstellungen, wie Mengen zusammengefasst werden können. 

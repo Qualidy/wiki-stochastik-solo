@@ -51,8 +51,10 @@ extra:
       link: https://qualidy.de
 
 nav:
-  - Statistik für Einsteiger: index.md
-  - Mengenlehre: mengenlehre/mengenlehre.md
+  - index.md
+  - Mengenlehre:
+    - mengenlehre/index.md
+    - Verschiedene Schreibweisen: mengenlehre/verschiedene_schreibweisen.md
   - Lineare Funktionen: lineare_funktionen/lineare_funktionen.md
   - Deskriptive Statistik:
     - deskriptive_statistik/index.md

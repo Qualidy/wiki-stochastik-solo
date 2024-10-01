@@ -5,7 +5,7 @@ Willkomen im Skript Statisik für Einsteiger.
 
 <div class="grid cards" markdown>
 
-- [:material-vector-combine: **Mengenlehre**](mengenlehre/mengenlehre.md)
+- [:material-vector-combine: **Mengenlehre**](mengenlehre/verschiedene_schreibweisen)
 
     ---
 
