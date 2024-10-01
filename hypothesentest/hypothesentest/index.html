@@ -575,6 +575,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#signifikanzniveau-und-p-wert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signifikanzniveau und p-Wert
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -667,6 +676,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#signifikanzniveau-und-p-wert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signifikanzniveau und p-Wert
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -695,6 +713,35 @@
 5. p-Wert berechnen: Der p-Wert gibt an, wie wahrscheinlich es ist, die beobachteten Daten zu erhalten, wenn die Nullhypothese wahr ist. Ein kleiner p-Wert (meist unter 0,05) bedeutet, dass die Nullhypothese eher falsch ist.
 6. Entscheidung: Wenn der p-Wert klein genug ist, lehnst du die Nullhypothese ab und nimmst an, dass die Alternativhypothese stimmt. Wenn der p-Wert groß ist, kannst du die Nullhypothese nicht ablehnen (aber du beweist nicht, dass sie wahr ist).</p>
 <h2 id="hypothesen-formulieren">Hypothesen formulieren</h2>
+<p>Für einen Hypothesentest müssen immer zwei sich <strong>widersprechende</strong> Hypothesen formuliert werden. Das ist zum einen die Nullhypothese <span class="arithmatex">\(H_0\)</span>, welche man widerlegen möchte, und zum anderen die Alternativhypothese <span class="arithmatex">\(H_1\)</span> (Gegenhypothese), welche man "beweisen" möchte.</p>
+<p><em>Beispiel</em>
+<em>Man hat einen sechsseitigen Würfel und möchte herausfinden, ob dieser Würfel "positiv" gezinkt ist, also hohe Zahlen wahrscheinlicher sind als nidriege. Dafür stellt man die Nullhypothese auf, dass der Würfel fair ist oder eher kleine Zahlen wirft (<span class="arithmatex">\(H_0: \mu \leq 3,5\)</span>). Die Alternativhypothese ist dann, dass der Würfel eher hohe Zahlen wirft (<span class="arithmatex">\(H_1:\mu &gt; 3,5\)</span>).</em></p>
+<p>Anstatt es auf den Erwartungswert zu beziehen, kann man auch den Fokus auf die Wahrscheinlichkeiten legen.</p>
+<p><em>Beispiel</em>
+_Man hat einen sechsseitigen Würfel und möchte herausfinden, ob dieser Würfel die "6" häufiger würfelt als ein fairer Würfel. Die Alternativhypothese ist dann, dass die Wahrscheinlichkeit eine "6" zu würfeln, höher als <span class="arithmatex">\(\frac{1}{6}\)</span> ist (<span class="arithmatex">\(H_0: p &gt; \frac{1}{6}\)</span>). Da die Nullhypothese genau das Gegenteil sein muss, muss sie aussagen, dass die Wahrscheinlichkeit eine "6" zu würfeln, gleich oder kleiner als <span class="arithmatex">\(\frac{1}{6}\)</span> ist (<span class="arithmatex">\(H_1: p \leq \frac{1}{6}\)</span>).</p>
+<p>Man unterscheidet beim Hypothesentest zwischen drei unterschiedlichen Herangehenweisen:</p>
+<ul>
+<li>linksseitiger Test, z.B.: <span class="arithmatex">\(H_0: p \geq 0,5\)</span> und <span class="arithmatex">\(H_1: p &gt; 0,5\)</span></li>
+<li>rechtsseitiger Test, z.B.: <span class="arithmatex">\(H_0: p \leq 0,5\)</span> und <span class="arithmatex">\(H_1: p &gt; 0,5\)</span></li>
+<li>beidseitiger Test, z.B.: <span class="arithmatex">\(H_0: p = 0,5\)</span> und <span class="arithmatex">\(H_1: p \neq 0,5\)</span></li>
+</ul>
+<p>Was es damit auf sich hat, behandeln wir später.</p>
+<h2 id="signifikanzniveau-und-p-wert">Signifikanzniveau und p-Wert</h2>
+<p>Das Signifikanzniveau (oft als <span class="arithmatex">\(\alpha\)</span> geschrieben) ist eine Schwelle, die im Hypothesentest festlegt, wie streng du sein willst, wenn du die Nullhypothese ablehnst. Es gibt an, wie groß das Risiko ist, dass du fälschlicherweise die Nullhypothese ablehnst, obwohl sie eigentlich wahr ist. Dies nennt man auch einen Fehler 1. Art. </p>
+<p><em>Beispiel</em><br />
+<em>Wir möchten eine Münze untersuchen, von der wir vermuten, dass sie nicht fair ist.</em></p>
+<p><span class="arithmatex">\(H_0: p = 0,5\)</span><br />
+<span class="arithmatex">\(H_1: p \neq 0,5\)</span>  </p>
+<p><em>Wir werfen die Münze nun mehrmals hintereinander. In diesem Fall gucken wir uns an, wie wir damit umgehen, wenn jedes mal Kopf kommt.</em></p>
+<p><span class="arithmatex">\(P(K) = 0,5^1 = 0,5\)</span><br />
+<span class="arithmatex">\(P(K,K) = 0,5^2 = 0,25\)</span><br />
+<span class="arithmatex">\(P(K,K,K) = 0,5^3 = 0,125\)</span><br />
+<span class="arithmatex">\(P(K,K,K,K) = 0,5^4 = 0,0625\)</span><br />
+<span class="arithmatex">\(P(K,K,K,K,K) = 0,5^5 = 0,03125\)</span>  </p>
+<p><em>Ab einem gewissen Punkt, halten wir dann die Chance, dass ein Ereignis eintritt, für zu unwahrscheinlich. Wir glauben dann nicht mehr, dass die Nullhypothese wahr ist und verwerfen diese. Dieser Punkt wird durch das Signifikanzniveau bestimmt.</em>  </p>
+<p>Für das Signifikanzniveau wird häufig ein Wert von <span class="arithmatex">\(\alpha = 0,05\)</span> verwendet. Das ist im Endeffekt eine willkürliche Wahl, welche sich aber historisch eingebürgert hat. Für medizinische Tests wird zum Beispiel oft ein kleinerer Wert für das Signifikanzniveau <span class="arithmatex">\(\alpha\)</span> verwendet.  </p>
+<p>Während das Signifikanzniveau die Schwelle darstellt, ab der wir die Nullhypothese verwerfen, ist der p-Wert die tatsächliche Wahrscheinlichkeit, dass unsere Stichprobe eintritt. Das Signifikanzniveau wird vorher festgelegt, den p-Wert berechnen wir aus unserer Stichprobe. Ist der p-Wert kleiner als das Signifikanzniveau, wird die Nullhypothese abgelehnt.</p>
+<p><em>Für unser Beispiel könnten wir das klassische Signifikanzniveau von <span class="arithmatex">\(\alpha = 0,05\)</span> wählen, dann ist die p-Wert von fünfmal Kopf <span class="arithmatex">\(p = 0,03125\)</span>. Da der p-Wert unter unser festgelegten Schwelle liegt, verwerfen wir die Hypothese, dass die Münze fair ist. (Eigentlich würde es sich hier um einen beidseitigen Test handeln, das habe ich zu Anschauungszwecken vernachlässigt.)</em></p>
 
 
 
