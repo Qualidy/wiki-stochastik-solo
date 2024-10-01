@@ -332,6 +332,8 @@
       
         
       
+        
+      
     
     
     
@@ -445,6 +447,27 @@
   
   <span class="md-ellipsis">
     Visualisierung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skalenniveaus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skalenniveaus
   </span>
   
 
@@ -586,24 +609,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#der-modus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Der Modus
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#skalenniveaus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Skalenniveaus
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#anwendungsfalle-der-lagemae" class="md-nav__link">
@@ -854,130 +859,6 @@ Welche Kennzahlen könntet ihr euch noch vorstellen?</p>
 <p><em>Aufgabe</em><br />
 Woher kommt das Wort <em>deskriptiv</em> bei der deskriptiven Statistik?  </p>
 <p>Es gibt zwei verschiedene Arten von Werten, die in der deskriptiven Statistik immer wieder vorkommen. Das sind zum einen Lagemaße, welche zum Beispiel ein besonders typischer oder zentraler Wert des Datensatzes sein können, und zum anderen Streumaße, welche beschreiben, wie sehr sich die Daten von einander unterscheiden. Wir werden nun im folgenden diese verschiedenen Maße durchgehen.</p>
-<h2 id="der-modus">Der Modus</h2>
-<p>Der Modus ist der Wert in einer Datenreihe, der am häufigsten vorkommt. Er zeigt also den häufigsten oder typischsten Wert an. Im Gegensatz zum Mittelwert oder Median muss der Modus nicht einmalig sein – es kann mehrere Modi geben, wenn mehrere Werte gleich oft vorkommen. Der Modus ist besonders nützlich bei kategorialen Daten, also Daten, die in Gruppen eingeteilt sind, wie z. B. die beliebteste Farbe in einer Umfrage.  </p>
-<p><em>Beispiel</em></p>
-<p>6 Personen wurden gefragt, welche Automarke sie fahren.</p>
-<table>
-<thead>
-<tr>
-<th>Automarke</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Audi</td>
-</tr>
-<tr>
-<td>BMW</td>
-</tr>
-<tr>
-<td>Porsche</td>
-</tr>
-<tr>
-<td>Audi</td>
-</tr>
-<tr>
-<td>VW</td>
-</tr>
-<tr>
-<td>BMW</td>
-</tr>
-</tbody>
-</table>
-<p>Die Modi dieser 6 Menschen sind sowohl "Audi" als auch "BMW".  </p>
-<p>Den Modus kann man auch von normalen Zahlen bestimmen.</p>
-<table>
-<thead>
-<tr>
-<th>Schulnote</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4</td>
-</tr>
-<tr>
-<td>1</td>
-</tr>
-<tr>
-<td>3</td>
-</tr>
-<tr>
-<td>5</td>
-</tr>
-<tr>
-<td>2</td>
-</tr>
-<tr>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>In diesem Fall ist der Modus nur "1".</p>
-<p><em>Aufgabe: Modus</em></p>
-<p>Berechne den Modus folgender Datensätze.</p>
-<p>a) <span class="arithmatex">\(\{2,5,12,4,5,3\}\)</span><br />
-b) <span class="arithmatex">\(\{2,3,4,5,5,12\}\)</span><br />
-c) <span class="arithmatex">\(\{Orange,Blau,Grün,Gelb,Blau,Orange\}\)</span><br />
-d) <span class="arithmatex">\(\{33,21,12,4\}\)</span><br />
-e) <span class="arithmatex">\(\{gut,ausreichend,sehr\ gut,mangelhaft,gut,befriedigend,ausreichend, gut\}\)</span>  </p>
-<h2 id="skalenniveaus">Skalenniveaus</h2>
-<p>Das Skalenniveau beschreibt, auf welche Weise Daten gemessen und klassifiziert werden können. Es gibt vier Haupttypen von Skalenniveaus, die bestimmen, welche mathematischen Operationen und statistischen Analysen auf den Daten möglich sind:</p>
-<table>
-<thead>
-<tr>
-<th>Skalenniveau</th>
-<th>Operationen</th>
-<th>Messbare Eigenschaften</th>
-<th>Beispiel</th>
-<th>Lageparameter</th>
-<th>Frage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nominalskala</td>
-<td><span class="arithmatex">\(=,\neq\)</span></td>
-<td>Häufigkeit</td>
-<td>Farben, Parteien</td>
-<td>Modus</td>
-<td>alles ist nominal</td>
-</tr>
-<tr>
-<td>Ordinalskala</td>
-<td><span class="arithmatex">\(=,\neq,&lt;,&gt;\)</span></td>
-<td>Häufigkeit, Rangfolge</td>
-<td>Schulnoten</td>
-<td>Modus, Median</td>
-<td>Gibt es eine Rangfolge?</td>
-</tr>
-<tr>
-<td>Intervallskala</td>
-<td><span class="arithmatex">\(=,\neq,&lt;,&gt;,+,-\)</span></td>
-<td>Häufigkeit, Rangfolge, Abstand</td>
-<td>Temperatur in Celsius</td>
-<td>Modus, Median, Arithmetische Mittel</td>
-<td>Kann ich zwei Datenpunkte addieren/subtrahieren und bekomme einen neuen Datenpunkt?</td>
-</tr>
-<tr>
-<td>Verhältnisskala</td>
-<td><span class="arithmatex">\(=,\neq,&lt;,&gt;,+,-,\times,\div\)</span></td>
-<td>Häufigkeit, Rangfolge, Abstand, natürlicher Nullpuntk</td>
-<td>Alter, Temperatur in Kelvin</td>
-<td>Modus, Median, Arithmetische Mittel, Geometrisches Mittel*</td>
-<td>Führt verdoppeln immer zu mehr?</td>
-</tr>
-</tbody>
-</table>
-<p>*Das Geometrische Mittel wird in diesem Kurs nicht behandelt, bei Interesse lohnt es sich aber, eigenständig nachzuschlagen.</p>
-<p><em>Aufgabe: Skalenniveau</em>  </p>
-<p>Ein Unternehmen hat eine Umfrage zu verschiedenen Eigenschaften von Produkten durchgeführt. Bestimme für jedes der folgenden Merkmale das richtige Skalenniveau.<br />
-a) Seriennummer der Produkte<br />
-b) Rangliste der beliebtesten Produkte<br />
-c) Zeit in Minuten, die ein Kunde auf die Lieferung wartet<br />
-d) Anzahl der verkauften Produkte in einem Jahr<br />
-e) Produktkategorie (z.B. Elektronik, Kleidung, Lebensmittel)  </p>
 <h2 id="anwendungsfalle-der-lagemae">Anwendungsfälle der Lagemaße</h2>
 <h3 id="mittelwert-durchschnitt">Mittelwert (Durchschnitt):</h3>
 <p><em>Anwendungsfall:</em> Für metrische Daten (z.B. Größe, Gewicht), wenn die Daten eine symmetrische Verteilung haben.<br />
@@ -1026,13 +907,13 @@ e) Produktkategorie (z.B. Elektronik, Kleidung, Lebensmittel)  </p>
 <p><em>Aufgabe: Lagemaße</em><br />
 Bestimme das arithmetische Mittel, den Median und den Modus, wenn möglich. Wähle aus, welches Lagemaß am besten repräsentiert, und begründe deine Wahl. Ordne jedem Datensatz das passende Skalenniveau zu.</p>
 <p>a) Die Ergebnisse eines Tests in einer Schulklasse lauten:  </p>
-<div class="arithmatex">\[\{49,45,95,58,52,57,56,61,49,52\}\]</div>
+<div class="arithmatex">\[(49,45,95,58,52,57,56,61,49,52)\]</div>
 <p>b) Die Mitarbeiter einer Firma haben ihre Fahrtzeiten in Minuten notiert:  </p>
-<div class="arithmatex">\[\{12, 37, 21, 25, 30, 12, 19, 25, 15, 12 ,21\}\]</div>
+<div class="arithmatex">\[(12, 37, 21, 25, 30, 12, 19, 25, 15, 12 ,21)\]</div>
 <p>c) Ein Modegeschäft hat in der letzten Woche folgende T-Shirt Größen verkauft:</p>
-<div class="arithmatex">\[\{𝑀, 𝑆, 𝑀, 𝑀, 𝑋𝐿, 𝐿, 𝐿, 𝑋𝐿, 𝑆, 𝑆, 𝐿, 𝑀\}\]</div>
+<div class="arithmatex">\[(𝑀, 𝑆, 𝑀, 𝑀, 𝑋𝐿, 𝐿, 𝐿, 𝑋𝐿, 𝑆, 𝑆, 𝐿, 𝑀)\]</div>
 <p>d) Bei einer Umfrage nach der Lieblingssportart wurden folgende Antworten gegeben:</p>
-<div class="arithmatex">\[\{Tennis, Fußball, Schwimmen, Schwimmen, Tennis, Fußball, Fußball, Volleyball, Schwimmen, Volleyball, Volleyball\}\]</div>
+<div class="arithmatex">\[(Tennis, Fußball, Schwimmen, Schwimmen, Tennis, Fußball, Fußball, Volleyball, Schwimmen, Volleyball, Volleyball)\]</div>
 <h2 id="spannweite">Spannweite</h2>
 <p>Die Spannweite (auch Range genannt) ist ein einfaches Maß für die Streuung von Daten. Sie gibt an, wie groß der Abstand zwischen dem größten und dem kleinsten Wert in einem Datensatz ist. Um die Spannweite zu berechnen, zieht man den kleinsten Wert vom größten ab. Die Spannweite zeigt, wie weit die Werte auseinanderliegen, gibt aber keine Informationen darüber, wie die Werte dazwischen verteilt sind. Sie ist anfällig für Ausreißer, da nur die extremen Werte berücksichtigt werden.  </p>
 <p><em>Beispiel</em><br />
@@ -1068,10 +949,10 @@ Im Folgenden sind die Alter einer Familie notiert worden.  </p>
 <p>Die Alter in dieser Familie streuen also über eine Spannweite von 67 Jahren.  </p>
 <p><em>Aufgabe: Spannweite</em><br />
 Bestimme die Spannweite folgender Datensätze.  </p>
-<p>a) <span class="arithmatex">\(\{4, 18, 14, 27, 19, 12\}\)</span><br />
-b) <span class="arithmatex">\(\{−3,−20,−11, 0\}\)</span><br />
-c) <span class="arithmatex">\(\{3, 3, 5,−2, 7, 5,−2\}\)</span><br />
-d) <span class="arithmatex">\(\{65,−48,−1, 55,−31, 15\}\)</span>  </p>
+<p>a) <span class="arithmatex">\((4, 18, 14, 27, 19, 12)\)</span><br />
+b) <span class="arithmatex">\((−3,−20,−11, 0)\)</span><br />
+c) <span class="arithmatex">\((3, 3, 5,−2, 7, 5,−2)\)</span><br />
+d) <span class="arithmatex">\((65,−48,−1, 55,−31, 15)\)</span>  </p>
 <h2 id="interquartilabstand">Interquartilabstand</h2>
 <p>Der Interquartilabstand (IQA) ist ein Maß für die Streuung von Daten und gibt an, wie weit die mittleren 50% der Daten verteilt sind. Er wird berechnet, in dem man den sortierten Datensatz in der Mitte teilt, den Median beider Teile berechnet und anschließend den unteren vom oberen subtrahiert.  </p>
 <p><em>Beispiel mit gerader Anzahl an Werten</em></p>
@@ -1218,10 +1099,10 @@ d) <span class="arithmatex">\(\{65,−48,−1, 55,−31, 15\}\)</span>  </p>
 <div class="arithmatex">\[ IQA = 6 - 2 = 4 \]</div>
 <p><em>Aufgabe: IQA</em>  </p>
 <p>Bestimme den IQA folgender Datensätze.<br />
-a) <span class="arithmatex">\(\{12, 32, 53, 32, 15, 28, 31\}\)</span><br />
-b) <span class="arithmatex">\(\{32, 41, 21, 14, 19, 25, 71, 5\}\)</span><br />
-c) <span class="arithmatex">\(\{17, 19, 11, 9, 21, 13, 20, 10, 5\}\)</span><br />
-d) <span class="arithmatex">\(\{51, 32, 41, 44, 25, 28, 30, 11, 3\}\)</span>  </p>
+a) <span class="arithmatex">\((12, 32, 53, 32, 15, 28, 31)\)</span><br />
+b) <span class="arithmatex">\((32, 41, 21, 14, 19, 25, 71, 5)\)</span><br />
+c) <span class="arithmatex">\((17, 19, 11, 9, 21, 13, 20, 10, 5)\)</span><br />
+d) <span class="arithmatex">\((51, 32, 41, 44, 25, 28, 30, 11, 3)\)</span>  </p>
 <h2 id="schiefe">Schiefe</h2>
 <p>Die Schiefe beschreibt, wie asymmetrisch eine Verteilung von Daten ist. Es gibt drei Typen von Schiefe:  </p>
 <ol>
@@ -1243,9 +1124,9 @@ Da es sich hierbei um ein Streuungsmaß handelt, lässt sich dazu natürlich ein
 <p>Da die Standardabweichung zu diesem Zeitpunkt noch nicht behandelt wurde, kommen wir später auf diese Formel zurück.  </p>
 <p><em>Aufgabe: Schiefe</em></p>
 <p>Ordne die Begriffe rechtsschief, linksschief und symmetrisch den folgenden Datensätze zu.
-a) <span class="arithmatex">\(\{30, 37, 29, 33, 52, 64, 31, 30, 35\}\)</span><br />
-b) <span class="arithmatex">\(\{11, 15, 19, 13, 10, 17, 20, 15\}\)</span><br />
-c) <span class="arithmatex">\(\{19, 23, 18, 22, 13, 11, 21, 19\}\)</span>  </p>
+a) <span class="arithmatex">\((30, 37, 29, 33, 52, 64, 31, 30, 35)\)</span><br />
+b) <span class="arithmatex">\((11, 15, 19, 13, 10, 17, 20, 15)\)</span><br />
+c) <span class="arithmatex">\((19, 23, 18, 22, 13, 11, 21, 19)\)</span>  </p>
 <h2 id="stichprobe-und-grundgesamtheit">Stichprobe und Grundgesamtheit</h2>
 <p>In der Statistik müssen wir zwischen Grundgesamtheit (oft auch Population) und Stichproben unterscheiden. Grundsätzlich interessiert man sich meistens für die Grundgesamtheit. Da die aber sehr groß sein kann, ist es praktischer eine Stichprobe zu untersuchen, um anhand derer Schlüsse für die Grundgesamtheit zu schließen.<br />
 Für Grundgesamtheit und Stichproben werden oft die gleichen Kennzahlen genutzt. Um beide gut auseinander halten zu können, nutzt man unterschiedliche Symbole für die jeweiligen Kennzahlen.</p>
@@ -1291,8 +1172,8 @@ Schlussendlich wird aus dieser Gesamtsumme der Durchschnitt berechnet, in dem du
 <p>Die Varianz liegt hier also bei 102.500.  </p>
 <p><em>Aufgabe: Varianz einer Grundgesamtheit</em></p>
 <p>Berechne die Varianz der folgenden Grundgesamtheiten.<br />
-a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
-b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+a) <span class="arithmatex">\((14, 15, 15, 18)\)</span><br />
+b) <span class="arithmatex">\((14, 15, 15, 30)\)</span>  </p>
 <p>Der Wert der Varianz ist schwer zu interpretieren. Das liegt am Quadrieren des Abstandes. Im Beispiel des Firmeninhabers ist die Einheit der Varianz €<span class="arithmatex">\(^2\)</span>.<br />
 Die Einheit der Varianz ist also das Quadrat der Einheit eines Datenpunktes. Um diese Diskrepanz aufzulösen, wird die Standardabweichung hinzugezogen.</p>
 <h3 id="standardabweichung-einer-grundgesamtheit">Standardabweichung einer Grundgesamtheit</h3>
@@ -1325,8 +1206,8 @@ Die Einheit der Varianz ist also das Quadrat der Einheit eines Datenpunktes. Um 
 <p>Vergleicht man die Standardabweichung nun mit dem Datensatz, dann fällt auf, dass die Standardabweichung viel anschaulich die Streuung beschreibt als die Varianz. Das liegt daran, dass die Quadrierung in der Varianz für die Standardabweichung aufgelöst wurde.  </p>
 <p><em>Aufgabe: Standardabweichung einer Grundgesamtheit</em></p>
 <p>Berechne die Standardabweichung der folgenden Grundgesamtheiten.<br />
-a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
-b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+a) <span class="arithmatex">\((14, 15, 15, 18)\)</span><br />
+b) <span class="arithmatex">\((14, 15, 15, 30)\)</span>  </p>
 <h3 id="varianz-einer-stichprobe">Varianz einer Stichprobe</h3>
 <div class="arithmatex">\[ s^2 = \frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2 \]</div>
 <p>Wenn von der Varianz einer Stichprobe die Rede ist, dann meint man damit eigentlich eine Schätzung der Varianz der Grundgesamtheit anhand einer Stichprobe und <strong>nicht</strong> die Varianz der Stichprobe selbst. Wenn man die tatsächlichen Varianzen aller möglichen Stichproben einer Grundgesamtheit berechnet, fällt auf, dass man öfter unterhalb der Varianz der Grundgesamtheit liegt als darüber. Das liegt daran, dass die Ausreißer, welche einen stärkeren Einfluss auf die Varianz haben, seltener in einer Stichprobe vorhanden sind. Hier ist also in der Mathematik selbst ein systematischer Fehlschätzung. Um diesem Fehler entgegenzuwirken, wird ein Korrekturfaktor genutzt <span class="arithmatex">\(\frac{1}{n - 1}\)</span>.<br />
@@ -1360,8 +1241,8 @@ Je kleiner die Stichprobe, desto größer ist der Einfluss dieser Korrektur. Das
 <p><em>Aufgabe: Varianz einer Stichprobe</em></p>
 <p>Berechne die Varianz der folgenden Stichproben.
 (Berechne eine Schätzung der Varianz der Grundgesamhtheit anhand folgender Stichproben.) <br />
-a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
-b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+a) <span class="arithmatex">\((14, 15, 15, 18)\)</span><br />
+b) <span class="arithmatex">\((14, 15, 15, 30)\)</span>  </p>
 <h3 id="standardabweichung-einer-stichprobe">Standardabweichung einer Stichprobe</h3>
 <div class="arithmatex">\[ s = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})} \]</div>
 <p>Auch bei der Standardabweichung einer Stichprobe ist in der Regel eine Schätzung der Standardabweichung der Grundgesamtheit anhand der Stichprobe gemeint. Das heißt es kommt der gleiche Korrekturfaktor zum Einsatz wie bei der Varianz einer Stichprobe.  </p>
@@ -1372,8 +1253,8 @@ Standardabweichung.  </p>
 <p><em>Aufagbe: Standardabweichung einer Stichprobe</em></p>
 <p>Berechne die Standardabweichung der folgenden Stichproben.<br />
 (Berechne eine Schätzung der Standardabweichung der Grundgesamhtheit anhand folgender Stichproben.) <br />
-a) <span class="arithmatex">\(\{14, 15, 15, 18\}\)</span><br />
-b) <span class="arithmatex">\(\{14, 15, 15, 30\}\)</span>  </p>
+a) <span class="arithmatex">\((14, 15, 15, 18)\)</span><br />
+b) <span class="arithmatex">\((14, 15, 15, 30)\)</span>  </p>
 <h2 id="verschiebung-und-skalierung">Verschiebung und Skalierung</h2>
 <p>Um das Verständnis der Lagemaße und Streumaße besser zu verstehen, lohnt es sich Datensätze zu verschieben bzw. zu skalieren.</p>
 <h3 id="verschiebung">Verschiebung</h3>
