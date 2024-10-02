@@ -1,10 +1,10 @@
-Repository klonen:
+**Repository klonen:**
 
 ```commandline
 git clone https://github.com/Qualidy/wiki-stochastik.git
 ```
 
-Virtuelle Umgebung anlegen:
+**Virtuelle Umgebung anlegen:**
 
 Auf Windows:
 
@@ -18,7 +18,7 @@ Auf Mac:
 python3 -m venv .venv
 ```
 
-Virtuelle Umgebung aktivieren:
+**Virtuelle Umgebung aktivieren:**
 
 Auf Windows:
 
@@ -32,7 +32,7 @@ Auf Mac:
 source .venv/bin/activate
 ```
 
-Abhängigkeiten installieren:
+**Abhängigkeiten installieren:**
 
 Auf Windows:
 
@@ -46,13 +46,13 @@ Auf Mac:
 pip3 install -r requirements.txt
 ```
 
-Lokal Webseite ausführen:
+**Lokal Webseite ausführen:**
 
 ```commandline
 mkdocs serve
 ```
 
-Webseite veröffentlichen:
+**Webseite veröffentlichen:**
 
 ```commandline
 mkdocs gh-deploy

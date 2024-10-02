@@ -1,0 +1,20 @@
+title: Summenzeichen bilden
+question: |
+  Stelle die folgenden Terme mit Hilfe des Summenzeichens dar und berechne anschließend das Ergebnis.
+  
+  a) $1+2+3+4+5+6$
+  
+  b) $2+4+6+8+10+12$
+  
+  c) $-3-6-9-12-15-18-21$
+  
+  d) $1+2+3+4+9+10+11+12$
+
+solution: |
+  a) $\sum_{i=1}^{6}i$
+  
+  b) $\sum_{i=1}^{6}2\cdot i$ oder $2\cdot \sum_{i=1}^{6} i $
+  
+  c) $\sum_{i=1}^{6} (-3)\cdot i$ oder $(-3)\cdot \sum_{i=1}^{6} i $
+  
+  d) $\sum_{i=1}^{4}i + \sum_{i=9}^{10}i$ oder $\sum_{i=1}^{4} (i + i + 9)$

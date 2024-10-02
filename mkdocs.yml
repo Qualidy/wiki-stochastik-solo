@@ -56,7 +56,9 @@ nav:
   - Mengenlehre:
     - mengenlehre/index.md
     - Verschiedene Schreibweisen: mengenlehre/verschiedene_schreibweisen.md
-  - Lineare Funktionen: lineare_funktionen/lineare_funktionen.md
+  - Lineare Funktionen:
+    - lineare_funktionen/index.md
+    - Summenzeichen: lineare_funktionen/summenzeichen.md
   - Deskriptive Statistik:
     - deskriptive_statistik/index.md
     - Arithmetisches Mittel: deskriptive_statistik/mean.md

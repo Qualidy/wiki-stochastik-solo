@@ -5,13 +5,13 @@ Willkomen im Skript Statisik für Einsteiger.
 
 <div class="grid cards" markdown>
 
-- [:material-vector-combine: **Mengenlehre**](mengenlehre/verschiedene_schreibweisen)
+- [:material-vector-combine: **Mengenlehre**](mengenlehre/index.md)
 
     ---
 
     Lerne die Grundlagen der mathematischen Sprache.
 
-- [:material-signal-cellular-outline: **Lineare Funktionen**](lineare_funktionen/lineare_funktionen.md)
+- [:material-signal-cellular-outline: **Lineare Funktionen**](lineare_funktionen/index)
 
     ---
 
