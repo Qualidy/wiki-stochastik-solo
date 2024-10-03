@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../../regression/regression/">
+        <link rel="prev" href="../">
       
+      
+        <link rel="next" href="../../deskriptive_statistik/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Anova - Statistik Schulung</title>
+        <title>Summenzeichen - Statistik Schulung</title>
       
     
     
@@ -71,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#summenzeichen" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Anova
+              Summenzeichen
             
           </span>
         </div>
@@ -292,6 +299,8 @@
       
   
   
+    
+  
   
   
     
@@ -306,16 +315,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../lineare_funktionen/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -332,7 +341,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Lineare Funktionen
@@ -345,10 +354,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lineare_funktionen/summenzeichen/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -357,6 +375,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -626,17 +645,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../anova/anova/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -645,7 +657,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -667,6 +678,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -681,9 +694,182 @@
                   
 
 
-  <h1>Anova</h1>
-
-
+<h1 id="summenzeichen">Summenzeichen</h1>
+<details class="video">
+<summary>Video</summary>
+<p><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://www.youtube.com/embed/vikXOuevyZc?si=Em4eVh1PBlnuo56F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div></p>
+</details>
+<p>Eine Addition von mehreren Zahlen kann vereinfacht mit dem Summenzeichen dargestellt werden. 
+Das Summenzeichen ist der große griechische Buchstabe Epsilon.</p>
+<div class="arithmatex">\[
+\sum_{k=1}^{n}k = 1+2+3+4+\cdots + n
+\]</div>
+<p>Hier siehst du die einzelnen Bestandteile des Summenzeichens:</p>
+<p><img alt="Summenzeichen mit Erklärung" src="../../pictures/summenzeichen_erkl%C3%A4rung.png" /></p>
+<p>Start und Endwert müssen ganze Zahlen sein. Wenn der Startwert größer als der Endwert ist,
+ist der Summenwert <span class="arithmatex">\(0\)</span>.</p>
+<p><em>Beispiel</em></p>
+<div class="arithmatex">\[\begin{align*}
+\sum_{k=0}^{5}k^2 &amp;= 0^2+1^2+2^2+3^2+4^2+5^2 \\
+ &amp;= 0+1+4+9+16+25 \\
+ &amp;= 55
+\end{align*}\]</div>
+<div class="admonition question">
+<p class="admonition-title">Summenzeichen bilden</p>
+<p>Stelle die folgenden Terme mit Hilfe des Summenzeichens dar und berechne anschließend das Ergebnis.</p>
+<p>a) <span class="arithmatex">\(1+2+3+4+5+6\)</span></p>
+<p>b) <span class="arithmatex">\(2+4+6+8+10+12\)</span></p>
+<p>c) <span class="arithmatex">\(-3-6-9-12-15-18-21\)</span></p>
+<p>d) <span class="arithmatex">\(1+2+3+4+9+10+11+12\)</span></p>
+<details class="success">
+<summary>Lösung</summary>
+<p>a) <span class="arithmatex">\(\sum_{i=1}^{6}i\)</span></p>
+<p>b) <span class="arithmatex">\(\sum_{i=1}^{6}2\cdot i\)</span> oder $2\cdot \sum_{i=1}^{6} i $</p>
+<p>c) <span class="arithmatex">\(\sum_{i=1}^{6} (-3)\cdot i\)</span> oder $(-3)\cdot \sum_{i=1}^{6} i $</p>
+<p>d) <span class="arithmatex">\(\sum_{i=1}^{4}i + \sum_{i=9}^{10}i\)</span> oder <span class="arithmatex">\(\sum_{i=1}^{4} (i + i + 9)\)</span></p>
+</details>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Summenzeichen auflösen</p>
+<p>Berechnen Sie die folgenden Summen</p>
+<p>a) <span class="arithmatex">\(\sum_{i=1}^{5}3i\)</span></p>
+<p>b) <span class="arithmatex">\(\sum_{j=3}^{9}(2j-1)\)</span></p>
+<p>c) <span class="arithmatex">\(\sum_{k=1}^{1}k\)</span></p>
+<p>d) <span class="arithmatex">\(\sum_{i=0}^{9}3\)</span></p>
+<p>e) <span class="arithmatex">\(\sum_{i=2}^{4}(k\cdot 2) + \sum_{i=0}^{4} (\frac{1}{2}j)\)</span></p>
+<p>f) <span class="arithmatex">\(\sum_{i=-5}^{5}k\)</span></p>
+<p>g) <span class="arithmatex">\(\sum_{i=-5}^{-3}k\)</span></p>
+<p>h) <span class="arithmatex">\(\sum_{i=2}^{1}k\)</span></p>
+<details class="success">
+<summary>Lösung</summary>
+<p>a) <span class="arithmatex">\(\sum_{i=1}^{5}3i = 3\cdot 1 + 3\cdot 2 + 3\cdot 3 + 3\cdot 4 + 3\cdot 5 = 3+6+9+12+15 = 45\)</span></p>
+<p>b) <span class="arithmatex">\(\sum_{j=3}^{9}(2j-1) = 5 + 7 + 9 + 11 + 13 + 15+ 17 = 77\)</span></p>
+<p>c) <span class="arithmatex">\(\sum_{k=1}^{1}k = 1\)</span></p>
+<p>d) <span class="arithmatex">\(\sum_{i=0}^{9}3 = 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 = 10 \cdot 3 = 30\)</span></p>
+<p>e) <span class="arithmatex">\(\sum_{i=2}^{4}(k\cdot 2) + \sum_{i=0}^{4} (\frac{1}{2}j) = (2\cdot 2 + 3\cdot 2 + 4\cdot 2 )+  (\frac{1}{2}\cdot 0)+(\frac{1}{2}\cdot 1)+(\frac{1}{2}\cdot 2)+(\frac{1}{2}\cdot 3)+(\frac{1}{2}\cdot 4)\)</span></p>
+<p>f) <span class="arithmatex">\(\sum_{i=-5}^{5}k = (-5)+(-4)+(-3)+(-2)+(-1) + 0 + 1 + 2 + 3 + 4 + 5 = 0\)</span></p>
+<p>g) <span class="arithmatex">\(\sum_{i=-5}^{-3}k = (-5)+(-4)+(-3) = -12\)</span></p>
+<p>h) <span class="arithmatex">\(\sum_{i=2}^{1}k = 0\)</span>, da der obere Index kleiner ist als der untere (leere Summe).</p>
+</details>
+</div>
+<h1 id="indexschreibweise">Indexschreibweise</h1>
+<details class="video">
+<summary>Video</summary>
+<p><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://www.youtube.com/embed/H_VSCzHclkw?si=gAH2SWtys7yo3zhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div></p>
+</details>
+<p>nach Summenfunktion müssen die einzelnen Summenglieder nicht zwangsläufig einen expliziten Zahlenwert besitzen.
+In der folgenden Summe werden die Glieder <span class="arithmatex">\(a_0\)</span> bis <span class="arithmatex">\(a_n\)</span> aufsummiert</p>
+<div class="arithmatex">\[
+\sum_{k=0}^{n}a_k = a_1 + a_2 + \cdots + a_n
+\]</div>
+<p><em>Beispiel</em></p>
+<p>Acht Leute spenden einen anonym einen Geldbetrag. Die Beträge werden als <span class="arithmatex">\(x\)</span> mit einem Index notiert:</p>
+<table>
+<thead>
+<tr>
+<th>Spendenbetrag</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x_1\)</span></td>
+<td><span class="arithmatex">\(10\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_2\)</span></td>
+<td><span class="arithmatex">\(25\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_3\)</span></td>
+<td><span class="arithmatex">\(5\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_4\)</span></td>
+<td><span class="arithmatex">\(30\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_5\)</span></td>
+<td><span class="arithmatex">\(20\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_6\)</span></td>
+<td><span class="arithmatex">\(80\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_7\)</span></td>
+<td><span class="arithmatex">\(15\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_8\)</span></td>
+<td><span class="arithmatex">\(100\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[
+\sum_{i=1}^{8}x_i = x_1 + x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 = 285
+\]</div>
+<h2 id="geordnete-indizierung">Geordnete Indizierung</h2>
+<p><img alt="" src="../../pictures/geordnete_indizierung.svg" /></p>
+<p>Wenn wir eine Menge von Daten haben, dann hat der normale Index keine Aussagekraft,
+außer vielleicht die Reihenfolge, in der die Daten eingetragen wurden.</p>
+<p>Es gibt jedoch eine Schreibweise, mit der man auf das kleinste/größte Element usw. zugreifen kann.
+Dazu schreiben wir um den Index eckige Klammern und zeigen so an, welchen Rang das Element hat.</p>
+<table>
+<thead>
+<tr>
+<th>Indizierung<br/>in Reihenfolge<br/>der Datenerfassung</th>
+<th>Inhalt</th>
+<th>Indizierung<br/>nach Größe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x_1\)</span></td>
+<td>106</td>
+<td><span class="arithmatex">\(x_{[7]}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_2\)</span></td>
+<td>30</td>
+<td><span class="arithmatex">\(x_{[1]}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_3\)</span></td>
+<td>84</td>
+<td><span class="arithmatex">\(x_{[5]}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_4\)</span></td>
+<td>35</td>
+<td><span class="arithmatex">\(x_{[4]}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_5\)</span></td>
+<td>30</td>
+<td><span class="arithmatex">\(x_{[2]}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_6\)</span></td>
+<td>30</td>
+<td><span class="arithmatex">\(x_{[3]}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_7\)</span></td>
+<td>84</td>
+<td><span class="arithmatex">\(x_{[6]}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Also <span class="arithmatex">\(x_{[1]}\)</span> beschreibt das kleinste Element.</p>
+<p><span class="arithmatex">\(x_{[2]}\)</span> beschreibt das zweit-kleinste Element.</p>
+<p>...</p>
+<p><span class="arithmatex">\(x_{[n]}\)</span> beschreibt das größte Element, wenn wir insgesamt <span class="arithmatex">\(n\)</span> Datenpunkte haben.</p>
+<p><span class="arithmatex">\(x_{[n-1]}\)</span> beschreibt das zweitgrößte Element. </p>
 
 
 
@@ -713,7 +899,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../regression/regression/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Regression">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Funktionen">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -723,11 +909,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Regression
+                Funktionen
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../../deskriptive_statistik/" class="md-footer__link md-footer__link--next" aria-label="Next: Deskriptive Statistik">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Deskriptive Statistik
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
