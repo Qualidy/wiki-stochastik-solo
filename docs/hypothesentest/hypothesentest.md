@@ -8,12 +8,13 @@ _Stell dir vor, du möchtest wissen, ob ein neues Medikament wirklich wirkt. Du 
 ## Was sind Hypothesentests?
 
 Die Schritte eines Hypothesentests:
-1. Nullhypothese: Dies ist die Ausgangsannahme. Zum Beispiel könnte die Nullhypothese sein: „Das Medikament hat keinen Effekt.“
-2. Alternativhypothese: Das ist die Annahme, die du beweisen willst. In unserem Beispiel wäre das: „Das Medikament hat einen Effekt.“
-3. Daten sammeln: Du führst ein Experiment durch oder sammelst Daten, um die Hypothesen zu testen.
-4. Statistischer Test: Du wählst einen passenden Test, um zu prüfen, wie gut die Daten zur Nullhypothese passen.
-5. p-Wert berechnen: Der p-Wert gibt an, wie wahrscheinlich es ist, die beobachteten Daten zu erhalten, wenn die Nullhypothese wahr ist. Ein kleiner p-Wert (meist unter 0,05) bedeutet, dass die Nullhypothese eher falsch ist.
-6. Entscheidung: Wenn der p-Wert klein genug ist, lehnst du die Nullhypothese ab und nimmst an, dass die Alternativhypothese stimmt. Wenn der p-Wert groß ist, kannst du die Nullhypothese nicht ablehnen (aber du beweist nicht, dass sie wahr ist).
+
+1. **Nullhypothese**: Dies ist die Ausgangsannahme. Zum Beispiel könnte die Nullhypothese sein: „Das Medikament hat keinen Effekt.“
+2. **Alternativhypothese**: Das ist die Annahme, die du beweisen willst. In unserem Beispiel wäre das: „Das Medikament hat einen Effekt.“
+3. **Daten sammeln**: Du führst ein Experiment durch oder sammelst Daten, um die Hypothesen zu testen.
+4. **Statistischer Test**: Du wählst einen passenden Test, um zu prüfen, wie gut die Daten zur Nullhypothese passen.
+5. **p-Wert berechnen**: Der p-Wert gibt an, wie wahrscheinlich es ist, die beobachteten Daten zu erhalten, wenn die Nullhypothese wahr ist. Ein kleiner p-Wert (meist unter 0,05) bedeutet, dass die Nullhypothese eher falsch ist.
+6. **Entscheidung**: Wenn der p-Wert klein genug ist, lehnst du die Nullhypothese ab und nimmst an, dass die Alternativhypothese stimmt. Wenn der p-Wert groß ist, kannst du die Nullhypothese nicht ablehnen (aber du beweist nicht, dass sie wahr ist).
 
 
 ## Hypothesen formulieren
@@ -150,7 +151,7 @@ $$ \sigma_s = \frac{\sigma_0}{\sqrt{n}} = \frac{0,5}{10} = 0,05 $$
 
 Nun müssen wir den passenden z-Wert für den Mittelwert der Stichprobe berechnen.
 
-$$ z = \frac{x - \mu_s}{\simga_s} = \frac{2,9 - 3}{0,05} = -2 $$
+$$ z = \frac{x - \mu_s}{\sigma_s} = \frac{2,9 - 3}{0,05} = -2 $$
 
 Aus der z-Werte-Tabelle können wir für $z=2$ einen Wert von $0,9772$ ablesen. Da wir es mit einem negativen z-Wert zu tun haben, müssen wir diesen Wert jetzt noch von $1$ abziehen $1-0,9772 = 0,0228$. Dieser Wert sagt jetzt also aus, dass die Wahrscheinlichkeit bei einer Stichprobe den Mittelwert von $2,9$ oder weniger zu erhalten, ungefähr 2,3 % ist, wenn sich der Mittelwert von vor 10 Jahren nicht verändert hat.  
 Diese 2,3% liegen natürlich unterhalb der 4%, die wir als Signifikanzniveau festgelegt haben. Da wir aber auf eine Abweichungen nach oben und unten testen, müssen wir auch unser Signifikanzniveau gleichmäßig auf beide Seiten verteilen. Das heißt also wir müssen hier die 2,3% mit 2% vergleichen. Wir sehen also, dass unser berechneter Wert nicht ganz unser Signifikanzniveau unterschreitet. Deswegen können wir unsere Nullhypothese hier nicht verwerfen und nehmen dann also weiter an, dass sie gilt.

@@ -1,0 +1,16 @@
+title: "Merkmale, Merkmalsträger unterscheiden"
+question: |
+  Lies die folgenden Beschreibungen und bestimme das **Merkmal** und den **Merkmalsträger**.
+
+  a) In einem Klassenzimmer wird das Alter aller Schüler erhoben.
+
+  b) Ein Bauer zählt die Anzahl der Eier, die seine Hühner an einem Tag legen.
+
+  c) Ein Autohändler kategorisiert alle Autos nach der Farbe des Lacks.
+
+solution: |
+  a) **Merkmal**: Alter der Schüler, **Merkmalsträger**: Schüler
+
+  b) **Merkmal**: Anzahl der gelegten Eier, **Merkmalsträger**: Hühner
+
+  c) **Merkmal**: Farbe des Autolacks, **Merkmalsträger**: Autos
