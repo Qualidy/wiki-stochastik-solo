@@ -1,0 +1,29 @@
+title: "Element in der Mitte"
+question: |
+  Gegeben ist die folgende Liste von Daten:
+  
+  | Indizierung | Inhalt |
+  |-------------|--------|
+  | $x_1$       | 45     |
+  | $x_2$       | 20     |
+  | $x_3$       | 18     |
+  | $x_4$       | 60     |
+  | $x_5$       | 32     |
+  
+  a) Was ist bei diesem Datensatz das Element in der mittleren Größe?
+  
+  b) Wir wissen, dass $x_{[1]}$ das kleinste Element und $x_{[n]}$ das größte Element ist, wenn wir insgesamt $n$ Elemente vorliegen haben.
+  Ist es möglich so auch immer zu sagen, an welcher Stelle das Element mit der mittleren Größe liegt?
+
+tip: Betrachte in b) nur den Fall, dass $n$ ungerade ist.
+
+solution: |
+  a) Zuerst ordnen wir die Daten der Größe nach:
+  
+     Geordnete Liste: $x_{[1]} = 18$, $x_{[2]} = 20$, $x_{[3]} = 32$, $x_{[4]} = 45$, $x_{[5]} = 60$
+     
+     Das Element in der Mitte ist also $x_{[3]} = 32$.
+  
+  b) Wenn die Anzahl der Elemente ($n$) ungerade ist, dann ist das mittlere Element immer dasjenige, das an der Stelle $\frac{n+1}{2}$ liegt.
+     
+     In diesem Fall mit $n = 5$ ist $\frac{5+1}{2} = 3$, daher ist $x_{[3]}$ das mittlere Element.

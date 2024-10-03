@@ -39,7 +39,6 @@ theme:
     primary: 'amber'
     accent: 'light blue'
   features:
-    - navigation.indexes
     - navigation.footer
 
 extra:
@@ -56,13 +55,14 @@ extra:
 nav:
   - index.md
   - Mengenlehre:
-    - mengenlehre/index.md
+    - Grundlagen: mengenlehre/index.md
     - Verschiedene Schreibweisen: mengenlehre/verschiedene_schreibweisen.md
   - Lineare Funktionen:
-    - lineare_funktionen/index.md
+    - Grundlagen: lineare_funktionen/index.md
     - Summenzeichen: lineare_funktionen/summenzeichen.md
+    - Indexschreibweise: lineare_funktionen/indizes.md
   - Deskriptive Statistik:
-    - deskriptive_statistik/index.md
+    - Grundlagen: deskriptive_statistik/index.md
     - Arithmetisches Mittel: deskriptive_statistik/mean.md
     - Median: deskriptive_statistik/median.md
     - Modus: deskriptive_statistik/modus.md

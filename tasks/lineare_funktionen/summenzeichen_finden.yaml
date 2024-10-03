@@ -13,8 +13,8 @@ question: |
 solution: |
   a) $\sum_{i=1}^{6}i$
   
-  b) $\sum_{i=1}^{6}2\cdot i$ oder $2\cdot \sum_{i=1}^{6} i $
+  b) $\sum_{i=1}^{6}2\cdot i$ oder $2 \cdot \sum_{i=1}^{6}i$
   
-  c) $\sum_{i=1}^{6} (-3)\cdot i$ oder $(-3)\cdot \sum_{i=1}^{6} i $
+  c) $\sum_{i=1}^{6} (-3)\cdot i$ oder $(-3) \cdot \sum_{i=1}^{6}i$
   
   d) $\sum_{i=1}^{4}i + \sum_{i=9}^{10}i$ oder $\sum_{i=1}^{4} (i + i + 9)$

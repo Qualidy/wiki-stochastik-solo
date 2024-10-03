@@ -1,0 +1,44 @@
+title: "Eine kleine Spende..."
+question: |
+  Die Pfadfindergruppe Ascheberg sammelt Spenden im Dorf für eine neue Jurte.
+  
+  Jürgen und Monika gehen gemeinsam durch den Matthias-Claudius-Ring und bitten und Spenden.
+  
+  Bei den ersten zwei Häusern erhalten sie jeweils 5€. Dann 10€ und dann sind vier Häuser lang niemand zu Hause.
+  
+  In den nächsten Häusern erhalten sie 14€, 10€, 50€, 0€ und noch mal 10€.
+  
+  a) Füllen Sie eine Tabelle der folgenden Form, in der die Spenden eingetragen werden:
+  
+  | Spendenbetrag | Wert  |
+  |---------------|-------|
+  | $x_1$         |       |
+  | $x_2$         |       |
+  | $\cdots$      |       |
+  
+  b) Wie viel haben sie insgesamt an Spenden eingenommen?
+  
+  c) Was ist in dieser Geschichte $n$?
+solution: |
+  a) Zuerst füllen wir die Tabelle mit den Spendenbeträgen:
+
+     | Spendenbetrag | Wert |
+     |---------------|------|
+     | $x_1$         | 5    |
+     | $x_2$         | 5    |
+     | $x_3$         | 10   |
+     | $x_4$         | 0    |
+     | $x_5$         | 0    |
+     | $x_6$         | 0    |
+     | $x_7$         | 0    |
+     | $x_8$         | 14   |
+     | $x_9$         | 10   |
+     | $x_{10}$      | 50   |
+     | $x_{11}$      | 0    |
+     | $x_{12}$      | 10   |
+
+  b) Die Gesamtsumme der Spenden beträgt:
+  
+     $\sum_{i=1}^{12} x_i = 5 + 5 + 10 + 0 + 0 + 0 + 0 + 14 + 10 + 50 + 0 + 10 = 94$
+
+  c) In dieser Geschichte ist $n$ die Anzahl der gesammelten Datenpunkte, also die Anzahl der Häuser, die sie besucht haben. Hier ist $n = 12$.

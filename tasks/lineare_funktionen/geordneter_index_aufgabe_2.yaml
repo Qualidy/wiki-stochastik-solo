@@ -1,0 +1,36 @@
+title: "Geordnete Indizierung: Mittlere Elemente"
+question: |
+  Gegeben ist die folgende Liste von Daten:
+  
+  | Indizierung | Inhalt |
+  |-------------|--------|
+  | $x_1$       | 45     |
+  | $x_2$       | 20     |
+  | $x_3$       | 18     |
+  | $x_4$       | 60     |
+  | $x_5$       | 32     |
+  
+  a) Ordne die Daten der Größe nach.
+  
+  b) Bestimme $x_{[2]}$ (das zweitkleinste Element) und $x_{[4]}$ (das zweitgrößte Element).
+  
+  c) Bilde die folgende Summe: $\sum_{i=2}^{4}x_i$
+  
+  d) Bilde die folgende Summe: $\sum_{i=2}^{4}x_{[i]}$
+  
+  e) Bilde die Differenz aus dem größten und dem kleinsten Element.
+  
+  f) Was fällt dir bei den Summen $\sum_{i=1}^{5}x_i$ und $\sum_{i=1}^{5}x_{[i]}$ auf, wenn du sie berechnest? Erkläre das Ergebnis!
+
+solution: |
+  a) Die geordnete Liste lautet: $x_{[1]} = 18$, $x_{[2]} = 20$, $x_{[3]} = 32$, $x_{[4]} = 45$, $x_{[5]} = 60$.
+  
+  b) $x_{[2]} = 20$ (zweitkleinstes Element) und $x_{[4]} = 45$ (zweitgrößtes Element).
+  
+  c) $\sum_{i=2}^{4}x_i = x_2 + x_3 + x_4 = 20 + 18 + 60 = 98$
+  
+  d) $\sum_{i=2}^{4}x_{[i]} = x_{[2]} + x_{[3]} + x_{[4]} = 20 + 32 + 45 = 97$
+  
+  e) Differenz aus dem größten und dem kleinsten Element: $x_{[5]} - x_{[1]} = 60 - 18 = 42$
+  
+  f) Die Summen $\sum_{i=1}^{5}x_i$ und $\sum_{i=1}^{5}x_{[i]}$ sind gleich, da beide die gleiche Menge von Elementen enthalten, nur in unterschiedlicher Reihenfolge.
