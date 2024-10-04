@@ -36,21 +36,10 @@ theme:
   name: material
   logo: logo.png
   palette:
-    primary: 'amber'
-    accent: 'light blue'
+    primary: 'grey'
+    accent: 'deep orange'
   features:
     - navigation.footer
-
-extra:
-  social:
-    - icon: fontawesome/solid/k
-      link: https://www.kununu.com/de/qualidy
-    - icon: fontawesome/brands/linkedin
-      link: https://de.linkedin.com/company/qualidy
-    - icon: material/google
-      link: https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF
-    - icon: fontawesome/solid/globe
-      link: https://qualidy.de
 
 nav:
   - index.md
