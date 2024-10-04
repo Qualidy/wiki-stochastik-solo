@@ -60,5 +60,57 @@ $$ SSE = 2+2+8 = 12 $$
 
 SSC und SSE müssen wir nun durch ihre entsprechenden Freiheitsgrade teilen, um zum MSC (mean sum of squares (columns)) und zum MSE (mean sum of squares (errors)) zu gelangen, mit denen wir das sogenannte "f-ratio" berechnen können.
 
-Die Freiheitsgerade 
+Der Freiheitsgrad $v_1$ des SSC berechnet sich durch die Spaltenanzahl (Anzahl der Gruppen) minus $1$.
+
+$$ v_1 = Spaltenanzahl - 1 $$
+
+Den MSC berechnen wir dann indem wir SSC durch $v_1$ teilen.
+
+$$ MSC = \frac{SSC}{v_1} $$
+
+Der Freiheitsgrad $v_2$ des SSE berechnet sich durch Anzahl aller Datenpunkte minus die Anzahl der Spalten.
+
+$$ v_2 = Anzahl\ Datenpunkte - Anzahl\ Spalten $$
+
+$$ MSE = \frac{SSE}{v_2} $$
+
+Das f-ration erhalten wir dann einfach, indem wir den MSC durch den MSE teilen.
+
+$$ f = \frac{MSC}{MSE} $$
+
+Auf Beispiel bezogen erhalten wir dann folgende Werte:
+
+$$ MSC = \frac{6}{3-1} = 3 $$
+
+$$ MSE = \frac{12}{9-3} = 2 $$
+
+$$ f = \frac{3}{2} $$
+
+Um das f-ratio zu beurteilen, gibt es eine sogenannte F-Verteilung. Diese Verteilung gucken wir uns im folgenden Kapitel genauer an. An dieser Stelle sei schon einmal gesagt, dass man aus der F-Verteilung einen kritischen Wert bekommt, der ähnlich wie das Signifikanzniveau ist. Wenn jetzt unser berechnetes f-ratio größer als dieser kritische Wert ist, dann lehnen wir die Nullhypothese ab. Ist das f-ratio kleiner als der kritische Wert, dann nehmen wir weiterhin die Nullhypothese als wahr an.
+
+## F-Verteilung
+
+Die F-Verteilung ist eine Wahrscheinlichkeitsverteilung, die in der Statistik hauptsächlich im Zusammenhang mit dem F-Test verwendet wird. Sie wird benutzt, um zu bestimmen, ob zwei Datensätze unterschiedliche Streuungen (Varianzen) aufweisen, und ist besonders wichtig bei Verfahren wie der ANOVA.
+
+![F-Verteilung](../pictures/F-Bereiche.png)
+
+Zentral bei der F-Verteilung ist der sogenannte kritische Wert (im Bild die gestrichelte Linie). Dieser kritische Wert wird mit dem f-ratio verglichen. Überschreitet das f-ratio den kritischen Wert, dann ist die Chance, dass das passiert unterhalb des gewählten Signifikanzniveaus. Das wäre als ein Grund die Nullhypothese abzulehnen.
+
+$$ f-ratio < kritischer\ Wert \Rightarrow keine\ Signifikanz, keine\ Verwerfung\ von\ H_0 $$
+
+$$ f-ratio > kritischer\ Wert \Rightarrow Signifikanz, Verwerfung\ von\ H_0 $$
+
+Die Werte für die F-Verteilung können wir aus Tabellen ablesen. 
+
+![](../pictures/f.05.png)
+
+Man sucht nach dem Schnittpunkt der beiden Freiheitsgrade in der Tabelle des gewählten Signifikanzniveaus und liest dort den kritischen Wert ab. Bei großen Freiheitsgraden ist es ausreichend, auf den nächstliegenden Freiheitsgrad zu runden.
+
+
+## zweifaktorielle ANOVA
+
+Das zweifaktorielle ANOVA (two-way ANOVA) ist ein statistisches Verfahren, das verwendet wird, um den Einfluss von zwei unabhängigen Faktoren auf eine abhängige Variable zu untersuchen. Im Gegensatz zum einfaktoriellen ANOVA, die nur einen Faktor betrachtet, kann das zweifaktorielle ANOVA auch testen, ob es eine Wechselwirkung (Interaktion) zwischen den beiden Faktoren gibt.
+
+_Beispiel_  
+_Angenommen, du möchtest testen, wie verschiedene Trainingsprogramme (Faktor 1) und die Tageszeit (Faktor 2) den Kalorienverbrauch beeinflussen. Die Two-Way ANOVA kann herausfinden, ob das Trainingsprogramm, die Tageszeit oder eine Kombination aus beiden einen Einfluss hat._
 
