@@ -1,0 +1,12 @@
+title: "Prüfung von Elementen in Mengen"
+question: |
+  Gegeben ist die Menge $A = \{1, 2, 3, 4, 5\}$.
+
+  a) Ist $3 \in A$?
+  
+  b) Ist $6 \in A$?
+
+solution: |
+  a) Ja, $3 \in A$, da 3 in der Menge $A$ enthalten ist.
+  
+  b) Nein, $6 \notin A$, da 6 nicht in der Menge $A$ enthalten ist.

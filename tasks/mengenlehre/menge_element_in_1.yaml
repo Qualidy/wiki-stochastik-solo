@@ -1,0 +1,32 @@
+title: Prüfung der Zugehörigkeit
+question: |
+  Füllen Sie die folgenden Lücken mit $\in$- oder $\notin$-Zeichen.
+
+  a) $7 \text{ ___ } \mathbb{N}$
+  
+  b) $-3 \text{ ___ } \mathbb{N}$
+  
+  c) $0 \text{ ___ } \mathbb{Z}$
+  
+  d) $\frac{1}{3} \text{ ___ } \mathbb{Q}$
+  
+  e) $\sqrt{2} \text{ ___ } \mathbb{Q}$
+  
+  f) $5.5 \text{ ___ } \mathbb{Z}$
+  
+  g) $3.14159 \text{ ___ } \mathbb{R}$
+
+solution: |
+  a) $7 \in \mathbb{N}$ ($7$ ist eine natürliche Zahl)
+  
+  b) $-3 \notin \mathbb{N}$ ($-3$ ist keine natürliche Zahl)
+  
+  c) $0 \in \mathbb{Z}$ ($0$ ist eine ganze Zahl)
+  
+  d) $\frac{1}{3} \in \mathbb{Q}$ ($\frac{1}{3}$ ist eine rationale Zahl)
+  
+  e) $\sqrt{2} \notin \mathbb{Q}$ ($\sqrt{2}$ ist keine rationale Zahl)
+  
+  f) $5.5 \notin \mathbb{Z}$ ($5.5$ ist keine ganze Zahl)
+  
+  g) $3.14159 \in \mathbb{R}$ ($3.14159$ ist eine reelle Zahl)

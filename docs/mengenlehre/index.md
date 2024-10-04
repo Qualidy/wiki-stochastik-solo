@@ -20,3 +20,20 @@ und warum sie für uns nützlich sind.
 | $\mathbb{R}$ | Reelle Zahlen     | Alle Zahlen auf der kontinuierlichen Zahlengeraden, einschließlich rationaler und irrationaler Zahlen | Kommazahlen ohne Regelmäßigkeiten: $\sqrt{2}; \pi; 1,41421356237;\cdots$                                               |
 
 {{ task(file="tasks/mengenlehre/mengenzugehörigkeit.yaml") }}
+
+## Das $\in$-Zeichen
+
+Um anzuzeigen, dass ein Element in einer Menge enthalten ist, nutzen wir das $\in$-Zeichen.
+Wenn ein Element nicht in einer Menge enthalten ist, nutzen wir das $\notin$-Zeichen
+
+_Beispiel_
+
+$$
+5\in \mathbb{N},
+$$
+
+$$
+\frac{5}{3}\notin \mathbb{N}
+$$
+
+{{ task(file="tasks/mengenlehre/menge_element_in_1.yaml") }}

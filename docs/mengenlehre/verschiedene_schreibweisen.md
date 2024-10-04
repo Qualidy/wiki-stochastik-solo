@@ -21,6 +21,8 @@ C &= \{1, \dots, 49\}
 \end{align*}
 $$
 
+{{ task(file="tasks/mengenlehre/aufzaehlende_schreibweise_1.yaml") }}
+
 ## Beschreibende Schreibweise
 In der beschreibenden Schreibweise wird zunächst eine Variable aus einer bekannten Menge eingeführt. Nach dem Trennstrich in der Mitte wird die Menge durch die Variable präziser eingegrenzt. Mehrere Eingrenzungen werden mit dem logischen “und” bzw. “oder” verknüpft.
 

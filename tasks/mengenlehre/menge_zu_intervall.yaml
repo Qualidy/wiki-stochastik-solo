@@ -9,6 +9,7 @@ question: |
   c) $\{x∈\mathbb{R}:\frac{x}{3} ≤ 12\}$
 
   d) $\{x∈\mathbb{R}:x ≤ 12 \text{ und } x > 25\}$
+tip: Es ist Egal, $:$ oder $|$ nutzt. Also $\{x∈\mathbb{R} :x ≤ 12\} = $\{x∈\mathbb{R} | x ≤ 12\}$$
 solution: |
   a) $(-\infty , 12]$
 

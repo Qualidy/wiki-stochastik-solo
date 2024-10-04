@@ -1,0 +1,37 @@
+title: "Mengenoperationen und Venn-Diagramm"
+question: |
+  Gegeben seien die Mengen:
+  
+  - $A = \{1, 2, 3\}$
+  - $B = \{4, 5, 6\}$
+  - $C = \{1, 2, 6\}$
+
+  Führe die folgenden Mengenoperationen durch und gib ein aufzählendes Ergebnis an:
+  
+  a) $A \cup B$
+  
+  b) $B \cap C$
+  
+  c) $A \cap B$
+  
+  d) $A \setminus C$
+  
+  e) $A \setminus B$
+  
+  f) $C \setminus A$
+  
+  g) Ermittle einen mengentheoretischen Ausdruck mit Hilfe der Mengen $A$, $B$ und $C$ für die Menge $D = \{1, 2\}$.
+solution: |
+  a) $A \cup B = \{1, 2, 3, 4, 5, 6\}$
+  
+  b) $B \cap C = \{6\}$
+  
+  c) $A \cap B = \emptyset$ (leere Menge)
+  
+  d) $A \setminus C = \{3\}$
+  
+  e) $A \setminus B = \{1, 2, 3\}$
+  
+  f) $C \setminus A = \{6\}$
+  
+  g) $D = A \cap C = \{1, 2\}$

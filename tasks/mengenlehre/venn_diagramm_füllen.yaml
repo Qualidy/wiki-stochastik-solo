@@ -1,0 +1,13 @@
+title: "Venn-Diagramm füllen"
+question: |
+  Gegeben seien die mengentheoretsichen Ausdrücke:
+  
+  a) $(A \cap C ) \setminus B$
+  
+  b) $(A \cup B ) \setminus C$
+  
+  c) $(A \cup C ) \cap (B \cup C)$
+  
+  ![3 leere Venn-Diagramme](/pictures/empty_venn_3.png)
+solution: |
+  ![Lösung der Aufgabe](/pictures/venn_solution_1.png)

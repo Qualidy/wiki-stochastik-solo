@@ -1,0 +1,11 @@
+title: "Venn-Diagramm lesen"
+question: |
+  Gib zu den folgendne Venn-Diagrammen einen Mengentheoretischen Ausdruck an:
+  
+  ![3 leere Venn-Diagramme](/pictures/venn_aufgabe.png)
+solution: |
+  a) $B \setminus (A \cup C)$
+  
+  b) $(A \setminus C) \cup (C \setminus (A\cup B))$
+  
+  c) $(B \cup C) \setminus (A \setminus C)$

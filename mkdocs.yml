@@ -57,6 +57,7 @@ nav:
   - Mengenlehre:
     - Grundlagen: mengenlehre/index.md
     - Verschiedene Schreibweisen: mengenlehre/verschiedene_schreibweisen.md
+    - Mengenoperationen: mengenlehre/mengenoperationen.md
   - Lineare Funktionen:
     - Grundlagen: lineare_funktionen/index.md
     - Summenzeichen: lineare_funktionen/summenzeichen.md
