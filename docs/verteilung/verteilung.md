@@ -90,11 +90,11 @@ _Beispiel_
 
 In diesem Beispiel sind normalverteilte Daten in mehreren Histogrammen dargestellt.
 
-![Histogramme](/pictures/hist1.png)
+![Histogramme](../pictures/hist1.png)
 
 Diese Daten können jeden beliebigen Kommawert annehmen. Um sie in einem Histogramm darzustellen, müssen die Daten in Gruppen zusammengefasst werden. Im Ersten Histogramm wurden 5 Gruppen gebildet. Der mittlere Balken beinhaltet also alle Werte, die in die Gruppe 11-12,5 fallen. Das wären in diesem Fall 17.500 Datenpunkte. Man kann diese Gruppen aber auch schmaler machen, um ein schärferes Bild zu bekommen. Je schmaler die Balken werden, desto mehr nähert man sich der Dichtefunktion der Normalverteilung an.
 
-![Histogramme mit Normalverteilung](/pictures/hist2.png)
+![Histogramme mit Normalverteilung](../pictures/hist2.png)
 
 Die Balken sind sehr anschaulich, haben aber den Nachteil, dass man bei der Beurteilung der Daten an die gegebene Gruppierung gebunden ist. Die Dichtefunktion der Normalverteilung ist schwieriger zu lesen, bietet aber die Möglichkeit, jede beliebige Gruppierung zu berechnen.  
 
@@ -113,7 +113,7 @@ Eigenschaften der Normalverteilung:
   
 Die Normalverteilung hilft, viele natürliche Phänomene zu modellieren und Wahrscheinlichkeiten zu berechnen.
 
-![Normalverteilung](/pictures/normalverteilung.png)
+![Normalverteilung](../pictures/normalverteilung.png)
 
 $$ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} $$
 
@@ -166,7 +166,7 @@ Der Datenpunkt x mit dem z-Wert 1,4 hat also einen Abstand von 7 zum Mittelwert 
 Mithilfe dieses z-Wertes und der dazugehörigen Tabelle, können wir nun bestimmen wie viel Prozent der Menschen kleiner als 180cm sind. 
 
 
-![Tabelle](/pictures/z-Werte.jpg)
+![Tabelle](../pictures/z-Werte.jpg)
 
 Für unseren z-Wert lässt sich also 0,9192 ablesen, was ungefähr 92% entspricht. Damit wissen wir nun, dass 92% kleiner als 180cm sind.
 
