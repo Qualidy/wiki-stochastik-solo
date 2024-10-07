@@ -799,7 +799,6 @@
 <th>Messbare Eigenschaften</th>
 <th>Beispiel</th>
 <th>Lageparameter</th>
-<th>Frage</th>
 </tr>
 </thead>
 <tbody>
@@ -809,7 +808,6 @@
 <td>Häufigkeit</td>
 <td>Farben, Parteien</td>
 <td>Modus</td>
-<td>alles ist nominal</td>
 </tr>
 <tr>
 <td>Ordinalskala</td>
@@ -817,7 +815,6 @@
 <td>Häufigkeit, Rangfolge</td>
 <td>Schulnoten</td>
 <td>Modus, Median</td>
-<td>Gibt es eine Rangfolge?</td>
 </tr>
 <tr>
 <td>Intervallskala</td>
@@ -825,7 +822,6 @@
 <td>Häufigkeit, Rangfolge, Abstand</td>
 <td>Temperatur in Celsius</td>
 <td>Modus, Median, Arithmetische Mittel</td>
-<td>Kann ich zwei Datenpunkte addieren/subtrahieren und bekomme einen neuen Datenpunkt?</td>
 </tr>
 <tr>
 <td>Verhältnisskala</td>
@@ -833,10 +829,24 @@
 <td>Häufigkeit, Rangfolge, Abstand, natürlicher Nullpuntk</td>
 <td>Alter, Temperatur in Kelvin</td>
 <td>Modus, Median, Arithmetische Mittel</td>
-<td>Führt verdoppeln immer zu mehr?</td>
 </tr>
 </tbody>
 </table>
+<pre class="mermaid"><code>graph TD
+
+    S["Neue Datenskala S liegt vor"] --immer--&gt;
+    N(["S ist nominalskalliert✅"]) --stelle Frage--&gt;
+    OF["Haben die Daten eine Ordnung?"] --Ja--&gt;
+    O(["S ist auch ordnialskalliert✅"]) --stelle Frage--&gt;
+    IF["Kann man zwei Datenpunkte sinnvoll addieren und erhält einen neuen Datenpunkt?"]--Ja--&gt;
+    I(["S ist auch intervallskalliert✅"]) --stelle Frage--&gt;
+    VF["Kann jeder Datenpunkt sinnvoll halbiert/verdoppelt werden? Oder: führt verdoppeln immer zu mehr?"] --Ja--&gt;
+    V(["S ist auch verhältnisskalliert✅"]) --&gt; 
+    F["Fertig"]
+
+    OF--Nein--&gt;F
+    IF--Nein--&gt;F
+    VF--Nein--&gt;F</code></pre>
 <div class="admonition question">
 <p class="admonition-title">Skalenniveaus bestimmen</p>
 <p>Ein Unternehmen hat eine Umfrage zu verschiedenen Eigenschaften von Produkten durchgeführt. Bestimme für jedes der folgenden Merkmale das richtige Skalenniveau.  </p>
