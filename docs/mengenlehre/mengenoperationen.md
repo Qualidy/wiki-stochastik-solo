@@ -39,8 +39,4 @@ Es können nun folgende Mengenoperationen durchgeführt werden.
 
 {{ task(file="tasks/mengenlehre/mengenoperationen_1.yaml") }}
 
-{{ task(file="tasks/mengenlehre/venn_diagramm_füllen.yaml") }}
-
-{{ task(file="tasks/mengenlehre/venn_diagramm_lesen.yaml") }}
-
 [weiterer Aufgaben :fontawesome-solid-file-pdf:](Aufgaben_Mengenlehre_1.pdf){ .md-button .md-button--primary }
