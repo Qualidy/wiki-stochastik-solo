@@ -2,6 +2,9 @@ site_name: Statistik Schulung
 
 nav:
   - index.md
+  - Deskriptive Statistik:
+      - Einleitung: content/deskriptive_statistik/index.md
+      - Merkmal: content/deskriptive_statistik/merkmal.md
   - old_content:
     - Mengenlehre:
       - Grundlagen: old_content/mengenlehre/index.md
