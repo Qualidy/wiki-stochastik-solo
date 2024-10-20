@@ -12,7 +12,7 @@ $$
 
 Hier siehst du die einzelnen Bestandteile des Summenzeichens:
 
-![Summenzeichen mit Erklärung](../pictures/summenzeichen_erklärung.png)
+![Summenzeichen mit Erklärung](../../pictures/summenzeichen_erklärung.png)
 
 Start und Endwert müssen ganze Zahlen sein. Wenn der Startwert größer als der Endwert ist,
 ist der Summenwert $0$.

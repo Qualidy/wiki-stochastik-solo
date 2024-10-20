@@ -92,7 +92,7 @@ Um das f-ratio zu beurteilen, gibt es eine sogenannte F-Verteilung. Diese Vertei
 
 Die F-Verteilung ist eine Wahrscheinlichkeitsverteilung, die in der Statistik hauptsächlich im Zusammenhang mit dem F-Test verwendet wird. Sie wird benutzt, um zu bestimmen, ob zwei Datensätze unterschiedliche Streuungen (Varianzen) aufweisen, und ist besonders wichtig bei Verfahren wie der ANOVA.
 
-![F-Verteilung](../pictures/F-Bereiche.png)
+![F-Verteilung](../../pictures/F-Bereiche.png)
 
 Zentral bei der F-Verteilung ist der sogenannte kritische Wert (im Bild die gestrichelte Linie). Dieser kritische Wert wird mit dem f-ratio verglichen. Überschreitet das f-ratio den kritischen Wert, dann ist die Chance, dass das passiert unterhalb des gewählten Signifikanzniveaus. Das wäre als ein Grund die Nullhypothese abzulehnen.
 
@@ -102,7 +102,7 @@ $$ f-ratio > kritischer\ Wert \Rightarrow Signifikanz, Verwerfung\ von\ H_0 $$
 
 Die Werte für die F-Verteilung können wir aus Tabellen ablesen. 
 
-![](../pictures/f.05.png)
+![](../../pictures/f.05.png)
 
 Man sucht nach dem Schnittpunkt der beiden Freiheitsgrade in der Tabelle des gewählten Signifikanzniveaus und liest dort den kritischen Wert ab. Bei großen Freiheitsgraden ist es ausreichend, auf den nächstliegenden Freiheitsgrad zu runden.
 

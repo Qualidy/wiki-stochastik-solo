@@ -35,7 +35,7 @@ $$
 
 ## Geordnete Indizierung
 
-![](../pictures/geordnete_indizierung.svg)
+![](../../pictures/geordnete_indizierung.svg)
 
 Wenn wir eine Menge von Daten haben, dann hat der normale Index keine Aussagekraft,
 außer vielleicht die Reihenfolge, in der die Daten eingetragen wurden.

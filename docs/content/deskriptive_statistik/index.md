@@ -13,7 +13,7 @@ und ermöglicht es präzise mit Kollegen über diese zu sprechen und so fundiert
 
 ## Merkmale, Merkmalsträger und Merkmalsausprägungen
 
-![Merkmale, ihre Träger und Ausprägungen](../pictures/merkmalsträger_usw.svg)
+![Merkmale, ihre Träger und Ausprägungen](../../pictures/merkmalsträger_usw.svg)
 
 Es ist nützlich sich auf bestimmte Vokabeln zu einigen, damit wir präzise über die Daten sprechen
 können, mit denen wir arbeiten.

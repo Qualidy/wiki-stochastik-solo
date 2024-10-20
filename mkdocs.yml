@@ -1,65 +1,106 @@
 site_name: Statistik Schulung
 
+nav:
+  - index.md
+  - old_content:
+    - Mengenlehre:
+      - Grundlagen: old_content/mengenlehre/index.md
+      - Verschiedene Schreibweisen: old_content/mengenlehre/verschiedene_schreibweisen.md
+      - Mengenoperationen: old_content/mengenlehre/mengenoperationen.md
+    - Lineare Funktionen:
+      - Grundlagen: old_content/lineare_funktionen/index.md
+      - Summenzeichen: old_content/lineare_funktionen/summenzeichen.md
+      - Indexschreibweise: old_content/lineare_funktionen/indizes.md
+    - Deskriptive Statistik:
+      - Grundlagen: old_content/deskriptive_statistik/index.md
+      - Arithmetisches Mittel: old_content/deskriptive_statistik/mean.md
+      - Median: old_content/deskriptive_statistik/median.md
+      - Modus: old_content/deskriptive_statistik/modus.md
+      - Visualisierung: old_content/deskriptive_statistik/visualisierung_mean_mode_median.md
+      - Skalenniveaus: old_content/deskriptive_statistik/skalenniveaus.md
+    - Verteilungen: old_content/verteilung/verteilung.md
+    - Wahrscheinlichkeitstheorie: old_content/wahrscheinlichkeitstheorie/wahrscheinlichkeitstheorie.md
+    - Hypothesentest: old_content/hypothesentest/hypothesentest.md
+    - Regression: old_content/regression/regression.md
+    - Anova: old_content/anova/anova.md
+
+
 markdown_extensions:
+  - pymdownx.keys
   - admonition
   - pymdownx.details
-  - attr_list
-  - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.arithmatex:
-      generic: true
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - md_in_html
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
 
 plugins:
   - search
   - macros
 
+extra_css:
+  - stylesheets/logo.css
+  - stylesheets/grid.css
+  - stylesheets/video_admonition.css
+  - stylesheets/python_tutor_admonition.css
+  - stylesheets/mermaid.css
+
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/pytutor_button.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - javascripts/tablesort.js
+  - https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js
+  - https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js
 
-extra_css:
-  - stylesheets/style.css
-  - stylesheets/video_admonition.css
+extra:
+  social:
+    - icon: fontawesome/solid/k
+      link: https://www.kununu.com/de/qualidy
+    - icon: fontawesome/brands/linkedin
+      link: https://de.linkedin.com/company/qualidy
+    - icon: material/google
+      link: https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF
+    - icon: fontawesome/solid/globe
+      link: https://qualidy.de
+
+watch:
+  - tasks
+  - main.py
+
+copyright: Copyright &copy; 2024 Qualidy GmbH
 
 theme:
   name: material
-  logo: logo.png
   palette:
-    primary: 'grey'
-    accent: 'deep orange'
+    primary: amber
+    accent: indigo
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   features:
+    - navigation.tracking
+    - navigation.path
+    - navigation.top
     - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
 
-nav:
-  - index.md
-  - Mengenlehre:
-    - Grundlagen: mengenlehre/index.md
-    - Verschiedene Schreibweisen: mengenlehre/verschiedene_schreibweisen.md
-    - Mengenoperationen: mengenlehre/mengenoperationen.md
-  - Lineare Funktionen:
-    - Grundlagen: lineare_funktionen/index.md
-    - Summenzeichen: lineare_funktionen/summenzeichen.md
-    - Indexschreibweise: lineare_funktionen/indizes.md
-  - Deskriptive Statistik:
-    - Grundlagen: deskriptive_statistik/index.md
-    - Arithmetisches Mittel: deskriptive_statistik/mean.md
-    - Median: deskriptive_statistik/median.md
-    - Modus: deskriptive_statistik/modus.md
-    - Visualisierung: deskriptive_statistik/visualisierung_mean_mode_median.md
-    - Skalenniveaus: deskriptive_statistik/skalenniveaus.md
-  - Verteilungen: verteilung/verteilung.md
-  - Wahrscheinlichkeitstheorie: wahrscheinlichkeitstheorie/wahrscheinlichkeitstheorie.md
-  - Hypothesentest: hypothesentest/hypothesentest.md
-  - Regression: regression/regression.md
-  - Anova: anova/anova.md
+

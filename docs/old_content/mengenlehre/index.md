@@ -10,7 +10,7 @@ und warum sie für uns nützlich sind.
 
 {{ youtube_video("https://www.youtube.com/embed/USDGgFp0agA?si=SzcML2_8vsgYn13c") }}
 
-![Venn-Diagramm der Grundmengen](../pictures/grundmengen_venn_diagram.png)
+![Venn-Diagramm der Grundmengen](../../pictures/grundmengen_venn_diagram.png)
 
 | Symbol       | Name              | Bedeutung                                                                                             | Beispiele                                                                                                              |
 |--------------|-------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
