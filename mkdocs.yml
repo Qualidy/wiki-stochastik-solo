@@ -5,6 +5,9 @@ nav:
   - Deskriptive Statistik:
       - Einleitung: content/deskriptive_statistik/index.md
       - Merkmal: content/deskriptive_statistik/merkmal.md
+      - Skalenniveaus: content/deskriptive_statistik/skalenniveaus.md
+      - Modus: content/deskriptive_statistik/modus.md
+      - Median: content/deskriptive_statistik/median.md
   - old_content:
     - Mengenlehre:
       - Grundlagen: old_content/mengenlehre/index.md
@@ -62,6 +65,7 @@ extra_css:
   - stylesheets/logo.css
   - stylesheets/grid.css
   - stylesheets/video_admonition.css
+  - stylesheets/excel_admonition.css
   - stylesheets/python_tutor_admonition.css
   - stylesheets/mermaid.css
 

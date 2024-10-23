@@ -1,6 +1,10 @@
-title: Modus berechnen
+title: Modus berechnen und analysieren
 question: |
-  Berechne den Modus folgender Datensätze.
+  Berechne den Modus folgender Datensätze und beantworte die Fragen:
+
+  - Welche der folgenden Datensätze sind unimodal und welche multimodal?
+  - Was ist der Modus / sind die Modi?
+  - In welchen Fällen ist der Modus eine Kennzahl mit starker Aussagekraft und welchen nicht?
 
   a) $(2,5,12,4,5,3)$  
   
@@ -10,15 +14,17 @@ question: |
   
   d) $(0,1,0,1,0,0,0,1,1,1,0,0,1,0)$  
   
-  e) $(\text{gut, ausreichend, sehr gut, mangelhaft, gut, befriedigend, ausreichend, gut})$  
+  e) $(\text{gut, ausreichend, sehr gut, mangelhaft, gut, befriedigend, ausreichend, gut})$
 
 solution: |
-  a) $5$
+  a) $5$ (unimodal, Modus hat eine moderate Aussagekraft, da eine Häufung sichtbar ist)
   
-  b) $5$
+  b) $5$ (unimodal, Modus hat eine moderate Aussagekraft, da es eine klare Häufung gibt)
   
-  c) Orange
+  c) Orange, Blau (multimodal, Modus hat eine geringe Aussagekraft, da zwei Werte gleich häufig sind)
   
-  d) $0$
+  d) $0$ (unimodal, Modus hat eine starke Aussagekraft, da der Wert $0$ deutlich überwiegt)
   
-  e) gut
+  e) gut (unimodal, Modus hat eine moderate Aussagekraft, da "gut" am häufigsten vorkommt, aber andere Bewertungen auch häufig sind)
+  
+  f) Alle Werte sind Modi, da alle Werte gleich häufig auftauchen. (multimodal, Modus hat praktisch keine Aussagekraft)
