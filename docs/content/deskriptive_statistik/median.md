@@ -57,6 +57,94 @@ Ausreißer als der Durchschnitt (arithmetisches Mittel).
 
 {{ task(file="tasks/deskriptive_statistik/median_bestimmen.yaml") }}
 
+Mathematisch drückt man den Median wie folgt aus:
+
+Sei $x$ ein ordinal skaliertes Merkmal mit $n$ Elementen. Der Modus wird $\bar{x}_{mod}$ genannt und wird
+wie folgt berechnet:
+
+<div class="grid" markdown>
+<div markdown>
+Wenn $n$ ungerade ist:
+
+$$
+\bar{x}_{mod} = x_{[\frac{n+1}{2}]}
+$$
+</div>
+<div markdown>
+
+Wenn $n$ gerade ist:
+
+$$
+\bar{x}_{mod} = \frac{1}{2} \cdot \left( x_{[\frac{n}{2}]} + x_{[\frac{n}{2}+1]} \right)
+$$
+</div>
+</div>
+
+Schauen wir uns noch einmal die letzten beiden Beispiele an, um uns klar zu machen,
+wie man die Formel liest:
+
+<div class="grid cards" markdown>
+
+-   _Beispiel mit ungerader Anzahl an Werten_  
+    
+    ---
+    
+    Zunächst liegt der Datensatz unsortiert vor:    
+
+    | normaler Index | Kuchenverkäufe |
+    |----------------|----------------|
+    | $x_1$          | 4              |
+    | $x_2$          | 7              |
+    | $x_3$          | 2              |
+    | $x_4$          | 3              |
+    | $x_5$          | 10             |
+    
+    Nachdem man die Werte sortiert, erhält man folgende Tabelle.  
+    
+    | sortierter Index | Kuchenverkäufe | normaler_Index |
+    |------------------|----------------|----------------|
+    | $x_{[1]}$        | 2              | $x_3$          |
+    | $x_{[2]}$        | 3              | $x_4$          |
+    | $x_{[3]}$        | 4              | $x_1$          |
+    | $x_{[4]}$        | 7              | $x_2$          |
+    | $x_{[5]}$        | 10             | $x_5$          |
+
+    Wir haben $5$ Werte. **Also ist $n=5$**.
+
+    Da $5$ **ungerade** ist, kannst du diese in die Formel für ungerade $n$ einsetzen:
+
+    $$ 
+    \bar{x}_{mod} = x_{[\frac{5+1}{2}]} = x_{[\frac{6}{2}]} = x_{[3]} = x_1 = 4
+    $$
+
+-   _Beispiel mit gerader Anzahl an Werten:_
+    
+    ---
+
+    | sortierter Index | Kuchenverkäufe |
+    |------------------|----------------|
+    | $x_{[1]}$        | 2              |
+    | $x_{[2]}$        | 3              |
+    | $x_{[3]}$        | 4              |
+    | $x_{[4]}$        | 5              |
+    | $x_{[5]}$        | 7              |
+    | $x_{[6]}$        | 10             |
+    
+    In diesem Beispiel liegen $6$ Werte vor. **Also ist $n=6$**.
+
+    Da $6$ **gerade** ist, kannst du dies in die Formel für ungerade $n$ einsetzen:
+
+    $$
+    \begin{align}
+    \bar{x}_{mod} & = \frac{1}{2} \cdot \left( x_{[\frac{6}{2}]} + x_{[\frac{6}{2}+1]} \right) \\
+    & = \frac{1}{2} \cdot \left( x_{[3]} + x_{[4]} \right) \\
+    & = \frac{1}{2} \cdot \left( 4 + 5 \right) \\
+    & = 4,5
+    \end{align}
+    $$
+</div>
+
+
 !!! excel
 
     In Excel kann der Median mit der Funktion [`MEDIAN`](https://support.microsoft.com/de-de/office/median-funktion-d0916313-4753-414c-8537-ce85bdd967d2)
