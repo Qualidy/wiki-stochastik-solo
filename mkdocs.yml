@@ -8,6 +8,7 @@ nav:
       - Skalenniveaus: content/deskriptive_statistik/skalenniveaus.md
       - Modus: content/deskriptive_statistik/modus.md
       - Median: content/deskriptive_statistik/median.md
+      - Arithmetisches Mittel: content/deskriptive_statistik/mean.md
   - old_content:
     - Mengenlehre:
       - Grundlagen: old_content/mengenlehre/index.md
