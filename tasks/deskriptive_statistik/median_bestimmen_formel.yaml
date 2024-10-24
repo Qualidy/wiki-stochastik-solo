@@ -1,0 +1,31 @@
+title: Median mit Formel berechnen
+question: |
+  Bestimmen Sie erneut den Median $\bar{x}_{mod}$, aber nun unter Verwendung der mathematischen Formel: 
+  
+  a) $(8,12,5,17)$   
+
+  b) $(5,3,7,3,4,4)$  
+
+  c) $(5,3,7,3,4,42)$  
+
+  d) $(12,-17,-13,10,8)$  
+
+  e) $(-17,8,12,-13,10)$
+  
+  f) $(3, -3)$
+  
+  g) $(7)$
+solution: |
+  a) $n=4$ ist gerade. Also: $\bar{x}_{mod} = \frac{1}{2} \cdot \left( x_{[\frac{n}{2}]} + x_{[\frac{n}{2}+1]} \right) = \frac{1}{2} \cdot \left( x_{[\frac{4}{2}]} + x_{[\frac{4}{2}+1]} \right) = \frac{1}{2} \cdot \left( x_{[2]} + x_{[3]} \right) = \frac{1}{2} \cdot (8 + 12) = \frac{1}{2} \cdot 20 = 10$
+
+  b) $n=6$ ist gerade. Also: $\bar{x}_{mod} = \frac{1}{2} \cdot \left( x_{[\frac{n}{2}]} + x_{[\frac{n}{2}+1]} \right) = \frac{1}{2} \cdot \left( x_{[3]} + x_{[4]} \right) = \frac{1}{2} \cdot (4 + 4) = 4$
+
+  c) $n=6$ ist gerade. Also: $\bar{x}_{mod} = \frac{1}{2} \cdot \left( x_{[\frac{n}{2}]} + x_{[\frac{n}{2}+1]} \right) = \frac{1}{2} \cdot \left( x_{[3]} + x_{[4]} \right) = \frac{1}{2} \cdot (4 + 5) = 4.5$
+
+  d) $n=5$ ist ungerade. Also: $\bar{x}_{mod} = x_{[\frac{n+1}{2}]} = x_{[\frac{5+1}{2}]} = x_{[3]} = 8$
+
+  e) $n=5$ ist ungerade. Also: $\bar{x}_{mod} = x_{[\frac{n+1}{2}]} = x_{[\frac{5+1}{2}]} = x_{[3]} = 8$
+
+  f) $n=2$ ist gerade. Also: $\bar{x}_{mod} = \frac{1}{2} \cdot \left( x_{[\frac{n}{2}]} + x_{[\frac{n}{2}+1]} \right) = \frac{1}{2} \cdot \left( x_{[\frac{2}{2}]} + x_{[\frac{2}{2}+1]} \right) = \frac{1}{2} \cdot \left( x_{[1]} + x_{[2]} \right) = \frac{1}{2} \cdot (-3 + 3) = \frac{1}{2} \cdot 0 = 0$
+
+  g) $n=1$ ist ungerade. Also: $\bar{x}_{mod} = x_{[\frac{n+1}{2}]} = x_{[\frac{1+1}{2}]} =x_{[1]} = 7$

@@ -1,0 +1,35 @@
+title: Median unter Bedingungen berechnen
+question: |
+  TODO: DATEN ÜBERARBEITEN
+  
+  Ein Lehrer hat in drei Klassen die gleiche Klassenarbeit geschrieben. Er hat die Ergebnisse
+  in der folgenden Tabelle notiert. Er möchte nun wissen, was insgesamt der Median ist und was der Median in jeder einzelnen Klasse ist.
+  
+  | Klasse | Note |
+  |-|-|
+  | A     | 1    |
+  | A     | 2    |
+  | A     | 3    |
+  | A     | 2    |
+  | A     | 4    |
+  | A     | 5    |
+  | B     | 4    |
+  | B     | 5    |
+  | B     | 3    |
+  | B     | 4    |
+  | B     | 2    |
+  | B     | 3    |
+  | C     | 2    |
+  | C     | 1    |
+  | C     | 3    |
+  | C     | 3    |
+  | C     | 4    |
+  | C     | 5    |
+solution: |
+  Median Klasse A: $n=6$ ist gerade. Die Noten sind $(1, 2, 2, 3, 4, 5)$. Also: $\bar{x}_{mod} = \frac{1}{2} \cdot \left( x_{[3]} + x_{[4]} \right) = \frac{1}{2} \cdot (2 + 3) = 2.5$.
+  
+  Median Klasse B: $n=6$ ist gerade. Die Noten sind $(2, 3, 3, 4, 4, 5)$. Also: $\bar{x}_{mod} = \frac{1}{2} \cdot \left( x_{[3]} + x_{[4]} \right) = \frac{1}{2} \cdot (3 + 4) = 3.5$.
+  
+  Median Klasse C: $n=5$ ist ungerade. Die Noten sind $(1, 2, 3, 3, 4)$. Also: $\bar{x}_{mod} = x_{[\frac{n+1}{2}]} = x_{[3]} = 3$.
+  
+  Gesamtmedian: Die Noten aller Klassen zusammen sind $(1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5)$. Da $n=15$ ungerade ist, wird der Median berechnet als: $\bar{x}_{mod} = x_{[\frac{n+1}{2}]} = x_{[8]} = 3$.

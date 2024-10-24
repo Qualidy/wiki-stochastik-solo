@@ -101,7 +101,7 @@ wie man die Formel liest:
     
     Nachdem man die Werte sortiert, erhält man folgende Tabelle.  
     
-    | sortierter Index | Kuchenverkäufe | normaler_Index |
+    | sortierter Index | Kuchenverkäufe | normaler Index |
     |------------------|----------------|----------------|
     | $x_{[1]}$        | 2              | $x_3$          |
     | $x_{[2]}$        | 3              | $x_4$          |
@@ -114,7 +114,7 @@ wie man die Formel liest:
     Da $5$ **ungerade** ist, kannst du diese in die Formel für ungerade $n$ einsetzen:
 
     $$ 
-    \bar{x}_{mod} = x_{[\frac{5+1}{2}]} = x_{[\frac{6}{2}]} = x_{[3]} = x_1 = 4
+    \bar{x}_{mod} = x_{[\frac{n+1}{2}]} = x_{[\frac{5+1}{2}]} = x_{[\frac{6}{2}]} = x_{[3]} = x_1 = 4
     $$
 
 -   _Beispiel mit gerader Anzahl an Werten:_
@@ -132,17 +132,23 @@ wie man die Formel liest:
     
     In diesem Beispiel liegen $6$ Werte vor. **Also ist $n=6$**.
 
-    Da $6$ **gerade** ist, kannst du dies in die Formel für ungerade $n$ einsetzen:
+    Da $6$ **gerade** ist, kannst du dies in die Formel für gerade $n$ einsetzen:
 
     $$
     \begin{align}
-    \bar{x}_{mod} & = \frac{1}{2} \cdot \left( x_{[\frac{6}{2}]} + x_{[\frac{6}{2}+1]} \right) \\
+    \bar{x}_{mod} & = \frac{1}{2} \cdot \left( x_{[\frac{n}{2}]} + x_{[\frac{n}{2}+1]} \right) \\
+    & = \frac{1}{2} \cdot \left( x_{[\frac{6}{2}]} + x_{[\frac{6}{2}+1]} \right) \\
     & = \frac{1}{2} \cdot \left( x_{[3]} + x_{[4]} \right) \\
     & = \frac{1}{2} \cdot \left( 4 + 5 \right) \\
     & = 4,5
     \end{align}
     $$
 </div>
+
+{{ task(file="tasks/deskriptive_statistik/median_bestimmen_formel.yaml") }}
+
+{{ task(file="tasks/deskriptive_statistik/median_bestimmen_fallunterscheidung.yaml") }}
+
 
 
 !!! excel
