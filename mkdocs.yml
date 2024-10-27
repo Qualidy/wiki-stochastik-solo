@@ -9,6 +9,8 @@ nav:
       - Modus: content/deskriptive_statistik/modus.md
       - Median: content/deskriptive_statistik/median.md
       - Arithmetisches Mittel: content/deskriptive_statistik/mean.md
+      - Varianz und Standardabweichung: content/deskriptive_statistik/variance.md
+      - Standardabweichung interpretieren: content/deskriptive_statistik/normal_distribution_sigma.html
   - old_content:
     - Mengenlehre:
       - Grundlagen: old_content/mengenlehre/index.md

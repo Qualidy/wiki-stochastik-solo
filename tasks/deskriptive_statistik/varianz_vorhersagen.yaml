@@ -1,0 +1,16 @@
+title: Varianz schätzen
+question: |
+  Berechnen Sie für die folgenden Datensätze zunächst die Mittelwerte. Bevor Sie die Varianz berechnen
+  schätzen Sie zunächst, welcher Datensatz die größte und welcher die kleinste Varianz hat. Sortieren Sie die Datensätze ensprechen.
+  Berechnen Sie dann die Varianz und überprüfen Sie ihre Vermutung.
+  
+  $A = (1, 2, 3)$, $B = (2, 3, 4)$, $C = (2, 2, 2)$, $D = (0, 2, 4)$
+tip: $0 = \sigma^2_C < \sigma^2_A = \sigma^2_B < \sigma^2_D$
+solution: |
+  $\bar{A} = 2$, $\sigma^2_A = \frac{2}{3} = 0{,}\bar{6}$
+  
+  $\bar{B} = 3$, $\sigma^2_B = \frac{2}{3} = 0{,}\bar{6}$
+  
+  $\bar{C} = 2$, $\sigma^2_C = 0$
+  
+  $\bar{D} = 2$, $\sigma^2_D = \frac{8}{3} = 2{,}\bar{6}$

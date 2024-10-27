@@ -1,0 +1,31 @@
+title: Varianz und Standardabweichung berechnen
+question: |
+  Berechnen Sie (wenn möglich) die Varianz $\sigma^2$ und die Standardabweichung $\sigma$ in den folgenden Fällen: 
+  
+  a) $(8,12,5,17)$   
+
+  b) $(5,3,7,3,4,4)$  
+
+  c) $(5,3,7,3,4,42)$  
+
+  d) $(12,-17,-13,10,8)$  
+
+  e) $(-17,8,12,-13,10)$
+  
+  f) $(7, 9)$
+  
+  g) $(3)$
+  
+  h) $(1, 1, 1)$
+tip: In der Aufgabe _Arithmetisches Mittel berechnen_ wurden für fast alle diese Beispiele bereits das Arithmetische Mittel berechnet. Es kann hier also genutzt werden.
+solution: |
+  | Dataset | Varianz           | Standard Abweichung  |
+  |---------|-------------------|----------------------|
+  | a       | $20.25$           | $4.50$               |
+  | b       | $1.8889$          | $1.3744$             |
+  | c       | $198.2222$        | $14.0791$            |
+  | d       | $153.2$           | $12.3774$            |
+  | e       | $153.2$           | $12.3774$            |
+  | f       | $1.0$             | $1.0$                |
+  | g       | nicht berechenbar | nicht berechenbar    |
+  | h       | $0.0$             | $0.0$                |
