@@ -4,12 +4,12 @@ Das Skalenniveau beschreibt, auf welche Weise Daten gemessen und klassifiziert w
 Es gibt vier Haupttypen von Skalenniveaus, die bestimmen, welche mathematischen Operationen 
 und statistischen Analysen auf den Daten möglich sind:
 
-| Skalenniveau    | Operationen                  | Messbare Eigenschaften                                | Beispiel                    | Lageparameter                        |
-|-----------------|------------------------------|-------------------------------------------------------|-----------------------------|--------------------------------------|
-| Nominalskala    | $=,\neq$                     | Häufigkeit                                            | Farben, Parteien            | Modus                                |
-| Ordinalskala    | $=,\neq,<,>$                 | Häufigkeit, Rangfolge                                 | Schulnoten                  | Modus, Median                        |
-| Intervallskala  | $=,\neq,<,>,+,-$             | Häufigkeit, Rangfolge, Abstand                        | Temperatur in Celsius       | Modus, Median, Arithmetische Mittel  |
-| Verhältnisskala | $=,\neq,<,>,+,-,\times,\div$ | Häufigkeit, Rangfolge, Abstand, natürlicher Nullpuntk | Alter, Temperatur in Kelvin | Modus, Median, Arithmetische Mittel  |
+| Skalenniveau    | Operationen                  | Messbare Eigenschaften                                | Beispiel                    |
+|-----------------|------------------------------|-------------------------------------------------------|-----------------------------|
+| Nominalskala    | $=,\neq$                     | Häufigkeit                                            | Farben, Parteien            |
+| Ordinalskala    | $=,\neq,<,>$                 | Häufigkeit, Rangfolge                                 | Schulnoten                  |
+| Intervallskala  | $=,\neq,<,>,+,-$             | Häufigkeit, Rangfolge, Abstand                        | Temperatur in Celsius       |
+| Verhältnisskala | $=,\neq,<,>,+,-,\times,\div$ | Häufigkeit, Rangfolge, Abstand, natürlicher Nullpuntk | Alter, Temperatur in Kelvin |
 
 ``` mermaid
 graph TD

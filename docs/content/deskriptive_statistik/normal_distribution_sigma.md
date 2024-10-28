@@ -42,7 +42,7 @@
     <div class="controls">
         <div class="slider-container">
             <label for="sigma-slider">Standardabweichungen (σ): </label>
-            <input type="range" id="sigma-slider" min="0" max="4" step="0.1" value="1">
+            <input type="range" id="sigma-slider" min="0" max="4" step="0.25" value="1">
             <span id="sigma-value">1.0</span>
         </div>
     </div>
@@ -146,7 +146,7 @@ const sigmaValue = document.getElementById("sigma-value");
 
 slider.addEventListener("input", function() {
     const value = parseFloat(this.value);
-    sigmaValue.textContent = value.toFixed(1);
+    sigmaValue.textContent = value.toFixed(2);
     updateGraph(value);
 });
 

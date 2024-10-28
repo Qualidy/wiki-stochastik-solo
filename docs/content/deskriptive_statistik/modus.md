@@ -8,9 +8,10 @@ Der Modus ist besonders nützlich bei kategorialen Daten, also Daten,
 die in Gruppen eingeteilt sind, wie z. B. die beliebteste Farbe in einer Umfrage.  
 
 
-<div class="grid cards" markdown>
+<div class="grid" markdown>
 
-- _Beispiel Multimodal:_
+<div markdown>
+!!! beispiel "Beispiel Multimodal"
     
     6 Personen wurden gefragt, welche Automarke sie fahren.
     
@@ -27,23 +28,26 @@ die in Gruppen eingeteilt sind, wie z. B. die beliebteste Farbe in einer Umfrage
     
     Wenn ein Datensatz, so wie dieser mehrere Modi hat, nennt man ihn **multimodal**. 
 
-- _Beispiel Unimodal:_
+</div>
+<div markdown>
+!!! beispiel "Beispiel Unimodal"
     
     Den Modus kann man auch von normalen Zahlen bestimmen.
     
     | Schulnote |
     |-----------|
-    | 4         |
-    | 1         |
-    | 3         |
-    | 5         |
-    | 2         |
-    | 1         |
+    | $4$       |
+    | $1$       |
+    | $3$       |
+    | $5$       |
+    | $2$       |
+    | $1$       |
     
-    In diesem Fall ist der Modus nur "1".
+    In diesem Fall ist der Modus nur $1$.
     
     Wenn ein Datensatz, so wie dieser, nur einen Modus hat, so nennt man ihn **unimodal**. 
 
+</div>
 </div>
 
 

@@ -10,7 +10,7 @@ nav:
       - Median: content/deskriptive_statistik/median.md
       - Arithmetisches Mittel: content/deskriptive_statistik/mean.md
       - Varianz und Standardabweichung: content/deskriptive_statistik/variance.md
-      - Standardabweichung interpretieren: content/deskriptive_statistik/normal_distribution_sigma.html
+      - Standardabweichung interpretieren: content/deskriptive_statistik/normal_distribution_sigma.md
   - old_content:
     - Mengenlehre:
       - Grundlagen: old_content/mengenlehre/index.md
@@ -69,6 +69,8 @@ extra_css:
   - stylesheets/grid.css
   - stylesheets/video_admonition.css
   - stylesheets/excel_admonition.css
+  - stylesheets/beispiel_admonition.css
+  - stylesheets/formel_admonition.css
   - stylesheets/python_tutor_admonition.css
   - stylesheets/mermaid.css
 

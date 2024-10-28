@@ -1,6 +1,6 @@
 # Deskriptive Statistik
 
-Ziel der deskriptiven Statistik ist es, eine große Menge von Daten, mit möglichst wenigen Kennzahlen
+Ziel der deskriptiven Statistik ist es, eine große Menge von Daten, mit möglichst wenigen **Kennzahlen**
 aussagekräftig zu beschreiben.
 
 Wir werden dazu verschieden Maßzahlen kennenlerne, mit denen wir uns ein Vokabular aufbauen.

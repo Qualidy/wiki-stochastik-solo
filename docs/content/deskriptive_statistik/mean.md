@@ -10,11 +10,18 @@ kann aber durch extreme Ausreißer beeinflusst werden.
 
 $$ \frac{\text{Summe der Werte}}{\text{Anzahl der Werte}} = \text{Arithmetisches Mittel} $$
 
-<div class="grid cards" markdown>
+!!! formel
 
-- _Beispiel_
+    $$ \bar{x} = \frac{1}{n} \sum_{i=1}^n x_i = \frac{1}{n}(x_1 + x_2 + \cdots + x_{n-1} + x_n)$$
     
-    ---
+    - $\bar{x}$ ist das arithmetische Mittel,
+    - $n$ ist die Anzahl der Elemente,
+    - $x_i$ beschreibt ein einzelnes Element (also $x_1$ das erste, $x_2$ das zweite, $x_n$ das letzte, $x_{n-1}$ das zweitletzte usw.),
+    - $i$ ist ein Index, welcher die Elemente durchnummeriert,
+    - $\sum_{i=1}^n$ ist das Summenzeichen, mit dem vom Startwert $i$ bis zum Endwert $n$ alle Elemente aufsummiert werden.
+
+
+???+ beispiel
 
     Ein Bäcker hat in folgender Tabelle notiert, wie viele Kuchen er in der letzten Woche verkauft hat.
     
@@ -40,21 +47,6 @@ $$ \frac{\text{Summe der Werte}}{\text{Anzahl der Werte}} = \text{Arithmetisches
 
     Das arithmetische Mittel dieses Datensatzes ist also $5{,}2$. 
     Mit anderen Worten verkauft der Bäcker pro Tag durchschnittlich $5{,}2$ Kuchen.
-    
-    
--   _Mathematische Schreibweise_
-    
-    ---
-
-    $$ \bar{x} = \frac{1}{n} \sum_{i=1}^n x_i = \frac{1}{n}(x_1 + x_2 + \cdots + x_{n-1} + x_n)$$
-    
-    - $\bar{x}$ ist das arithmetische Mittel,
-      - $n$ ist die Anzahl der Elemente,
-      - $x_i$ beschreibt ein einzelnes Element (also $x_1$ das erste, $x_2$ das zweite, $x_n$ das letzte, $x_{n-1}$ das zweitletzte usw.),
-      - $i$ ist ein Index, welcher die Elemente durchnummeriert,
-      - $\sum_{i=1}^n$ ist das Summenzeichen, mit dem vom Startwert $i$ bis zum Endwert $n$ alle Elemente aufsummiert werden.
-
-</div>
 
 {{ task(file="tasks/deskriptive_statistik/mean_bestimmen.yaml") }}
 

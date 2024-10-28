@@ -17,7 +17,7 @@ können, mit denen wir arbeiten.
     * Der Mensch ist der Merkmalsträger der Merkmale "Haarfarbe", "Alter" und "T-Shirt Größe" (und natürlich noch vieler weiterer).
 
   
-!!! info "Vokabeln"
+!!! formel "Vokabeln"
 
     Die interessante Eigenschaft ist das **Merkmal**.
     
