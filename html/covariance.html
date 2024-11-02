@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covariance Visualizer</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        #canvas-container, #table-container {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        #canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+        }
+        .tooltip {
+            position: absolute;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 5px;
+            visibility: hidden;
+            pointer-events: none;
+            font-size: 12px;
+        }
+        #controls {
+            margin: 10px 0;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Covariance Visualizer</h1>
+    <div id="controls">
+        <input type="checkbox" id="avgX" checked> Show Average X<br>
+        <input type="checkbox" id="avgY" checked> Show Average Y<br>
+        <input type="checkbox" id="errorRects"> Show Error Rectangles<br>
+        <input type="checkbox" id="showCovariance"> Show Covariance<br>
+    </div>
+    <div id="container" class="grid">
+        <div id="canvas-container">
+            <canvas id="canvas" width="800" height="600"></canvas>
+            <div class="tooltip" id="tooltip"></div>
+        </div>
+        <div id="table-container">
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>x</th>
+                        <th>y</th>
+                        <th>x - x̄</th>
+                        <th>y - ȳ</th>
+                        <th>(x - x̄) * (y - ȳ)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const tooltip = document.getElementById('tooltip');
+        const points = [];
+
+        let avgX = true;
+        let avgY = true;
+        let showErrorRects = false;
+        let showCovariance = false;
+
+        document.getElementById('avgX').addEventListener('change', function () {
+            avgX = this.checked;
+            draw();
+        });
+        document.getElementById('avgY').addEventListener('change', function () {
+            avgY = this.checked;
+            draw();
+        });
+        document.getElementById('errorRects').addEventListener('change', function () {
+            showErrorRects = this.checked;
+            draw();
+        });
+        document.getElementById('showCovariance').addEventListener('change', function () {
+            showCovariance = this.checked;
+            draw();
+        });
+
+        canvas.addEventListener('mousedown', function (e) {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const point = points.find(p => Math.abs(p.x - x) < 5 && Math.abs(p.y - y) < 5);
+            if (point) {
+                const moveHandler = function (e) {
+                    point.x = e.clientX - rect.left;
+                    point.y = e.clientY - rect.top;
+                    draw();
+                };
+                const upHandler = function () {
+                    canvas.removeEventListener('mousemove', moveHandler);
+                    canvas.removeEventListener('mouseup', upHandler);
+                };
+                canvas.addEventListener('mousemove', moveHandler);
+                canvas.addEventListener('mouseup', upHandler);
+            }
+        });
+
+        canvas.addEventListener('click', function (e) {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            if (!points.some(p => Math.abs(p.x - x) < 5 && Math.abs(p.y - y) < 5)) {
+                points.push({ x, y });
+                draw();
+            }
+        });
+
+        canvas.addEventListener('mousemove', function (e) {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const point = points.find(p => Math.abs(p.x - x) < 5 && Math.abs(p.y - y) < 5);
+            if (point) {
+                tooltip.style.left = `${e.clientX + 10}px`;
+                tooltip.style.top = `${e.clientY + 10}px`;
+                tooltip.innerHTML = `x: ${(point.x / 40 - 10).toFixed(2)}, y: ${(10 - point.y / 30).toFixed(2)}<br>` +
+                                    `Δx: ${((point.x / 40 - 10) - getAvgX()).toFixed(2)}, Δy: ${(10 - point.y / 30 - getAvgY()).toFixed(2)}<br>` +
+                                    `Δx * Δy: ${(((point.x / 40 - 10) - getAvgX()) * (10 - point.y / 30 - getAvgY())).toFixed(2)}`;
+                tooltip.style.visibility = 'visible';
+                draw(point);
+                highlightTableRow(point);
+            } else {
+                tooltip.style.visibility = 'hidden';
+                draw();
+                removeTableHighlight();
+            }
+        });
+
+        canvas.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const index = points.findIndex(p => Math.abs(p.x - x) < 5 && Math.abs(p.y - y) < 5);
+            if (index !== -1) {
+                points.splice(index, 1);
+                draw();
+            }
+        });
+
+        function getAvgX() {
+            return points.reduce((sum, p) => sum + (p.x / 40 - 10), 0) / points.length;
+        }
+
+        function getAvgY() {
+            return points.reduce((sum, p) => sum + (10 - p.y / 30), 0) / points.length;
+        }
+
+        function updateTable() {
+            const tbody = document.querySelector('#data-table tbody');
+            tbody.innerHTML = '';
+            let totalProduct = 0;
+            points.forEach((point, index) => {
+                const x = point.x / 40 - 10;
+                const y = 10 - point.y / 30;
+                const dx = x - getAvgX();
+                const dy = y - getAvgY();
+                const product = dx * dy;
+                totalProduct += product;
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${x.toFixed(2)}</td>
+                    <td>${y.toFixed(2)}</td>
+                    <td>${dx.toFixed(2)}</td>
+                    <td>${dy.toFixed(2)}</td>
+                    <td>${product.toFixed(2)}</td>
+                `;
+                row.addEventListener('mouseenter', function () {
+                    highlightPoint(point);
+                });
+                row.addEventListener('mouseleave', function () {
+                    draw();
+                });
+                tbody.appendChild(row);
+            });
+
+            if (points.length > 0) {
+                const totalRow = document.createElement('tr');
+                totalRow.innerHTML = `
+                    <td colspan="4"><strong>Total</strong></td>
+                    <td><strong>${totalProduct.toFixed(2)}</strong></td>
+                `;
+                tbody.appendChild(totalRow);
+            }
+        }
+
+        function highlightTableRow(point) {
+            const rows = document.querySelectorAll('#data-table tbody tr');
+            rows.forEach((row, index) => {
+                const x = point.x / 40 - 10;
+                const y = 10 - point.y / 30;
+                if (parseFloat(row.children[0].textContent) === x && parseFloat(row.children[1].textContent) === y) {
+                    row.classList.add('highlight');
+                } else {
+                    row.classList.remove('highlight');
+                }
+            });
+        }
+
+        function removeTableHighlight() {
+            const rows = document.querySelectorAll('#data-table tbody tr');
+            rows.forEach(row => {
+                row.classList.remove('highlight');
+            });
+        }
+
+        function highlightPoint(point) {
+            draw(point);
+            tooltip.style.left = `${point.x + 10}px`;
+            tooltip.style.top = `${point.y + 10}px`;
+            tooltip.innerHTML = `x: ${(point.x / 40 - 10).toFixed(2)}, y: ${(10 - point.y / 30).toFixed(2)}`;
+            tooltip.style.visibility = 'visible';
+        }
+
+        function draw(highlightPoint) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw grid lines
+            ctx.strokeStyle = '#ccc';
+            ctx.lineWidth = 1;
+            for (let i = 0; i <= 20; i++) {
+                ctx.beginPath();
+                ctx.moveTo(i * 40, 0);
+                ctx.lineTo(i * 40, canvas.height);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(0, i * 30);
+                ctx.lineTo(canvas.width, i * 30);
+                ctx.stroke();
+            }
+
+            if (avgX && points.length > 0) {
+                const avgXValue = (getAvgX() + 10) * 40;
+                ctx.strokeStyle = 'blue';
+                ctx.beginPath();
+                ctx.moveTo(avgXValue, 0);
+                ctx.lineTo(avgXValue, canvas.height);
+                ctx.stroke();
+                ctx.fillText(`x̄: ${(getAvgX()).toFixed(2)}`, avgXValue + 5, 20);
+            }
+
+            if (avgY && points.length > 0) {
+                const avgYValue = (10 - getAvgY()) * 30;
+                ctx.strokeStyle = 'red';
+                ctx.beginPath();
+                ctx.moveTo(0, avgYValue);
+                ctx.lineTo(canvas.width, avgYValue);
+                ctx.stroke();
+                ctx.fillText(`ȳ: ${(getAvgY()).toFixed(2)}`, 5, avgYValue - 5);
+            }
+
+            // Draw intersection of avgX and avgY
+            if (avgX && avgY && points.length > 0) {
+                const avgXValue = (getAvgX() + 10) * 40;
+                const avgYValue = (10 - getAvgY()) * 30;
+                ctx.fillStyle = 'black';
+                ctx.font = '16px Arial';
+                ctx.fillText('X', avgXValue - 5, avgYValue + 5);
+            }
+
+            points.forEach(point => {
+                ctx.fillStyle = 'black';
+                ctx.beginPath();
+                ctx.arc(point.x, point.y, 5, 0, Math.PI * 2);
+                ctx.fill();
+
+                if (highlightPoint === point) {
+                    const avgXValue = (getAvgX() + 10) * 40;
+                    const avgYValue = (10 - getAvgY()) * 30;
+                    const dx = point.x - avgXValue;
+                    const dy = point.y - avgYValue;
+
+                    ctx.fillStyle = (dx * dy > 0) ? 'rgba(0, 255, 0, 0.3)' : 'rgba(255, 0, 0, 0.3)';
+                    ctx.fillRect(avgXValue, avgYValue, dx, dy);
+
+                    ctx.strokeStyle = 'black';
+                    ctx.lineWidth = 1;
+                    ctx.font = '12px Arial';
+
+                    // Draw braces for dx and dy
+                    ctx.beginPath();
+                    ctx.moveTo(avgXValue, avgYValue - 10);
+                    ctx.lineTo(avgXValue + dx, avgYValue - 10);
+                    ctx.stroke();
+                    ctx.fillText(`Δx: ${(dx / 40).toFixed(2)}`, avgXValue + dx / 2 - 15, avgYValue - 20);
+
+                    ctx.beginPath();
+                    ctx.moveTo(avgXValue + dx + 10, avgYValue);
+                    ctx.lineTo(avgXValue + dx + 10, avgYValue + dy);
+                    ctx.stroke();
+                    ctx.fillText(`Δy: ${(dy / 30).toFixed(2)}`, avgXValue + dx + 15, avgYValue + dy / 2);
+
+                    // Draw product value with arrow if the rectangle is too small
+                    const textOffset = 10;
+                    if (Math.abs(dx) > 40 && Math.abs(dy) > 30) {
+                        ctx.fillText(`Δx * Δy: ${(dx / 40 * dy / 30).toFixed(2)}`, avgXValue + dx / 2, avgYValue + dy / 2);
+                    } else {
+                        ctx.fillText(`Δx * Δy: ${(dx / 40 * dy / 30).toFixed(2)}`, avgXValue + dx + textOffset, avgYValue + dy + textOffset);
+                        ctx.beginPath();
+                        ctx.moveTo(avgXValue + dx, avgYValue + dy);
+                        ctx.lineTo(avgXValue + dx + textOffset, avgYValue + dy + textOffset);
+                        ctx.stroke();
+                    }
+                }
+            });
+
+            if (showErrorRects && points.length > 0) {
+                points.forEach(point => {
+                    const avgXValue = (getAvgX() + 10) * 40;
+                    const avgYValue = (10 - getAvgY()) * 30;
+                    const dx = point.x - avgXValue;
+                    const dy = point.y - avgYValue;
+
+                    ctx.fillStyle = (dx * dy > 0) ? 'rgba(0, 255, 0, 0.1)' : 'rgba(255, 0, 0, 0.1)';
+                    ctx.fillRect(avgXValue, avgYValue, dx, dy);
+                });
+            }
+
+            if (showCovariance && points.length > 0) {
+                const covariance = points.reduce((sum, p) => sum + ((p.x / 40 - 10) - getAvgX()) * (10 - p.y / 30 - getAvgY()), 0) / points.length;
+                ctx.fillStyle = (covariance > 0) ? 'green' : 'red';
+                ctx.fillRect(10, canvas.height - 50, 50, 30);
+                ctx.fillStyle = 'black';
+                ctx.fillText(`Covariance: ${covariance.toFixed(2)}`, 70, canvas.height - 30);
+            }
+
+            updateTable();
+        }
+
+        draw();
+    </script>
+</body>
+</html>

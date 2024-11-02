@@ -1,0 +1,1173 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Varianz und Standardabweichung - Statistik Schulung</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/excel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/beispiel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/formel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/python_tutor_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#varianz-und-standardabweichung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Statistik Schulung" class="md-header__button md-logo" aria-label="Statistik Schulung" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Statistik Schulung
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Varianz und Standardabweichung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Statistik Schulung" class="md-nav__button md-logo" aria-label="Statistik Schulung" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Statistik Schulung
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Statisik für Einsteiger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mengenlehre
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mengenlehre
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mengenlehre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grundlagen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mengenlehre/verschiedene_schreibweisen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verschiedene Schreibweisen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mengenlehre/mengenoperationen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mengenoperationen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lineare Funktionen
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lineare Funktionen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lineare_funktionen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grundlagen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lineare_funktionen/summenzeichen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summenzeichen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lineare_funktionen/indizes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indexschreibweise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Deskriptive Statistik
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Deskriptive Statistik
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grundlagen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arithmetisches Mittel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../median/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Median
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualisierung_mean_mode_median/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visualisierung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skalenniveaus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skalenniveaus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verteilung/verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wahrscheinlichkeitstheorie/wahrscheinlichkeitstheorie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wahrscheinlichkeitstheorie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hypothesentest/hypothesentest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypothesentest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regression/regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anova/anova/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anova
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="varianz-und-standardabweichung">Varianz und Standardabweichung<a class="headerlink" href="#varianz-und-standardabweichung" title="Permanent link">&para;</a></h1>
+<div class="grid">
+<div>
+<p>Die Varianz und Standardabweichungen sind die wichtigsten Streumaße in der Statistik.</p>
+<p>Je höher die Varianz bzw. die Standardabweichung ist, desto stärker sind die Datenpunkte verstreut.</p>
+<p>Die Varianz und Standardabweichung hängen extrem eng zusammen. 
+So eng, dass man sie nicht als zwei verschiedene Kennzahlen sehen sollte, sondern als die Selbe,
+die bloß verschieden dargestellt wird. Dies ist ähnlich wie mit der Messung von Temperaturen: 
+Wenn es 100 °C (Celsius) ist, ist es auch 212 °F (Fahrenheit). Beide beschreiben das gleiche,
+jedoch etwas anders skaliert. So ist es auch mit der Varianz und der Standardabweichung.
+Wir werden sehen, dass man mit der Varianz oft einfacher rechnen kann, die Standardabweichung
+jedoch leichter von Menschen interpretierbar ist.</p>
+</div>
+<div>
+<p><img alt="Vergleich von Varianz und Standardabweichung mit Temperaturmessungen in Celsius und Fahrenheit" src="../temperatur_vergleich_varianz_std.svg" /></p>
+</div>
+</div>
+<h2 id="motivation-fur-die-varianz">Motivation für die Varianz<a class="headerlink" href="#motivation-fur-die-varianz" title="Permanent link">&para;</a></h2>
+<p>Die Varianz soll messen, wie sehr die Datenpunkte vom Mittelwert abweichen.</p>
+<p>Der naive erste Ansatz wäre, die Abstände zum Mittelwert einfach zu berechnen, aber das ist leider sehr 
+fruchtlos, da die Summe dieser Abstände immer <span class="arithmatex">\(0\)</span> ergibt! Das ist nicht gerade aussagekräftig, wenn für jede
+Datenmenge immer dieselbe Kennzahl herauskommt.</p>
+<p>Es hat sich daher als nützlich herausgestellt, nicht direkt die Abweichungen von Mittelwert zu messen,
+sondern <strong>das Quadrat der Abweichungen vom Mittelwert</strong> zu messen und davon den <strong>Durchschnitt</strong> zu bestimmen.</p>
+<p>In dieser Visualisierung ist das besonders gut ersichtlich:</p>
+<p><a class="md-button" href="https://www.geogebra.org/m/ahax9v8d" target="_blank">Link zur Visualisierung</a></p>
+<p><a href="https://www.geogebra.org/m/ahax9v8d" target="_blank"><img alt="img.png" src="../img.png" /></a></p>
+<h2 id="formel">Formel<a class="headerlink" href="#formel" title="Permanent link">&para;</a></h2>
+<p>Die mathematische Formel für die Varianz sieht etwas Gruselig aus.</p>
+<p>Die Varianz bezeichnet man oft als <span class="arithmatex">\(\sigma^2\)</span> und berechnet man wie folgt:</p>
+<div class="grid">
+<div>
+<div class="admonition formel">
+<p class="admonition-title">Formel für die Varianz mit Summenzeichen</p>
+<div class="arithmatex">\[
+\sigma^2 = \frac{1}{n} \left( \sum_{i=1}^n (x_i - \bar{x})^2 \right)
+\]</div>
+</div>
+<div></div>
+<div class="admonition formel">
+<p class="admonition-title">Formel für die Varianz ohne Summenzeichen</p>
+<div class="arithmatex">\[
+\sigma^2 = \frac{1}{n} \left( (x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + \cdots + (x_n - \bar{x})^2 \right)
+\]</div>
+</div>
+</div>
+<div>
+<div class="admonition formel">
+<p class="admonition-title">Formel für die Standardabweichung</p>
+<p>Die Standardabweichung wird oft mit <span class="arithmatex">\(\sigma\)</span> bezeichnet und wird bestimmt, indem man von der Varianz die Wurzel zieht:</p>
+<div class="arithmatex">\[
+\sigma = \sqrt{\sigma^2}
+\]</div>
+</div>
+</div>
+</div>
+<div class="admonition beispiel">
+<p class="admonition-title">Beispiel</p>
+<p>Gegeben Sie der folgende Datensatz, von dem wir die Varianz und Standardabweichung berechnen wollen:</p>
+<table>
+<thead>
+<tr>
+<th>normaler Index</th>
+<th>Kuchenverkäufe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x_1\)</span></td>
+<td><span class="arithmatex">\(4\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_2\)</span></td>
+<td><span class="arithmatex">\(6\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_3\)</span></td>
+<td><span class="arithmatex">\(2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_4\)</span></td>
+<td><span class="arithmatex">\(3\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_5\)</span></td>
+<td><span class="arithmatex">\(10\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Um die Varianz zu berechnen, müssen wir zunächst das Arithmetische Mittel <span class="arithmatex">\(\bar{x}\)</span> bestimmen.
+Hier also</p>
+<div class="arithmatex">\[
+\bar{x} = \frac{1}{5} \left( 4 + 6 + 2 + 3 + 10 \right) = \frac{1}{5} \cdot 25 = 5
+\]</div>
+<p>Dann wird von jedem Datenpunkt berechnet, welchen Abstand er zum Mittelwert hat:</p>
+<table>
+<thead>
+<tr>
+<th>normaler Index</th>
+<th>Kuchenverkäufe</th>
+<th><span class="arithmatex">\(x_i - \bar{x}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x_1\)</span></td>
+<td><span class="arithmatex">\(4\)</span></td>
+<td><span class="arithmatex">\(5-4=-1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_2\)</span></td>
+<td><span class="arithmatex">\(6\)</span></td>
+<td><span class="arithmatex">\(5-6=1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_3\)</span></td>
+<td><span class="arithmatex">\(2\)</span></td>
+<td><span class="arithmatex">\(5-2=-3\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_4\)</span></td>
+<td><span class="arithmatex">\(3\)</span></td>
+<td><span class="arithmatex">\(5-3=-2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_5\)</span></td>
+<td><span class="arithmatex">\(10\)</span></td>
+<td><span class="arithmatex">\(5-10=5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Die Summe der Abweichungen ist immer <span class="arithmatex">\(0\)</span> und daher absolut nichtssagend.</p>
+<p>Um starke Abweichungen stärker zu betonen und schwache Abweichungen weniger zu betonen,
+werden die Quadrate dieser Abweichungen gebildet.</p>
+<table>
+<thead>
+<tr>
+<th>normaler Index</th>
+<th>Kuchenverkäufe</th>
+<th><span class="arithmatex">\(x_i - \bar{x}\)</span></th>
+<th><span class="arithmatex">\((x_i - \bar{x})^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x_1\)</span></td>
+<td><span class="arithmatex">\(4\)</span></td>
+<td><span class="arithmatex">\(-1\)</span></td>
+<td><span class="arithmatex">\((-1)^2=1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_2\)</span></td>
+<td><span class="arithmatex">\(6\)</span></td>
+<td><span class="arithmatex">\(1\)</span></td>
+<td><span class="arithmatex">\(1^2=1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_3\)</span></td>
+<td><span class="arithmatex">\(2\)</span></td>
+<td><span class="arithmatex">\(-3\)</span></td>
+<td><span class="arithmatex">\((-3)^2=9\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_4\)</span></td>
+<td><span class="arithmatex">\(3\)</span></td>
+<td><span class="arithmatex">\(-2\)</span></td>
+<td><span class="arithmatex">\((-2)^2=4\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_5\)</span></td>
+<td><span class="arithmatex">\(10\)</span></td>
+<td><span class="arithmatex">\(5\)</span></td>
+<td><span class="arithmatex">\(5^2=25\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Von diesen Abweichungsquadraten berechnen wir nun den Durschnitt. Das Ergebnis dieser Rechnung
+ist nun endlich die <strong>Varianz</strong> <span class="arithmatex">\(\sigma^2\)</span>!</p>
+<div class="arithmatex">\[
+\begin{align}
+\sigma^2 &amp;= \frac{1}{n} \left( \sum_{i=1}^n (x_i - \bar{x})^2 \right) \\
+&amp;= \frac{1}{5} \left( (x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 + (x_5 - \bar{x})^2 \right) \\
+&amp;= \frac{1}{5} \left( 1 + 1 + 9 + 4 + 25 \right) \\
+&amp;= \frac{1}{5} \cdot 40 \\
+&amp;= 8
+\end{align}
+\]</div>
+<p>Abschließend können wir nun noch die Standardabweichung <span class="arithmatex">\(\sigma\)</span> bestimmen, indem wir von
+der Varianz die Wurzel ziehen:</p>
+<div class="arithmatex">\[
+\sigma = \sqrt{\sigma^2} = \sqrt{8} \approx 2{,}8284\dots
+\]</div>
+<p><strong>Zusammengefasst</strong>: Bei dem Datensatz <span class="arithmatex">\((4, 6, 2, 3, 10)\)</span> ist das Arithmetische Mittel <span class="arithmatex">\(\bar{x} = 5\)</span>, die Varianz <span class="arithmatex">\(\sigma^2=8\)</span> und die Standardabweichung <span class="arithmatex">\(\sigma\approx 2{,}8284\)</span>.</p>
+</div>
+<details class="question" open="open">
+<summary>Varianz schätzen</summary>
+<p>Berechnen Sie für die folgenden Datensätze zunächst die Mittelwerte. Bevor Sie die Varianz berechnen
+schätzen Sie zunächst, welcher Datensatz die größte und welcher die kleinste Varianz hat. Sortieren Sie die Datensätze ensprechen.
+Berechnen Sie dann die Varianz und überprüfen Sie ihre Vermutung.</p>
+<p><span class="arithmatex">\(A = (1, 2, 3)\)</span>, <span class="arithmatex">\(B = (2, 3, 4)\)</span>, <span class="arithmatex">\(C = (2, 2, 2)\)</span>, <span class="arithmatex">\(D = (0, 2, 4)\)</span></p>
+<details class="info">
+<summary>Tipp</summary>
+<p><span class="arithmatex">\(0 = \sigma^2_C &lt; \sigma^2_A = \sigma^2_B &lt; \sigma^2_D\)</span></p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p><span class="arithmatex">\(\bar{A} = 2\)</span>, <span class="arithmatex">\(\sigma^2_A = \frac{2}{3} = 0{,}\bar{6}\)</span></p>
+<p><span class="arithmatex">\(\bar{B} = 3\)</span>, <span class="arithmatex">\(\sigma^2_B = \frac{2}{3} = 0{,}\bar{6}\)</span></p>
+<p><span class="arithmatex">\(\bar{C} = 2\)</span>, <span class="arithmatex">\(\sigma^2_C = 0\)</span></p>
+<p><span class="arithmatex">\(\bar{D} = 2\)</span>, <span class="arithmatex">\(\sigma^2_D = \frac{8}{3} = 2{,}\bar{6}\)</span></p>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Varianz und Standardabweichung berechnen</summary>
+<p>Berechnen Sie (wenn möglich) die Varianz <span class="arithmatex">\(\sigma^2\)</span> und die Standardabweichung <span class="arithmatex">\(\sigma\)</span> in den folgenden Fällen: </p>
+<p>a) <span class="arithmatex">\((8,12,5,17)\)</span>   </p>
+<p>b) <span class="arithmatex">\((5,3,7,3,4,4)\)</span>  </p>
+<p>c) <span class="arithmatex">\((5,3,7,3,4,42)\)</span>  </p>
+<p>d) <span class="arithmatex">\((12,-17,-13,10,8)\)</span>  </p>
+<p>e) <span class="arithmatex">\((-17,8,12,-13,10)\)</span></p>
+<p>f) <span class="arithmatex">\((7, 9)\)</span></p>
+<p>g) <span class="arithmatex">\((3)\)</span></p>
+<p>h) <span class="arithmatex">\((1, 1, 1)\)</span></p>
+<details class="info">
+<summary>Tipp</summary>
+<p>In der Aufgabe <em>Arithmetisches Mittel berechnen</em> wurden für fast alle diese Beispiele bereits das Arithmetische Mittel berechnet. Es kann hier also genutzt werden.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Varianz</th>
+<th>Standard Abweichung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td><span class="arithmatex">\(20.25\)</span></td>
+<td><span class="arithmatex">\(4.50\)</span></td>
+</tr>
+<tr>
+<td>b</td>
+<td><span class="arithmatex">\(1.8889\)</span></td>
+<td><span class="arithmatex">\(1.3744\)</span></td>
+</tr>
+<tr>
+<td>c</td>
+<td><span class="arithmatex">\(198.2222\)</span></td>
+<td><span class="arithmatex">\(14.0791\)</span></td>
+</tr>
+<tr>
+<td>d</td>
+<td><span class="arithmatex">\(153.2\)</span></td>
+<td><span class="arithmatex">\(12.3774\)</span></td>
+</tr>
+<tr>
+<td>e</td>
+<td><span class="arithmatex">\(153.2\)</span></td>
+<td><span class="arithmatex">\(12.3774\)</span></td>
+</tr>
+<tr>
+<td>f</td>
+<td><span class="arithmatex">\(1.0\)</span></td>
+<td><span class="arithmatex">\(1.0\)</span></td>
+</tr>
+<tr>
+<td>g</td>
+<td>nicht berechenbar</td>
+<td>nicht berechenbar</td>
+</tr>
+<tr>
+<td>h</td>
+<td><span class="arithmatex">\(0.0\)</span></td>
+<td><span class="arithmatex">\(0.0\)</span></td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<div class="admonition excel">
+<p class="admonition-title">Excel</p>
+<p>Die Varianz kann in Excel mit Hilfe der Formel <a href="https://support.microsoft.com/de-de/office/var-p-funktion-73d1285c-108c-4843-ba5d-a51f90656f3a"><code>VAR.P</code></a>
+berechnet werden.</p>
+<p>Die Standardabweichung kann in Excel mit Hilfe der Formel <a href="https://support.microsoft.com/de-de/office/stabw-n-funktion-6e917c05-31a0-496f-ade7-4f4e7462f285"><code>STABW.N</code></a>
+berechnet werden.</p>
+<p><iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://qualidyschulungen-my.sharepoint.com/personal/viktor_reichert_qualidy_de/_layouts/15/Doc.aspx?sourcedoc={3e0e208d-9ba0-45ee-8355-fc03cb898635}&action=embedview&AllowTyping=True&ActiveCell='VAR.P%20und%20STABW.N'!C2&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe></p>
+</div>
+<h2 id="varianz-und-standardabweichung-interpretieren">Varianz und Standardabweichung interpretieren<a class="headerlink" href="#varianz-und-standardabweichung-interpretieren" title="Permanent link">&para;</a></h2>
+<p>Oft fällt es Einsteigern die Varianz beziehungsweise Standardabweichung zu interpretieren. Und dies gestaltet sich auch 
+tatsächlich als schwierig. Es gilt immer:</p>
+<ul>
+<li>Je größer die Varianz/Standardabweichung ist, desto größer sind die Schwankungen in den Daten.</li>
+</ul>
+<p>Wenn die Daten normal verteilt sind (was genau das bedeutet, werden wir später untersuchen,
+doch für den Moment können Sie glauben, dass sehr viele Datensätze normal verteilt sind), so können
+wir mithilfe der einer einfachen Formel abschätzen, wie die Daten um das arithmetische Mittel
+verteilt sind. Das geht wie folgt:</p>
+<p>Wenn der Datensatz normalverteilt sind und wir kennen das Arithmetische Mittel <span class="arithmatex">\(\bar{x}\)</span> und 
+die Standardabweichung <span class="arithmatex">\(\sigma\)</span>, so befinden sich </p>
+<h2 id="variazionskoeffizient">Variazionskoeffizient<a class="headerlink" href="#variazionskoeffizient" title="Permanent link">&para;</a></h2>
+<p>Um die Varianz besser zu interpretieren, wird manchmal der Variationskoeffizient verwendet. 
+Dieser übersetzt die Streuung in einen prozentualen Wert.</p>
+<div class="admonition formel">
+<p class="admonition-title">Formel</p>
+<p>Der <strong>Variationskoeffizient</strong> <span class="arithmatex">\(v\)</span> wird berechnet, indem man die Standardabweichung durch den Mittelwert teilt:</p>
+<div class="arithmatex">\[
+v = \frac{\sigma}{\bar{x}}  
+\]</div>
+</div>
+<div class="admonition beispiel">
+<p class="admonition-title">Beispiel</p>
+<p>Ein Wertpapier, dessen Wert durchschnittlich bei 20 EUR liegt und zwischen 10 und 30 EUR schwankt, 
+weist ein höheres Risiko auf als ein Wertpapier mit einem mittleren Wert von 200 EUR, das zwischen 190 und 210 EUR variiert.</p>
+<p>Man beachte, dass die Datensätze <span class="arithmatex">\(X = (10, 20, 30)\)</span> und <span class="arithmatex">\(Y = (190, 200, 210)\)</span> 
+dieselbe Varianz (<span class="arithmatex">\(\sigma_X^2 = \sigma_Y^2 \approx 66{,}67 \, \text{EUR}^2\)</span>), 
+und Standardabweichung (<span class="arithmatex">\(\sigma_X = \sigma_Y \approx 8{,}16 \, \text{EUR}\)</span>).</p>
+<p>Der Variationskoeffizient zeigt jedoch, dass die Schwankungen im ersten Fall etwa 41 % des Durchschnittswertes ausmachen, während sie im zweiten Fall nur 4 % betragen:</p>
+<div class="arithmatex">\[
+v_X \approx \frac{8{,}16}{20} \approx 0{,}41; \quad v_Y \approx \frac{8{,}16}{200} \approx 0{,}04
+\]</div>
+</div>
+<div class="admonition excel">
+<p class="admonition-title">Excel</p>
+<p>In Excel gibt es keine eigene Formel zum Berechnung des Variationskoeffizienten. Stattdessen
+wird die Rechnung für einen gewünschten <code>Bereich</code> selbst ausgeführt: <code>=STABW.P(Bereich)/MITTELWERT(Bereich)</code>.</p>
+<p><iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://qualidyschulungen-my.sharepoint.com/personal/viktor_reichert_qualidy_de/_layouts/15/Doc.aspx?sourcedoc={1d74e621-d579-4d15-8209-e4bca0b29478}&action=embedview&AllowTyping=True&ActiveCell='Variationskoeffizient'!C5&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.kununu.com/de/qualidy" target="_blank" rel="noopener" title="www.kununu.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M311 86.3c12.3-12.7 12-32.9-.7-45.2s-32.9-12-45.2.7l-155.2 160L64 249V64c0-17.7-14.3-32-32-32S0 46.3 0 64v384c0 17.7 14.3 32 32 32s32-14.3 32-32V341l64.7-66.7 133 192c10.1 14.5 30 18.1 44.5 8.1s18.1-30 8.1-44.5L174.1 227.4z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF" target="_blank" rel="noopener" title="www.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../javascripts/pytutor_button.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      
+        <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+      
+    
+  </body>
+</html>
