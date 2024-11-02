@@ -2,36 +2,26 @@ site_name: Statistik Schulung
 
 nav:
   - index.md
+  - Mengenlehre:
+    - Grundlagen: old_content/mengenlehre/index.md
+    - Verschiedene Schreibweisen: old_content/mengenlehre/verschiedene_schreibweisen.md
+    - Mengenoperationen: old_content/mengenlehre/mengenoperationen.md
+  - Lineare Funktionen:
+    - Grundlagen: old_content/lineare_funktionen/index.md
+    - Summenzeichen: old_content/lineare_funktionen/summenzeichen.md
+    - Indexschreibweise: old_content/lineare_funktionen/indizes.md
   - Deskriptive Statistik:
-      - Einleitung: content/deskriptive_statistik/index.md
-      - Merkmal: content/deskriptive_statistik/merkmal.md
-      - Skalenniveaus: content/deskriptive_statistik/skalenniveaus.md
-      - Modus: content/deskriptive_statistik/modus.md
-      - Median: content/deskriptive_statistik/median.md
-      - Arithmetisches Mittel: content/deskriptive_statistik/mean.md
-      - Varianz und Standardabweichung: content/deskriptive_statistik/variance.md
-      - Standardabweichung interpretieren: content/deskriptive_statistik/normal_distribution_sigma.md
-  - old_content:
-    - Mengenlehre:
-      - Grundlagen: old_content/mengenlehre/index.md
-      - Verschiedene Schreibweisen: old_content/mengenlehre/verschiedene_schreibweisen.md
-      - Mengenoperationen: old_content/mengenlehre/mengenoperationen.md
-    - Lineare Funktionen:
-      - Grundlagen: old_content/lineare_funktionen/index.md
-      - Summenzeichen: old_content/lineare_funktionen/summenzeichen.md
-      - Indexschreibweise: old_content/lineare_funktionen/indizes.md
-    - Deskriptive Statistik:
-      - Grundlagen: old_content/deskriptive_statistik/index.md
-      - Arithmetisches Mittel: old_content/deskriptive_statistik/mean.md
-      - Median: old_content/deskriptive_statistik/median.md
-      - Modus: old_content/deskriptive_statistik/modus.md
-      - Visualisierung: old_content/deskriptive_statistik/visualisierung_mean_mode_median.md
-      - Skalenniveaus: old_content/deskriptive_statistik/skalenniveaus.md
-    - Verteilungen: old_content/verteilung/verteilung.md
-    - Wahrscheinlichkeitstheorie: old_content/wahrscheinlichkeitstheorie/wahrscheinlichkeitstheorie.md
-    - Hypothesentest: old_content/hypothesentest/hypothesentest.md
-    - Regression: old_content/regression/regression.md
-    - Anova: old_content/anova/anova.md
+    - Grundlagen: old_content/deskriptive_statistik/index.md
+    - Arithmetisches Mittel: old_content/deskriptive_statistik/mean.md
+    - Median: old_content/deskriptive_statistik/median.md
+    - Modus: old_content/deskriptive_statistik/modus.md
+    - Visualisierung: old_content/deskriptive_statistik/visualisierung_mean_mode_median.md
+    - Skalenniveaus: old_content/deskriptive_statistik/skalenniveaus.md
+  - Verteilungen: old_content/verteilung/verteilung.md
+  - Wahrscheinlichkeitstheorie: old_content/wahrscheinlichkeitstheorie/wahrscheinlichkeitstheorie.md
+  - Hypothesentest: old_content/hypothesentest/hypothesentest.md
+  - Regression: old_content/regression/regression.md
+  - Anova: old_content/anova/anova.md
 
 
 markdown_extensions:
